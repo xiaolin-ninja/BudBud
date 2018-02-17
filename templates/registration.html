@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Registration{% endblock %}
+{% block theme %}Please Complete Registration.{% endblock %}
+{% block content %}
+
+<h1>Fill Out Your User Profile</h1>
+<h2>Register!</h2>
+    <form id="reg" action="/registration" method="POST">
+        Email: <input type="text" name="email" required><br>
+        Password: <input type="text" name="password" required><br>
+        First Name: <input type="text" name="fname" required><br>
+        Last Name: <input type="text" name="lname" required><br>
+        Zipcode: <input type="text" name="zipcode" required><br>
+        Age: <input type="text" name="age"><br>
+        Usage: <select name="user_type">
+               <option value="Medical">Medical</option>
+               <option value="Recreational">Recreational</option>
+               <option value="Both">Both</option>
+               </select><br>
+        Preference: <select name="preferred_type" required>
+               <option value="Indica">Indica</option>
+               <option value="Sativa">Sativa</option>
+               <option value="Hybrid">Hybrid</option>
+               <option value="Nada">None</option>
+               </select><br>
+        <input type="submit" value="Join us!">
+    </form>
+
+{% endblock %}

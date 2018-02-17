@@ -1,0 +1,36 @@
+https://www.leafly.com/hybrid/blue-dream/availability/san-francisco-ca
+
+^ gives me a list of available spots
+
+https://maps.googleapis.com/maps/api/place/textsearch/json?query=dispensary+in+san+francisco&location=37.7868812,-122.4857473&radius=10000&key=AIzaSyAU-8pPSo9J3hSrWFBJMlpKX8cJtwNgrsw
+
+
+JS maps API: AIzaSyB4Rm_AAcmUnxv8-LuxDHQgwuyMEsRCkR4
+Js maps API: AIzaSyDnZPpl8aau3fCm9LKhwc5Yx9ugGxqddT8
+
+u'Blum - Oakland' >> Blum Oak
+
+Problems:
+- limited data set
+- lack of available, organized information
+- incongruency between leafly site & individual sites
+- incomplete leafly strains profile (none of the items on the menu of my fav dispensary are on leafly)
+
+Result: terrible user experience due to bad data
+
+Demo strain: "GSC"
+alternatives: "Blue Dream"
+
+
+----------------------------------
+
+{% for s in strains %}
+<p><b><a href="/map?strain={{s.s_name}}">{{ s.s_name }}</a></b> is a <i>{{ s.s_type }}</i> bud that can make you feel
+    {% for effect in s.pos_effects.split(",") %}
+    <li>{{ effect }}</li>
+    {% endfor %}
+    but also<br> {% for effect in s.neg_effects.split(",") %}
+    <li>{{ effect }}
+    {% endfor %}</p>
+</li>
+{% endfor %}

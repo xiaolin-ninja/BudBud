@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet">
+  <title>
+  {% block title %} TITLE GOES HERE! {% endblock %}</title>
+  {% block head %}
+  {% endblock %}
+
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<body>
+  <a href="/"> Back to Home </a><br>
+  {% block theme %}Theme{% endblock %}
+  <hr>
+
+  <div id="content">
+  {% block content %} put your content here {% endblock %}
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/
+    3.3.7/js/bootstrap.js"></script>
+</body>
+</html>

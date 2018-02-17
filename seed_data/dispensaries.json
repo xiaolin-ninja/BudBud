@@ -1,0 +1,3432 @@
+ {
+    "html_attributions": [],
+    "results": [
+        {
+            "formatted_address": "1077 Post St, San Francisco, CA 94109, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.786784,
+                    "lng": -122.4194573
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78819157989272,
+                        "lng": -122.4181155201073
+                    },
+                    "southwest": {
+                        "lat": 37.78549192010728,
+                        "lng": -122.4208151798928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "ca5bdc67eab744edef8be8ae7d165f7ba1ace412",
+            "name": "Grass Roots",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1204,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAX6507D7mXySyz1TcZc_ywDrGYBQkTgIvzs5fUfMl23fRftxLcCs7mqqlfQOofMyGSSzG7jWBQ8ehEcwhIRWiBxHbTWpSdOpLBuFUpP6gkPkyciBrC1KIyOw8BlM26XsvEhALHgJisIfO18x6sLyZR4SwGhRJIIFDwEwi1GCjDSwK-8_zNkaPng",
+                    "width": 1844
+                }
+            ],
+            "place_id": "ChIJ6fMWHJSAhYARZPuLQnQFtxE",
+            "rating": 4.2,
+            "reference": "CmRbAAAAiWIhmLqomW_yPeokJXT_YiswUN82dR10ePlhWyfJH6rlmD9T8KHND39D9Ayzo1JKT6ubzf0DKifuwC5wg3oKm1miFudK3hvWS5V7HIW9GHprjhMPw4zjvVg5V6GpImoVEhAND7C2I2djHviIWP6diMg9GhS0fgOTPWks3lIWF0xQ6keCo1dqiw",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+
+        {
+            "formatted_address": "2701 Sutter St, San Francisco, CA 94115, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.784487,
+                    "lng": -122.444964
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78589692989272,
+                        "lng": -122.4436271201073
+                    },
+                    "southwest": {
+                        "lat": 37.78319727010727,
+                        "lng": -122.4463267798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "87a2c6f5600536c5a84e1fd0bf17f36020abb9e4",
+            "name": "Spring Wind Dispensary Chinese Herbs",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2988,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAKmNb63T9hkXOEG82dF9snFIrd1MjRUvnMjxiE3KH2HREqPj6mNd02tT6mFcny0yuTJrNkCKLDwvfal2JQ4rJQeYk7OJQtCAXD3BQkhy-llk14x8LDVcRWccKpaOxbbXDEhDopOp5m6nDulhOfa2zCr8sGhS8bUCIqbmh1OJ3bJvoFuUmadL_Mw",
+                    "width": 5312
+                }
+            ],
+            "place_id": "ChIJgTpjk8qAhYARCOQRR17Y3_w",
+            "rating": 5,
+            "reference": "CmRbAAAAcL3KSx_TUyw0rImM0sEQ58EbAoNuTVaWaCXIrnhCVaVS9YZPiSBPwjUBrxr_nSUhLqkbD_4-DdvE_fQKXPCQfCC6wPUjLSYqJDAueHudFXfd4EMyK8ICntkcS2zy6PcgEhDuH6E-s3tz2IlZLOu_iKqPGhQ15zyolVipxb0pdPnkXA1l2SyyDw",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1933 Mission St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7662313,
+                    "lng": -122.4195892
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.76757452989272,
+                        "lng": -122.4183494201073
+                    },
+                    "southwest": {
+                        "lat": 37.76487487010728,
+                        "lng": -122.4210490798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "18d3ad08b15f398f9f33c8e42363270976463d7c",
+            "name": "Medithrive",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 682,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAfFg7BJ4O01Y6XceHWQe3uZIZChmcxcRrbzqYdWv3x7p7Uej1iHxbvoHqUbVGauSNdRbDbnKXxlnDe4E46qzELH0vu1VO2NViRG52SOoCiR-fz8azzhI60Zp7m-hYBBZTEhBtl6tJfUccJ4rE_mCVqbAKGhQ_Xrnt844ZS9uu6316dldNxiyTnQ",
+                    "width": 1024
+                }
+            ],
+            "place_id": "ChIJESnfmSN-j4ARuA9CoFV7ZjI",
+            "rating": 4.2,
+            "reference": "CmRbAAAAGkTgw-sSHwhbKgBhLd53HBiUXRb5RaPsOaRL1mEva8wq8MIvjSOglSbyQjZFrBaEvEtMQjsqbAhP33cfzg1tqxlKTd8fXRHTGTuTSmj-Tg26LmJsfZd3p1gPviVsVp3tEhDtDeJ18zXfVJIq1VV7SUFhGhRl6O4RCrvVYQ9tmWiYvQjeQ-S4JA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "952 Mission St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.781907,
+                    "lng": -122.4078286
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78325682989272,
+                        "lng": -122.4064787701073
+                    },
+                    "southwest": {
+                        "lat": 37.78055717010728,
+                        "lng": -122.4091784298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "a6a0a8afca90edc73ac2b6d5e7c333a65fad8113",
+            "name": "Barbary Coast Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3036,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRZAAAA0FchDgAjw7Z1LegTAApgaGs-B85UxjVqOw6V3n9eo-Rz4iu9hmC2wImgTXo73B-fm_COkxS5cHv7WWulisCMIbUip-LdVEgluHOJ2OSsWsH-fZmXjQAHPlTMSNPKxY_wEhAsTby3B7CWpsI_rkfhN1LIGhQWaD35VkSceUTPKaUc7PEPw24m6w",
+                    "width": 4048
+                }
+            ],
+            "place_id": "ChIJ3w4gI4SAhYARqCT0OUxl_KE",
+            "rating": 4.6,
+            "reference": "CmRbAAAAjNjeelVjCSCnUoizNV1BJ91n0pKBgPqErvUh3Of6l89f1a-JClXnm9cfYDBnuWghae7tHWNcgxT3WGoLE1MSce0ZurGjkTLUp2FKWrxdHJ_JKB6RXBSz67e4ouk1zzJ5EhAKoPhGlBO1z0cWMf5jIf_HGhR3I5N2JHydyJMlInFYhKOm3uZtJQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "502 14th St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.768092,
+                    "lng": -122.424674
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.76939412989272,
+                        "lng": -122.4233193701073
+                    },
+                    "southwest": {
+                        "lat": 37.76669447010728,
+                        "lng": -122.4260190298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "39e160b63f679f40eb7bb6d69b306f9242687098",
+            "name": "LoveShack - San Francisco",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 600,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAADgAJu3cLYTlBbk5qLU5d4VabeI533v901QcrXwU7XVoW9A4BOO9IoEu8BbYUi0rCaI5yAHWTSXC_lq0tZGeOdWjFbz8Bq1yqL2AuEmDyxXsuftA9nhRuRf3aLJlrZGoVEhD-q-yz1FtXZZcfpbaQ3r5MGhQRJWusbE_R-ULC4pOL6snFGmIzwA",
+                    "width": 600
+                }
+            ],
+            "place_id": "ChIJpxkveR9-j4ARUwzxnPCwNRw",
+            "rating": 4.6,
+            "reference": "CmRbAAAADa-cn4cEO6x5SLuvtihvrTNRRqicCxZDHyOthLxf-Z2bi0iNYjzn-5a2sSvHEBdPODDzikwMMjeAvYezvaEQYSr1UzxHvJUcCfGjiTvu_12Yh49KtMsMhNAOMKDKNItWEhDGMGVeW7gTu2c9NHrBOEPWGhTYPg9BsUrSpqEYKmpOmcxzrx8VSw",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "471 Jessie St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7819455,
+                    "lng": -122.4083563
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78334287989272,
+                        "lng": -122.4070655701073
+                    },
+                    "southwest": {
+                        "lat": 37.78064322010728,
+                        "lng": -122.4097652298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "cb9f10f53603780839f23b0b2d66a5fca59714b2",
+            "name": "Bloom Room",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3433,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAjhO1EIdSs8hMT-nKaWGi-wSgtBNDtsf3t22mCF-dp92lcW1gvGImlkXDbvLPLTjH0rX9bCJLgi7n7o3EpaZMNZaznKwAlcgqc7kp0Rn2PHWfTe_E_OKYl1PaunQtujxWEhC-AOD-__SYk9xsgiek_S47GhT3K5kWmu2kcGW4IXAWkst9TlX7SA",
+                    "width": 5185
+                }
+            ],
+            "place_id": "ChIJoamyOYSAhYAR0aQ0NTiRNP4",
+            "rating": 4.5,
+            "reference": "CmRbAAAAhbavnib-4B9pVfvmAnGuUQILA1qJK6PPBUqTYK6SGMCs_zaD4N65CC80RJ7g6PjQs9r56cHKS6Kk__czY_VyyvznBdxtfq0ZpYeJcYsJ1Y3WKjBHlQgE8U6PgE2bt2M1EhAYrtoVH0TMT3I3fvgzsOROGhTyKQ1UiH86DEtVtQAaEfpQkNzFDQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "4811 Geary Blvd, San Francisco, CA 94118, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7804107,
+                    "lng": -122.4711125
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78188132989272,
+                        "lng": -122.4697705701072
+                    },
+                    "southwest": {
+                        "lat": 37.77918167010728,
+                        "lng": -122.4724702298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "174155dee1b40ea398b1d765a272496a047dac25",
+            "name": "Harvest on Geary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1165,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAEwT8OlJGidNQprK5u99592Lpeu41-0V0C1J_2-2AC5_yvsNnJkvi402hYiS9_uyVMtrugrR_lYAr20MlfZhzV_0rlF1lMq5JvbsJq7hoip7fy-lV9bLwU6SC3EgU4J4EEhDS2lHpmCXJKm0fEHQfjtUlGhQT-0e7h3C3_Qk3AyfDX10Yi5sYUw",
+                    "width": 2699
+                }
+            ],
+            "place_id": "ChIJ3zracxaHhYARPg5JRHoVpgI",
+            "rating": 4.1,
+            "reference": "CmRbAAAAzPyStoAxHM3p80MilaXXCEVs9d5GoS_N07_s6pPYn8D57peM2Wgl4wpdWdmUT-cI2sGDB85Abv-Dutlq7xObgeb17-fDPIAh4LytjAO6WF0jkutNYM3i2iYCtK5THB0ZEhDYLarPOAug-fYxt14pVvOnGhQk8A46kT0RfDJYww3ZQwk_uS6qOg",
+            "types": [
+                "night_club",
+                "bar",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "122 10th St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.774846,
+                    "lng": -122.415769
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.77627157989272,
+                        "lng": -122.4143229201073
+                    },
+                    "southwest": {
+                        "lat": 37.77357192010728,
+                        "lng": -122.4170225798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "8d6aa2086fb3974d6ffafa662862c43ea6740eb8",
+            "name": "Urban Pharm",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 640,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAqXnICgpMFwqhIsKMzQK-wBhF2Z5n6hvk7wZHuSocipf7mRIZQ9dB_6FSKEp6tdK0OtC0Qr2tqVHh2fOOMyo6_w2tK21RJCbDFkd1dx_1S5adjvfH00-uy4FoW6D-SbUJEhC1qRZ9XPXHF-F_mcCt55HJGhS-I6g3urueTKQ2E3Wrv_bYkl4VQw",
+                    "width": 960
+                }
+            ],
+            "place_id": "ChIJldcyCJ2AhYARCgiyeQqcpsE",
+            "rating": 4.6,
+            "reference": "CmRbAAAArHFg9d3HD3gKcIy3l4NvyYHWk6KpLS0sGjS50ctVORLbA2QO8tPt_by5q0fEqV2WBsSVHrtKQyroxWQp8Mt05NI4lHuQmqT2UmOkDYrDF9NqatPVP0kGD9jHQvDNmIo4EhD1cxJvaHUobVhwdlEZW5IqGhQY8F216cABlFyuMEx5cVBx4OGxaw",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "4218 Mission St, San Francisco, CA 94112, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7297817,
+                    "lng": -122.4306375
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.73106422989272,
+                        "lng": -122.4291811201072
+                    },
+                    "southwest": {
+                        "lat": 37.72836457010727,
+                        "lng": -122.4318807798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "8bb0a03297e39c56c756829022acf0a98462f5fe",
+            "name": "The Green Cross",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2617,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAnX6uGexTJV_IKRHPcD5_y_uaB6caOF1VZDRAEOX6nL5obTXlx-ZQ2fla3HJg__ovsP_jbgLKGiixlgAHm1dxKhYCjtENmWDYmPQgf5fkmlIYMUpPKW8QAV0z2mMSRajgEhBI8BrC6Cfiv35-7OQ_inQ0GhT7--1l7VcXPBfchsf7nFuon5XDgA",
+                    "width": 3926
+                }
+            ],
+            "place_id": "ChIJp7uz74l-j4ARH-ndJjm0tzk",
+            "rating": 4.5,
+            "reference": "CmRbAAAAjf40HisMoWQhap-RP3GUbBr4F5AW5bfXbLK8xdIT_upl9S5pqmaOQTBfBfKGEjLc3RiChCC5lHFl-CeFzZ4hIuuYkvt3t21-ovq3yPcjkYuh89gba-WgDykI2YB8IcsTEhCK6oCx-WjGKSNzqauSPTuvGhToFkZXD-pqL9rcVIZz7-QNIwt5zQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "5234 Mission St, San Francisco, CA 94112, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7153831,
+                    "lng": -122.44218
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.71667432989272,
+                        "lng": -122.4407306701073
+                    },
+                    "southwest": {
+                        "lat": 37.71397467010728,
+                        "lng": -122.4434303298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "8881b4743f8b03034057d25286f26146dd1a3b23",
+            "name": "Connected Cannabis",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3072,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAzfxZT9gdgNfPJK5876D-5RAYt1_QqjV8EbImFPPljRFpjZn8OOFUl4i7j5HE8iaSpJXQk7WhnuGxjKCs5nEtDO0CAjmFm8tOtybUKmpv_lvIkgwb_UZVlcLVkFQhHi20EhC0EJWFQj3cH38MKbEpwc0LGhRC_Rp-uUNwKkFFkpczZ6QcJtotAA",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJj5pfiZx-j4AR10SVY_p74YQ",
+            "rating": 3.3,
+            "reference": "CmRbAAAA_Xkcm21LjSeVotokNTsjpE4Y3fknkYnIFX6ICYyPwAOFka-93W9ykOKUkvZcTQ-Um6SiN90xThrb5wjwwDM09lbI-TjhQ4IhYZgYOFSKpYdnXI_fEPgnXvpzzS3nPeNqEhAH70EZc4aK6wXQUHirlUb9GhTDJm-CSUXtUmeoP61QV7Y0TN_5Jw",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "5258 Mission St, San Francisco, CA 94112, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7151258,
+                    "lng": -122.4423793
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.71642537989271,
+                        "lng": -122.4409534701073
+                    },
+                    "southwest": {
+                        "lat": 37.71372572010727,
+                        "lng": -122.4436531298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "dffa233220b27823a138ec1fe13c054965916d1f",
+            "name": "Mission Organic Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 5248,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA-GAjicpi6PqCaTThhICxJxzIVOeJ8Zo-RaQq2cx-q9VN0de9cgxvt2EdC7ucp_oKjyCcSWb2b3ydIaWvcaFfuvjJC5SMQQS6F__JNfC4pfW9FXSWUd2HvqrheCAEx4k3EhB-3xkUTQd0hdugqwbKrN3kGhQkf70wW6204e0GYHa4ShlyHQmmyw",
+                    "width": 2952
+                }
+            ],
+            "place_id": "ChIJUVwVipx-j4ARzznBYHNUcQM",
+            "rating": 4,
+            "reference": "CmRbAAAAbfsplfu9je6uXjxY2Qk9_48wnWlN45igdNcKRrUBw8Fqab90KDQwU2b9s0Q335FH7vDsLqDMFD_HJ5nyEiLuk4njlu5M_-O0bxkVuYI8obGjmNXSkTjbjlfBzH01cPWpEhDUwgMGaY9OMTXcopzM5vjnGhRUYnNoDNfHTVqf71XcAbgq1XEfxg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2441 Mission St, San Francisco, CA 94110, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7579643,
+                    "lng": -122.4187944
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.75930702989272,
+                        "lng": -122.4175562701073
+                    },
+                    "southwest": {
+                        "lat": 37.75660737010728,
+                        "lng": -122.4202559298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "3afc9765f407ec9a55854b3e4d422e3720390f80",
+            "name": "Shambhala Medical Cannabis Collective",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3264,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAABEPEZioeMe5K9D65jA-iqWS7BzfLkmjtL-_3vzkLfnEaW-LncwMA4C-gDgsUsPGhuxTEUknJEhixfN0wkUuDAIZB4gL-Q1k8BBc04CR2J2jOmfvS5cJBo6g-zY1m8gTAEhCIbMPLUPIcYjptpY7gtnzFGhTWIEiolWHKK_K5T4kN7uuilqPxsg",
+                    "width": 4928
+                }
+            ],
+            "place_id": "ChIJDVrcqT5-j4AR_cFn7kgRmMk",
+            "rating": 4.4,
+            "reference": "CmRbAAAAiw8Vs0hIA2Ul5b3o-liVBTdnS-h0jF021pdQy2WNsRVs-norv3vYYk1iy_rBd4CALuOt9mfy2RADwn7HgIa1h9kDHk25o1It14xmrFxU21IaDD2sflmEGDnFP2LHdPXfEhB710K7Z5EXWOkFW09p9rX3GhRK4-CojHFscbfkSX6hJHfNEC_FPg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2520 Mission St, San Francisco, CA 94110, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7566342,
+                    "lng": -122.4190327
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.75798817989272,
+                        "lng": -122.4176094201073
+                    },
+                    "southwest": {
+                        "lat": 37.75528852010728,
+                        "lng": -122.4203090798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "68a2954378f473785c44a36af1ae9048c5f23ad9",
+            "name": "Purple Star MD",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4160,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAMCPBUFJ1uJEJwmhvJNagNkDBR2ceeUa-jM0GonwrNBDg4Z4fqB5VLx0tgrP6FQvSz2H6ZYkwUn-Yz_WDlGnE-SZQ49nMPYsjvqJkNe2QpbE2lm0JUYD4Y-foa1-K29LeEhDWgzBUgMHf8jW6tkEYisDVGhQDmk21svEgHoGBhLmHhOjl9otECg",
+                    "width": 3120
+                }
+            ],
+            "place_id": "ChIJyxLOyT5-j4ARxCo3n_HYaCQ",
+            "rating": 4.8,
+            "reference": "CmRbAAAAoewyZihhjcfv2iWSHIPeqnYhBZJY6ODLvDPig-dGnx23LEHfepBQR3-UQ1z_P4P6S_H6IZCc3Cmbt-Fd4cJ35LvD5dQE0UmTYavMkI4z9nyeAK_MYVj74dPS7r0q3AzgEhCicetuJA7bXn3H5SV7-a5JGhTUcetPsFyojqbFY0_fpfmOYPMjfg",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2544 3rd St, San Francisco, CA 94107, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7573241,
+                    "lng": -122.388489
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.75868077989272,
+                        "lng": -122.3870595701073
+                    },
+                    "southwest": {
+                        "lat": 37.75598112010728,
+                        "lng": -122.3897592298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "a186b21ba7144a40a9b88334cb4d5ab0f7ebf397",
+            "name": "Dutchman's Flat Medical Cannabis Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 600,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA2XjLym70WZvnckXJab5R2SvV58yHPPMt_SqbYLkWzwSL8z-hX_CYIjiF9UmzCmyZ9Tpx3H05SJZ1ryhFkYbpe8vx4AqKLlGMo0Ff3_4-AkjGGoCr5pzPc_9bb5BGcrHGEhD6vSS2mKQD-ERvkmkn2RGtGhTVfBSxVxfmLnIISlt4n5SKbYuyxw",
+                    "width": 600
+                }
+            ],
+            "place_id": "ChIJ7UIAI7p_j4ARJiGWa2RHJ8w",
+            "rating": 4.7,
+            "reference": "CmRbAAAAKTZkcojmnRaA4ss6qzanyAqvRq0b2fX9KXStVEeB-qc1JqRyZRi3zRxAcqu2Iq0R3zy1zGvtCymwnwySLCr_FeMdlObzMtwrLE_AasI_pQXWrd9DUORYXukPC6ZTTVH3EhAMJsy5KKIZZmUcR_qWIFYKGhQYR3i-gF5tf3PGfVsz2AklkDvVOQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "33 29th St, San Francisco, CA 94110, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7438385,
+                    "lng": -122.4216595
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.74527227989272,
+                        "lng": -122.4203152701073
+                    },
+                    "southwest": {
+                        "lat": 37.74257262010727,
+                        "lng": -122.4230149298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "c410c363e5d5a42087166e7baa580daec7008fbf",
+            "name": "Harvest Off Mission",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "place_id": "ChIJbX883EJ-j4ARrFwiPYvZsVY",
+            "rating": 4.8,
+            "reference": "CmRbAAAA-9eP6QXKR6oRZOV1nfl6kCfeHGnGQvJybq9TguKXbSpTkwJHIsASgAJnJ0YYTpckOj851gK7mywslsTY5bOuLrqw6BKXD7x1oNJVNc9Krjo7tYWQ4_fIa9WaHxgjrSc9EhCAeG05Tjt44TQTQdL-nAk7GhRbNCOoFrPviC20pkSft1n1CRlc_w",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "843 Howard St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7823497,
+                    "lng": -122.4035705
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78376172989272,
+                        "lng": -122.4023017701073
+                    },
+                    "southwest": {
+                        "lat": 37.78106207010728,
+                        "lng": -122.4050014298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "e2d8d54df0325f753a110debcf9f7e36b078ef4e",
+            "name": "The Green Door",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4160,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA_mYfs8JnjQtj0NesvKqUAK5-tIn2wirwwj1ZpEdoSn7SbTKITqb4xPo62oJg7I_Pu6uqZB72j4TJr_FC9PVkIK5nlesqy-PS8RsensieiF0PXGklc757newgW50DEFTcEhChPIA5oVmNZtvIPzg_-fkrGhSpGZqRET439Pr4z3_E6m3OUUFKiA",
+                    "width": 3120
+                }
+            ],
+            "place_id": "ChIJX_w0JYeAhYARrhcP1ir5C5k",
+            "rating": 4.5,
+            "reference": "CmRbAAAA6rvF0CvFaYDzgiKIb1iO14QF_aCVcUw_QNiovo-fOgs6KKkvtrvSiDYNd3ULQeh5oPtIYyHJpAwshGJTp4SxaMw-fgf4Q-pRid5t1NJUqHzI-9mpp0xb_BNk4Y_CiqBiEhAlk2LOTteenXplysVcRtKJGhQnybsNTfHjtfl6GIa6nTC4naWk9A",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "70 2nd St, San Francisco, CA 94105, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.788628,
+                    "lng": -122.400356
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78992952989272,
+                        "lng": -122.3990655201073
+                    },
+                    "southwest": {
+                        "lat": 37.78722987010728,
+                        "lng": -122.4017651798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "e06f3f37f739957b2b11d1a685b849b7768e749d",
+            "name": "Flower Power",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 639,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAATuF_VMIP7Awh6pBr074_PetyKTop5Enxh6u7QcX2dDBCjFjGDYdZDm76wm31MGNu2jt4O6jmydnReWu7FENqQz8fNLA1jb1sjG2ve-0vcliLZWdWXvebxCVjwbYBKCb0EhB4oErDGiULQEYc_Ihk0E-EGhTjUmaP8d9GtBRmlN8U8QAsVlRKcw",
+                    "width": 960
+                }
+            ],
+            "place_id": "ChIJT-MJvmKAhYARhvgenkLxSAE",
+            "rating": 4.4,
+            "reference": "CmRbAAAAG4BMhuObzF1XUHqP6uoHp52nNPdQcIVw2b1i1VxxZI-05KsHO-irAcPC4n863Oj7lrcyDWwsRsgsSnrxpW2FPtxAPNPqtBptB3_NPtBYlJBW3SJyQNSnz_WuNXD4Pl4rEhCUUO5XRevScpcZ9RWQ-fktGhSH64d8VqJGmxMxAtH9FxXwSfSkng",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "212 California St, San Francisco, CA 94111, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7935756,
+                    "lng": -122.3991592
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.79480537989271,
+                        "lng": -122.3977849201073
+                    },
+                    "southwest": {
+                        "lat": 37.79210572010727,
+                        "lng": -122.4004845798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "c4414243450349358e8d917a59f8cbcd2e883785",
+            "name": "2ONE2 California Street Medical Cannabis Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4160,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAJ2tC2FJTb8taSHEXvH2zh4Qy9Ql76qeEgrY_bMwfC-mDPm7lz5plcD_9K8wVJ9EO_9dVSF3ZEkL6uHIZQl7jM76g1M2h0Nd0wyZ6FJnPBRk7160HNagTceFJ--BoCVJSEhBJU5Hg0zxIXlZGqwGNnBfDGhSNVkpQTpWxQqfMSyWdGhRmYX5q2w",
+                    "width": 3120
+                }
+            ],
+            "place_id": "ChIJ9eiZmWGAhYARW7KodNGDH2M",
+            "rating": 3.9,
+            "reference": "CmRbAAAA1k0-B5iYeF4Z_9VIMq3Eukq5BPgkQ1DfAb7krkpiLShazVbrlDZ9evDI5eN9WNrwvCirGJWtRPd-6bhGc5ln8FyLZIJmHutvGnMtKc9w7WOhcqnvW05zKLn7mTq4TO-iEhCmDCwrb2EaMmuwrr25IzpZGhRm2qXQPITmf5vdA9C3TkFqhBPGiQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1256 Mission St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.776906,
+                    "lng": -122.4141207
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.77820827989272,
+                        "lng": -122.4127107701073
+                    },
+                    "southwest": {
+                        "lat": 37.77550862010727,
+                        "lng": -122.4154104298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "c86fc437e75aa8939c19c15312b708dcb7eb86fc",
+            "name": "SPARC",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2035,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAdxGOh35GvNrLK3vk4qZjwDKmkBaS6CVBdAqQVkaI7rPA060NenRGpKtNPZFSO7cjR1KK-rhfX1m-jTBVbReNlVvIl6rq9ooOGmCjEYG1q2bHkcFqMSFkppox-d6podXKEhAHVAMKty5YDR8vVTnEHX9tGhRSSaDEfIwIzlmGlNk0fnFy4P0NLQ",
+                    "width": 3072
+                }
+            ],
+            "place_id": "ChIJWUZ7wpyAhYARKQY_IJHE_94",
+            "rating": 4.5,
+            "reference": "CmRbAAAAUHDG2VIQOeZ-sLNKdQQ6lPMaIwcOCe1HtzmdnPeB51H63PjfiOo2SWo5FG6Ki6F4RjY-z9lEX7TgLFPvEYjHJIpzKWU7os8eRxDdH85F8YfT7fTnDM13ObmaU-b9rwM6EhANIJDfwv7C2Vv_tqldQmVDGhRYSaMvyR1DpefydEU3UEsBunEpzw",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2701 Sutter St, San Francisco, CA 94115, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.784487,
+                    "lng": -122.444964
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78589692989272,
+                        "lng": -122.4436271201073
+                    },
+                    "southwest": {
+                        "lat": 37.78319727010727,
+                        "lng": -122.4463267798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "87a2c6f5600536c5a84e1fd0bf17f36020abb9e4",
+            "name": "Spring Wind Dispensary Chinese Herbs",
+            "opening_hours": {
+                "open_now": false,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2988,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAhHCz4rFr6cvyuDDgoiFQs70a4-ay-q7Dtjca6W-SPFiH0U5T11P84T4-45h3wWBiyhfJUqaEsQqQR308HhJkuwC3aCnJNXslKtVrbLQVj8dqG7CD7gfyA1N6ue9N3UffEhBRDskgOKjKNFm3K6I7Oww0GhRcP8Bzuafqr9STapvUv7hG8gmwpw",
+                    "width": 5312
+                }
+            ],
+            "place_id": "ChIJgTpjk8qAhYARCOQRR17Y3_w",
+            "rating": 5,
+            "reference": "CmRbAAAAquyDLzL2LIc3d5cqqnNORnGaL0jqvS3UOb3EATopNEQz-6wMybRBIQZOsgyvT8WeKzofx-qfjndyxzCHxvMHfatMCFOfL1sRBdqm7lefEAxSCHgnRYfDH40HprrFqrgzEhDD8zd0VWo6L8ATGQClLp1JGhROiVJI85b0tVD_uSpCZQejwrciEw",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1077 Post St, San Francisco, CA 94109, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.786784,
+                    "lng": -122.4194573
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78819107989271,
+                        "lng": -122.4181193701073
+                    },
+                    "southwest": {
+                        "lat": 37.78549142010727,
+                        "lng": -122.4208190298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "ca5bdc67eab744edef8be8ae7d165f7ba1ace412",
+            "name": "Grass Roots",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1204,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAWStuImWhYz2flUr4oMl2gB-hEtaFI9Tz9_Gqx0LFqE1B62trVXCKiwSBojxk1IDlsKlJzcI7fyW2k0glRUsffkqBWNBN5NnSXOBBYTchYlMLqIgwou8FSAiNtMO1PM_tEhCOZmh2nkM-UVaZ9rFkAQo0GhQ8XC3dDxA0TxSqndQUIa59ieoAIg",
+                    "width": 1844
+                }
+            ],
+            "place_id": "ChIJ6fMWHJSAhYARZPuLQnQFtxE",
+            "rating": 4.2,
+            "reference": "CmRbAAAAakRY7tXTeRWN_MG8i4etTobwZ8MXpOnebyrDpONC0wxgEFi81aOy-MpWSZoarO7LlixjGKqhQDhofj4jyR-g0E4VaFHACDpSRy-s15C9x_tMT1nd3oIzUyrqhB0kwZM1EhCvJrWSCmgzEtO9isxe-K9bGhRTiASJvllHxfYcTc95Kw10_Byx8g",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "744 E 12th St, Oakland, CA 94606, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7930703,
+                    "lng": -122.2522211
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.79436092989272,
+                        "lng": -122.2509556201073
+                    },
+                    "southwest": {
+                        "lat": 37.79166127010728,
+                        "lng": -122.2536552798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "5a67bc85dad0a1e9c462acfcd076ef47c02c8e93",
+            "name": "Hang Sheng Dispensary",
+            "place_id": "ChIJn0eUESWHj4ARPqnhDpFYkMc",
+            "reference": "CmRbAAAAdZQDGbzURzaSwhC2eOIwJk_R7R7E1OlsZ2xXmWIXA1jsirlEAffoeIMfx3SxpR6n1vK2kTFjDHRwZaLDoei9KxK-npR3Oiqg1D8ozAuQi9WtPP7z1N5MHI_sP5n4WL_rEhDisL0ttyOQ67bQR-KFsT3hGhR_MNpZUKBNLsVMRTmmL8tPA75PhQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "3823 San Pablo Dam Rd, El Sobrante, CA 94803, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.9652854,
+                    "lng": -122.314224
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.96647592989272,
+                        "lng": -122.3128203701073
+                    },
+                    "southwest": {
+                        "lat": 37.96377627010727,
+                        "lng": -122.3155200298928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "f7a77c23bce35427ea76680fc82a1a264f789dcc",
+            "name": "M.E. Marijuana Dispensary & (Scheduled) Delivery",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1080,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAqmnfM725e5PAEINzGvBrttqL-FLSsp2l3XUHlWw4nUbd_YDzz2fm1ghRTXPVALJU6r2xLY04d8Lu_biRVreR3NmqhNXTQDKF3shBS44ypeLETdMjZeRzlWvFEILq3DMwEhCs-XbTixCS9TlLYQZZXVPuGhRbjdAnpilTNUG8KtWY73P1xx2npQ",
+                    "width": 1920
+                }
+            ],
+            "place_id": "ChIJ2X_lGIN3hYARbEMPfwCqubE",
+            "rating": 2.5,
+            "reference": "CmRbAAAAJ_hl46WpF1jZpd7j5WaLyAZMVWsQ8sfdg5h5cM7xO9c9K6BnwAMvRNkxgP11TWOLOPBNPUiGOa2fqy9yut0eMgWS_OQCdU3VdzEnmvqEIT14cPz53L4VYRVmFQd8uBdWEhA1Gk_HpEhHkw04hZVGwHdAGhRhTyx8nbGYVRIgJcJn6P7605Nc-w",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2029 Market St, San Francisco, CA 94114, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.768287,
+                    "lng": -122.427436
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.76972132989272,
+                        "lng": -122.4261905201073
+                    },
+                    "southwest": {
+                        "lat": 37.76702167010728,
+                        "lng": -122.4288901798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "afdefb759cb77d09eb260dadd4bdde4839b5f57a",
+            "name": "The Apothecarium - Castro",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAASYwjNOVNn7jQhggyOZh14HmxAfI6sKNi1CjY_pLBR_uPBPNnRJVdEVnDzkXycoy3tIlcfePayc7Gri1ENXKrQyyy3J6MBVM96BUAG_flLw3IcQ0nk7pq-UehY7dvwtdUEhAwMODU8XIRg-OFHuRy5Q_nGhQBGAWdwqa9RbBWn47Ne6qpGu2_Lg",
+                    "width": 3932
+                }
+            ],
+            "place_id": "ChIJM22Xbx5-j4ARVt5DXN7Kqi8",
+            "rating": 4.5,
+            "reference": "CmRbAAAAZvDazZmaQDhBYRNmOdc0yBgqYas1Pu8-fsUhrpHueBE4xD4dObhKqgdJoPszR12S4pCqTqaP8WsvhKgHWzdOT4yyt1_FnSDkej2sBY996Xk1BWEjaGkhp0AFhXJ4CpLfEhB8iYnUuhS2Z-sXr6ppaPKEGhSYo3DA2SOs7zx5fGHFrg7JOyi6Og",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "952 Mission St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.781907,
+                    "lng": -122.4078286
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78325682989272,
+                        "lng": -122.4064787701073
+                    },
+                    "southwest": {
+                        "lat": 37.78055717010728,
+                        "lng": -122.4091784298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "a6a0a8afca90edc73ac2b6d5e7c333a65fad8113",
+            "name": "Barbary Coast Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2448,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAADGaTqv9hF9CExdSdtaIEqIhQl6f0S7d-TH5ks2wSYIA7mL3EnPjeKbunmcNeRaKamkUHrenJVq6_1zpq83VKxRC6fJE5MR2s6HM5dkvAdwBoaQCA_PZUWd1NQ99fNfeEEhDwf2OVNCgjJ2UwCa9siZtVGhQEvRqYLjz33_lTkLr3ANcr4gUVIA",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJ3w4gI4SAhYARqCT0OUxl_KE",
+            "rating": 4.6,
+            "reference": "CmRbAAAAoc-WplxNKn7eJtq47qI0JO-y1DhwYtlv-nA6YIrQ15eSsjfxQOMVz9ESk4gyyHReJCZqyaL1aZb11LEK9kQnFPjpy5-LUrVHMJBPIkHEcqzd0AOO0At2tf6GfIFIde8KEhBFlIxkAqyzuudqMJjKOG2PGhQPRj7p7nyxE0P8aC3Y3La9Lk8n2A",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1545 Ocean Ave, San Francisco, CA 94112, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7242633,
+                    "lng": -122.458991
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.72572142989272,
+                        "lng": -122.4576038201073
+                    },
+                    "southwest": {
+                        "lat": 37.72302177010728,
+                        "lng": -122.4603034798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "88681f4f6cbbc2068b839fc94093fe55a63b9d93",
+            "name": "Waterfall Wellness",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRZAAAAZiOy1Lu6hTuzi45XEtx1h5XWUzfKg-3JO_7_fRHFeQSOREE3QkkxuzjtyMDmlmZs1XFXsoLDi9HIm9erad6l2FU42cZTUKom8q3e7md8LWKT1dztmIs9MCJb7AmVD8f3EhDGVBjr6X1WVBif_OGkMO8eGhRuBxBL_vR2ggHjSIYPA_gea1SOEg",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJsb75nM19j4AR19Fr0X3QXdM",
+            "rating": 4.2,
+            "reference": "CmRbAAAAyYC9OPcMpMnVkwTp5EIkPwKfnu2XMPECVMGt4YB9o_w0Oi-GKYLXE5955q457UrMK_ES3UvU1A6Wmvz2rN_xbNNKYnZnBxAMusVvQLyuCwy6egsX64EFA-2rXP6leM_LEhC8_OWqbMZt3NcdmGnYQ9gKGhSRoIsrODfynTHkJPA0yVqefcM4vg",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2366 San Pablo Ave, Berkeley, CA 94702, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.863273,
+                    "lng": -122.29061
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.86465112989272,
+                        "lng": -122.2891308201073
+                    },
+                    "southwest": {
+                        "lat": 37.86195147010728,
+                        "lng": -122.2918304798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "ff65549170f957242f7367ec6ed2c6c48a73bdb0",
+            "name": "Berkeley Patients Group",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3366,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAE8VaIWDE5B6ZyhJjfJEdPNKj0smslnk_stWXmKo7mFa1ViJfw3SFbjTbM3sWyZ7smuiRkk8N9Ymx2DGfa_njdOHQv90hPKFHivT7kurMCKRtWUNW2GCK7EaDyUCIvkwEEhCh9_dXDl-Hv1YDllwbtdsXGhQ6XHI29YD5hHzLAQ7-qt_jyI8Gqg",
+                    "width": 5049
+                }
+            ],
+            "place_id": "ChIJBwXAktB-hYARXYPj3jOSUiY",
+            "rating": 4.3,
+            "reference": "CmRbAAAA6QxyLS8CBQKdaAhv88gPhBG6kxHHeTRYHXdFcis68fq53GjBFtWFETKgB5vQ6WGdltoN8orzzf2MGXD_4cq0NVG3hn5Mi4-1xrHIYn_5DBmaytKmgpa-JmvZqo7btXLFEhCV3xJdWkKFaakhRUDG7FmiGhS11b1i9zzQ-U0EILGhlvj5cn0BsA",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1840 Embarcadero, Oakland, CA 94606, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.783926,
+                    "lng": -122.24228
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78520982989272,
+                        "lng": -122.2413785201073
+                    },
+                    "southwest": {
+                        "lat": 37.78251017010728,
+                        "lng": -122.2440781798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "a94e4f86b4726f28ad9c162fa82ff3332ab0c347",
+            "name": "Harborside",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAUkfeazdSS5i1Qpta0zpH9zxm8VE0mGr9hu_iT--JDTRoZrCQ1KBpArhYokBnze7WhNCXXj6b_qIKFGNLaej9Qp3cbT_sZDjU9VfWoqCllyTT9TpA7vKcE9UIZgaED_FeEhDOBwoQhSYNyB9wfS60uYCuGhQa8Cw9S7Qr_ksy5VI6O-wPfq1nEg",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJk6vYruCGj4ARGgsGnQaWgzw",
+            "rating": 4.3,
+            "reference": "CmRbAAAAWTT_nDj9UTNzjNww4TEeZlw_l2dp5lI3TJUipf7oFIx2ARU5UEZRzgZC5nG-18llknc1Oxij9ckugWfs-eY9nSzsCL9VJcSpNn0kZU3paCldJ_KSKFwlg6atIbZOShGzEhBM19mIKejYg-swJTLxElk8GhR7GEOeZoqB5eqf7QFcF75M_mxksA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "502 14th St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.768092,
+                    "lng": -122.424674
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.76939412989272,
+                        "lng": -122.4233193701073
+                    },
+                    "southwest": {
+                        "lat": 37.76669447010728,
+                        "lng": -122.4260190298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "39e160b63f679f40eb7bb6d69b306f9242687098",
+            "name": "LoveShack - Medical Cannabis Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 600,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA6_r9BSBmHjwlRjKR4wySwlKab_uOrxELb6fI9QchZHuHlg0rIb_V8ucdJ_nhLl4L_gKho-opzyMthG-a17vnuP6ctdRqQi6H5rQIZqGgGuc9irHQElHao-wDLrlT3UlZEhBPzP76_3rzXRJeScyO4t6fGhT6kFgvdopyxQbcVz6GjBLhVPpoNg",
+                    "width": 600
+                }
+            ],
+            "place_id": "ChIJpxkveR9-j4ARUwzxnPCwNRw",
+            "rating": 4.6,
+            "reference": "CmRbAAAAURkhlxdEZl_tBXaoR_3AcM9LjHbvHgZSFc3K5J08gG1sY2YxXmocV0OZRTFUMJXn1gjFFhLqTa5RPCNWjO2Mdn_cD9W2uNEFQ07YKNejOcKe8cBVgLQKKS9lNJER80XEEhBlQWGFw5cVuAaSVGIHgqZTGhQORNbpPrrLu_QSDRhjd0kLEaLTwQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "212 California St, San Francisco, CA 94111, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7935756,
+                    "lng": -122.3991592
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.79480537989271,
+                        "lng": -122.3977849201073
+                    },
+                    "southwest": {
+                        "lat": 37.79210572010727,
+                        "lng": -122.4004845798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "c4414243450349358e8d917a59f8cbcd2e883785",
+            "name": "2ONE2 California Street Medical Cannabis Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4160,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAjOBhbsowJKN7VqvVmUXPxWgtnw20Elu1m2UUVdTVJ6bZ-suAjsyL5RPtKdUhNRm2jhVXtgNt_je3-oZXK2E654Gip7SgRq3ZGSH_M9lzfSgyi2rZ1gmeemcxmi5tV-ZZEhBSzeCy4OiyET5lauFir3-AGhTMhf_6Xq1Dgr-rwDyK1onwJQjRbg",
+                    "width": 3120
+                }
+            ],
+            "place_id": "ChIJ9eiZmWGAhYARW7KodNGDH2M",
+            "rating": 3.9,
+            "reference": "CmRbAAAAIafvK4Zp4aS-HtmL6IrMgFQaFjK0b--9_cRKhVuiOVdNsz0cQ9hmJIviGHBFl48Kw3ZA0XqF2Olm-i8rJNA6jpOPDuZEccHBE0Jwa9uvIM0tKS0H1Q3Jo97sPPW54pe8EhBXHTur-2A93SJnUFCvFTQrGhT7iEsELkKrYEwgPgxS-30syniwmA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2544 3rd St, San Francisco, CA 94107, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7573241,
+                    "lng": -122.388489
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.75868077989272,
+                        "lng": -122.3870595701073
+                    },
+                    "southwest": {
+                        "lat": 37.75598112010728,
+                        "lng": -122.3897592298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "a186b21ba7144a40a9b88334cb4d5ab0f7ebf397",
+            "name": "Dutchman's Flat Medical Cannabis Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 600,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAh5wLPAvQDTQSsubHHyeLYC06vvKlUT2f5viGmrHHPF3dve1h_1zMxZWyw1p7AGBCkkKjQCk8QmDIpSMBbe0DWcZ0m0GMGjSwsm7maTSiGQyH9d-U-h5F_xxsWescb0yiEhAvcNUgFfLhNERJhdaxm7OgGhRWuBG-qgjX_9vpAeFzEmxeop5qCw",
+                    "width": 600
+                }
+            ],
+            "place_id": "ChIJ7UIAI7p_j4ARJiGWa2RHJ8w",
+            "rating": 4.7,
+            "reference": "CmRbAAAA1FcG8-qFKXzs46yqt2jFpdZt2oqZn1hPQ1If4eZLpJqx7a6qWotpNoVyuNW4g_PL45l4vrKGbdKMs3L1A9FS8N0P52kUDhFGIPXBjUEuFo5EcvQc3R_vgP3825mhIkcXEhBOU4606YZp4naGkHk3lfWuGhSuiTEDP4dF7IZremTbpesjYBb0tA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1426 Fillmore St #206, San Francisco, CA 94115, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7827244,
+                    "lng": -122.4325492
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78407137989273,
+                        "lng": -122.4312232701073
+                    },
+                    "southwest": {
+                        "lat": 37.78137172010729,
+                        "lng": -122.4339229298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "e1f9644c76f36a411e25bfe024f791d0107182bc",
+            "name": "MediCann",
+            "photos": [
+                {
+                    "height": 380,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA4LB6KvIslNjXceVsebpmo_Ccy0vnGACU2F-HoibdFO1ulZHN9ucPQlLy1FA0R2PQ2s8XoBxjRdX3RGYJZCkhHwAl1TSDPLy9k-7Ksov5qjzDfg7qwXXgh29TTF35Xt41EhDzq_0r1MEuvYWl3i9Bi6AzGhQquP926jGNZ8BvPeF8hbupbhQJyQ",
+                    "width": 379
+                }
+            ],
+            "place_id": "ChIJmV8DebmAhYARz31sDsF8yNg",
+            "reference": "CmRbAAAAXEO1nZX_shYJNVDrD8InzH-HsMvYcU-TntLXOn2sv-x1SrmukQ2-DRTYO_c4ixjHS3YTOslk_CHCz631HzWuA-DTVyse4XqF8DEc7w7uOuW16oFZ2idCh1j59zz57T6oEhCC5ZzPjDr5Li_qJmjHkJowGhSwvD5GOjF3ltpx08OzYB02xMH18A",
+            "types": [
+                "doctor",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1814 Franklin St #305, Oakland, CA 94612, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8069308,
+                    "lng": -122.2675353
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.80835982989272,
+                        "lng": -122.2663901201073
+                    },
+                    "southwest": {
+                        "lat": 37.80566017010727,
+                        "lng": -122.2690897798928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "1491402b4007d7c6613e390a59fe55b70da959ea",
+            "name": "MediCann",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "place_id": "ChIJS-bT_LKAj4ARSRvgk8iZhTo",
+            "reference": "CmRbAAAATQ3fMZk6nWBfKxBv4qdFRDWISYjJVMdOutipvXwencoZXvB-wzqCxzNrZQwsspYJ7ejjNfbwIL5g-lVVMAiAOlYc8ffsKCAtg1H5UAxjeKtfjE0mWbxpy1rKYrx_8TzBEhCNp---IS3d_cjV11dj5twpGhRkk-ZlBnqD_MOq8YmajkRSh7KB0Q",
+            "types": [
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2441 Mission St, San Francisco, CA 94110, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7579643,
+                    "lng": -122.4187944
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.75930702989272,
+                        "lng": -122.4175562701073
+                    },
+                    "southwest": {
+                        "lat": 37.75660737010728,
+                        "lng": -122.4202559298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "3afc9765f407ec9a55854b3e4d422e3720390f80",
+            "name": "Shambhala Medical Cannabis Collective",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3264,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAcc9sM2ob_moy43jMVgQVgfBSIDxDXMaw3jzh3XVILr-A1NKMbOXRdd599B34pEu44OGebcPU2WwDtJp4m4kw5V13oqU0bCcEHBxOX-m9H-BrSDuVdFcpwxpaUF-m5eMfEhDwYMvVejWJWhJ2zQTTunldGhTsL2w6V4RCChy6Mssr534qb6xUUw",
+                    "width": 4928
+                }
+            ],
+            "place_id": "ChIJDVrcqT5-j4AR_cFn7kgRmMk",
+            "rating": 4.4,
+            "reference": "CmRbAAAAxlVtRapjEpftEQzRCSX-7EDkXsvyxJnXf_A0vyXGnyaQFYACthPLXDtlpzS4fDFRDGSEi5s69agGO5xl-RgaPNlcX7hgdY5pvuMT1SOt2JAG4AgrvROOKUxlA_OMz-0lEhAPJScciLGEZV7_sETebuYaGhRrNN8BbGB_zpdLGMDB_g-d4HECyg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "4811 Geary Blvd, San Francisco, CA 94118, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7804107,
+                    "lng": -122.4711125
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78188132989272,
+                        "lng": -122.4697705701072
+                    },
+                    "southwest": {
+                        "lat": 37.77918167010728,
+                        "lng": -122.4724702298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "174155dee1b40ea398b1d765a272496a047dac25",
+            "name": "Harvest on Geary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1165,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA37ExYDyy3jzK12ZlwEm8v1lPzdCjjZ1TR04w2aiVNv-VMsFauS0I06DRDSDjjx7Oe89T5DXbPyaxWbozBqdimbQ1-Xh-_bdhNATfxruKLwoxOA8rlCJ743d3FtdcEC3pEhAT4RUN__Jfg33IsEMABW03GhTtREQfX0Pfwlo8M9MDL8Vcm7lIzQ",
+                    "width": 2699
+                }
+            ],
+            "place_id": "ChIJ3zracxaHhYARPg5JRHoVpgI",
+            "rating": 4.1,
+            "reference": "CmRbAAAAA06T_Uin7xpzZPGIhhnrbYETUqPnWOdOBnOVO4Gr0AHEs0Lew35FmdIfgXh_WzqsOxMXUxnxrF2Oy10AGTLaL-LcGzl_6WQAg0LKAd3g4Y9dGu6XHCAFqGtdvl3AB9OzEhD2c-yvsHFylPVYlpCcUUVkGhS3UqxPOrLElaNZpSdYk2n8LVO1kw",
+            "types": [
+                "night_club",
+                "bar",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1111 Post St, San Francisco, CA 94109, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7867387,
+                    "lng": -122.4201823
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78812272989272,
+                        "lng": -122.4188393201073
+                    },
+                    "southwest": {
+                        "lat": 37.78542307010728,
+                        "lng": -122.4215389798928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "702b7e3150a2d64772c5087cd5afa2bc6dd482db",
+            "name": "Medical Marijuana Card Doctors Hollywood Easy Clinic",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1152,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAYvsOOyFHwBgmu5pJ4yfCO8LGQUv2XbLSqZTEBeYNWFJhdW9YVDKLeO-5uG6iElyfEb4UG1kFxjylVvlmy6n6jPvUzxipp12p-Jomh5tPoyCmJtBs7bHey2TlLrxSL6adEhDXI31zxYYyBwGe0QNjDEh_GhTVtX_iUKMwIBO5vpUiWr1WmwWu3A",
+                    "width": 2048
+                }
+            ],
+            "place_id": "ChIJufCuJJSAhYARMhfkvu05fnc",
+            "rating": 5,
+            "reference": "CmRbAAAAnNIAms7dKLVJ6J9Z4Rqso75SWKaxfuldkIE-a2JHxFJFaswJFpZrVmep-l3LFTXdLsIapalmA-TQsyrUAOYWGQw-oYj4M2tjzGzNVxnpEEIKDa2M6NFpShzyVu2mWx_fEhCGrNKwMkHBQXOBzDOdgc_KGhQeTsHdDMvlxgZnfMJ9DeZ1JRdjvg",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "4218 Mission St, San Francisco, CA 94112, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7297817,
+                    "lng": -122.4306375
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.73106422989272,
+                        "lng": -122.4291811201072
+                    },
+                    "southwest": {
+                        "lat": 37.72836457010727,
+                        "lng": -122.4318807798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "8bb0a03297e39c56c756829022acf0a98462f5fe",
+            "name": "The Green Cross",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2617,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA06UzDmNT5oCjELl2pMBWVgYtvtNMA-1dS85qIt8X--lEgg8k1pr7dbK6IwQJ186d_gbibwnc5iMPKRx_1Z-Yl3izxpVoivv89tRfRNaEo4pKhgZenJuyFsCTTVNkxlqQEhAA_0C11E_IVZyut8C3Bh6MGhREKgAbtmT9sHksy9EOUeioVeax1A",
+                    "width": 3926
+                }
+            ],
+            "place_id": "ChIJp7uz74l-j4ARH-ndJjm0tzk",
+            "rating": 4.6,
+            "reference": "CmRbAAAAWiXYJWW7pPkCla36lVOf_tVnr9OSu6MkQgyBI_k7BA679LaMAeuV5bVeBQ2B--Ei8n7SaPI7QpbUs1Ha3OXES0v0WZ3O4txIWqn_E3TKPIn2U6bxPC9noMCi9KeALsFfEhB15tC9_NR-u-orXWPNoUSKGhRkELWqg0WL7BEpBqDAqUHR91nQRw",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "578 W Grand Ave, Oakland, CA 94612, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8125021,
+                    "lng": -122.2709601
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.81376027989272,
+                        "lng": -122.2696360701073
+                    },
+                    "southwest": {
+                        "lat": 37.81106062010728,
+                        "lng": -122.2723357298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "3c5ea68c3c0e0d25e6f35b3cdbf64038b9d1cba0",
+            "name": "Blum Oak",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1944,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAcH9H2cjPolBruzU_GRiFQow0meQn6mf5omR4xUQrPHYH3mHrQYgObIeJW1ZBvzsO1htKRDXRTYRWDZPqul5lRUaL8qcqQt9Gbl7DX6mTt6EyJePFBMZOR_-8oSyDnD8bEhDvf0-vXOTz73XI5_3WUigMGhQHPa-66-uAoxWdkfOKjhNvIu3L6A",
+                    "width": 2592
+                }
+            ],
+            "place_id": "ChIJNUi-AqyAj4AROCPitWxtpsM",
+            "rating": 4.5,
+            "reference": "CmRbAAAAgQg1h4JTvWVZ-zponWaJc7fLYMmzzyt5zda6SUSXgnLpqCtAOYy8P_digjhTXr4ll2rX2u2pT0eNwSwrrQQfQ1x3-tFvqTdsYsa3OyyDscRQzgbdg_5koH6-VSSsnP9ZEhBiIhbKKOu1zpUv-KKKRRrNGhT8Kfhm77fraxHlKHOU7Lywqc_IEA",
+            "types": [
+                "pharmacy",
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "578 W Grand Ave, Oakland, CA 94612, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8125021,
+                    "lng": -122.2709601
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.81376027989272,
+                        "lng": -122.2696360701073
+                    },
+                    "southwest": {
+                        "lat": 37.81106062010728,
+                        "lng": -122.2723357298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "3c5ea68c3c0e0d25e6f35b3cdbf64038b9d1cba0",
+            "name": "Blum - Oakland",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1944,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAcH9H2cjPolBruzU_GRiFQow0meQn6mf5omR4xUQrPHYH3mHrQYgObIeJW1ZBvzsO1htKRDXRTYRWDZPqul5lRUaL8qcqQt9Gbl7DX6mTt6EyJePFBMZOR_-8oSyDnD8bEhDvf0-vXOTz73XI5_3WUigMGhQHPa-66-uAoxWdkfOKjhNvIu3L6A",
+                    "width": 2592
+                }
+            ],
+            "place_id": "ChIJNUi-AqyAj4AROCPitWxtpsM",
+            "rating": 4.5,
+            "reference": "CmRbAAAAgQg1h4JTvWVZ-zponWaJc7fLYMmzzyt5zda6SUSXgnLpqCtAOYy8P_digjhTXr4ll2rX2u2pT0eNwSwrrQQfQ1x3-tFvqTdsYsa3OyyDscRQzgbdg_5koH6-VSSsnP9ZEhBiIhbKKOu1zpUv-KKKRRrNGhT8Kfhm77fraxHlKHOU7Lywqc_IEA",
+            "types": [
+                "pharmacy",
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "8440 Enterprise Way, Oakland, CA 94621, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7438727,
+                    "lng": -122.1939996
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.74510317989272,
+                        "lng": -122.1928188201072
+                    },
+                    "southwest": {
+                        "lat": 37.74240352010727,
+                        "lng": -122.1955184798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "f932c822cf98a0ff22b137d55644c3d882cf93c4",
+            "name": "Phytologie Oakland",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAkYmI9hNIj0SyvlmD01koiIk2twPVx-eVbLGNdO53PtgQZN5Kf6FhlJ-EwiCVABJ_ZH3qSQn9sYjb2UfHF4JL4_fnGuj3gLeR2C4nK2ET5MUUq7gz70lMdG-IhJCQ2aP-EhA1Rf-toFUagogVEN0vJFaqGhTZRbUf6qD4p-xL5MGxXFywNkVx8A",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJWe07-5SFj4ARMumb0H7wBt4",
+            "rating": 4.5,
+            "reference": "CmRbAAAAYLBQlzeB_W2HgpayNKn_9W6rjPpJ4OvxtE5lCQQn1gFL8JR8UfZQsMLcq0xUFd8C4Kc4n9Dl1Ew3JnmQw0NQvPn1FRBvGIAoPzsX_Ri166L2J3Df_QF3xuHzzEqU0vaxEhBKyKZNrC6iuD_pXVsXoXRPGhTbgGrJA89UTPvp3QObdDTXwGln_A",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2340 Powell St, Emeryville, CA 94608, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8375801,
+                    "lng": -122.3021811
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.83873242989272,
+                        "lng": -122.3008307701073
+                    },
+                    "southwest": {
+                        "lat": 37.83603277010727,
+                        "lng": -122.3035304298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "386a0feaeef133c39e1cd66e296cbbe72b29614b",
+            "name": "Naturopathic Medicine, Coleen Murphy, Naturopath",
+            "place_id": "ChIJ85_CAVB-hYARVLAsdXnA_aM",
+            "reference": "CmRbAAAA79GTaAbNBbfMyc5dCL4wPb2W77o8UHPuAtBzYozvnLf21fn6KJOa1gyLn8GmVGzwVdi9WMU2pR-K9NZu78V1J0IhBVza2mDrNOxF7LAZPmNlkziFL8FUeg7Lw6uK4ssaEhAKJwrg18gV74eylMrJR-xnGhQ3M7Zn35LxrnoNZfWwmz-SQcadqA",
+            "types": [
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "471 Jessie St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7819455,
+                    "lng": -122.4083563
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78334287989272,
+                        "lng": -122.4070655701073
+                    },
+                    "southwest": {
+                        "lat": 37.78064322010728,
+                        "lng": -122.4097652298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "cb9f10f53603780839f23b0b2d66a5fca59714b2",
+            "name": "Bloom Room",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3433,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAHmuGbqLUtFNF-ho88yNNB0jDVqGzCKMFhn1chsJRMmMhcjD41XeYVWJEo2uw5cwglGuYX1nXI5C-Ny0GtBkG0FF60JX9W0Dxc7yxCe6yuL3rtP4axtlsthWLWsbRtS_fEhCRm2Iazs8iEw-yu4qGRLmMGhQcpo1hBoaIEvDCiJ_C3r7SEoVMjg",
+                    "width": 5185
+                }
+            ],
+            "place_id": "ChIJoamyOYSAhYAR0aQ0NTiRNP4",
+            "rating": 4.5,
+            "reference": "CmRbAAAAw5NvHwLDv2jjv_JJ9zteqYnKQx6i7oHC-CblkHfjv1xMHApkGbXkoG0Wr1fp4nsvFyWJES6dYiAcKphd2lJUxizKHAgJ9X30iZEzB8TNEM4bRyy_aItXG1EWtDXn9YSXEhCmO-2YRrVa8HdvEyGojnnDGhS2jmsd1ETcquaEGbiBSo4jRDWhmQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1933 Mission St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7662313,
+                    "lng": -122.4195892
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.76757452989272,
+                        "lng": -122.4183494201073
+                    },
+                    "southwest": {
+                        "lat": 37.76487487010728,
+                        "lng": -122.4210490798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "18d3ad08b15f398f9f33c8e42363270976463d7c",
+            "name": "Medithrive",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 682,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAi80rz8sBrJiljsVPbx4UTxhW4K2ManVdaCH32C0gWfpv_AQLSNwlNrS-l-VhB8HO-3I11UZpep3W4fijSLAp7VcDeDWfeQRAs0Mu66o2Xd5f4Q1KgQ0vCjRaMhdf2JWlEhBNw3PbGl7vr8K5XYzYqC7CGhQBkRxkVzhSpyvZdvd56AsHqpaPiA",
+                    "width": 1024
+                }
+            ],
+            "place_id": "ChIJESnfmSN-j4ARuA9CoFV7ZjI",
+            "rating": 4.2,
+            "reference": "CmRbAAAAQzHdNxFPbaMW6II9q_ocB1A12nnpDSUEqWi166mtOv34beJhLpR5dWpS6dCrHmhbMGtFJ2NftVEecae3X7VrTPOP_-Qx7z6oiNZp1YGR6HlH7aduxb7EfBZ7QkEaTRziEhCy_lxC-eyH1bWvC-LmrDWdGhRhfc0XsX9hFCdcaIGS0pu6v46qKA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "3033 Shattuck Ave, Berkeley, CA 94705, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8540427,
+                    "lng": -122.2660312
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.85537947989273,
+                        "lng": -122.2648324201073
+                    },
+                    "southwest": {
+                        "lat": 37.85267982010728,
+                        "lng": -122.2675320798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "9cf0090fef14ef998755c24fb152ae4cb95bcec8",
+            "name": "Cannabis Buyers' Club of Berkeley",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4048,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAnddFXNMWErgqhfv7XPkLjhOfJcGip4Gt8XQBeTlLIm_d_1YatEsqp64-_d5TlrheU3sK70CY60-HjBGXgEI_LPjbtYzed8vjDiXZvsCXMZ7c1jScrTJ9mSOlw6_M4dYIEhAtXdxLoaE9C0fdXfDWLpPpGhRHXWVKodyGUmS0qsgo_3BXsrpFpQ",
+                    "width": 3036
+                }
+            ],
+            "place_id": "ChIJEeHmZX9-hYARg95XUbpqSKY",
+            "rating": 4.6,
+            "reference": "CmRbAAAAaRxoPJ0QNUg83oCh3Y9yCjtiwIBRNVIBngokeHeGYAIMRA6Jcto3teQZJ_naldN-OXLegT16pq9msinhDZE2LiO4MYh-KNv1naxT0eBq6KY2Bv2W6hclMPRuCQKYueBkEhDNr67VEviD8KY799SOmEqYGhSUs4ovyhpGuWvLncZmTQb0WPGIoQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "655 Redwood Hwy #246, Mill Valley, CA 94941, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8912865,
+                    "lng": -122.5173814
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.89260932989272,
+                        "lng": -122.5158292701073
+                    },
+                    "southwest": {
+                        "lat": 37.88990967010728,
+                        "lng": -122.5185289298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "22d489cc02d5659371d1a7f2a948ae3fe46be8e1",
+            "name": "360-MD",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 542,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA5xo9NV8yp5fgSI5a5SejlR1R3rSCwFyFGqCIjGmMi7Fnvt0Ohfll4CnXfj3k-1T3IjBIPdRT65-W49w7gOiIl6haOwwQiio9KgCJyyfxIS4zcXSXe89-ft2wv6vVPXMREhCATjxw4Dajse3aXhH4aLi6GhTW3aACnBVF4sDu8t8VfD37tzyZpQ",
+                    "width": 640
+                }
+            ],
+            "place_id": "ChIJa-WVUkqFhYARtRtb3TFT5WU",
+            "rating": 5,
+            "reference": "CmRbAAAAltblv8Fyvwh7tuDT9ELVxFCkDIuufAQ546RLHqtkRRDE5crQJyAOQEUHM9TZRx8F2P-AF_De8odX8V3XdIKSQ462oWGGAwbsPLz12Xojfl2Pujc9RVa6NzIol-OzAwRGEhAZyRzJR7Pauk2MyrjM0FSSGhRvFvRpId6He6TEbZqSjqzNjFJKyg",
+            "types": [
+                "doctor",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "446 Old County Rd #150, Pacifica, CA 94044, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.609475,
+                    "lng": -122.4953827
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.61075077989273,
+                        "lng": -122.4939392701073
+                    },
+                    "southwest": {
+                        "lat": 37.60805112010728,
+                        "lng": -122.4966389298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "7c2ff57bed264f93bcf7967c3c2b6e2141ffd942",
+            "name": "Citcpremier",
+            "place_id": "ChIJ03k0col6j4ARzDtWfo6Bu1Q",
+            "reference": "CmRbAAAAn0MonwBDi2ghinqnnzfnT9ipCnbIE4dTSCkqC6YM_3X8WDGjaG6eXm3gk-n72CoIwStzFTMgh19lKFVv-tCEh10kP8agI4ArOy8qUgXLlUoqlUZ_zH4ke_RKZM-IipOzEhBHnYM9Hn-iXbb-3QMO5VCqGhRg1Kupgg6ReQkVt6UiySbuxyZClw",
+            "types": [
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1256 Mission St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.776906,
+                    "lng": -122.4141207
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.77820827989272,
+                        "lng": -122.4127107701073
+                    },
+                    "southwest": {
+                        "lat": 37.77550862010727,
+                        "lng": -122.4154104298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "c86fc437e75aa8939c19c15312b708dcb7eb86fc",
+            "name": "SPARC",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2035,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAtSGcgl_PssgacWUIvpKpoFk6JXvZYwRzjQRIhnE-mZQSNhEs_kJuRaCICzqDvGqN6pyzF3189qpBgSEoLqX7C95HukbKmQvJwJ6s9s0zUvydFbYlrSY2rswKazA7F41JEhCNBjLJqOGndqUUwRNWfxn1GhRs6oQVkFMCjUPPS837BB-P0kBzQA",
+                    "width": 3072
+                }
+            ],
+            "place_id": "ChIJWUZ7wpyAhYARKQY_IJHE_94",
+            "rating": 4.5,
+            "reference": "CmRbAAAALvbjzAXaiMnVpO4QhFwAZs6hFH8tD7LMFVqfZIHHMaKy-93tYnD9eliykVAsMcCdmlAjixOlXTmbDI_gYshLfbMD_TkiQca7FUGG6fnnoVu5CmrCrNMr0vwGo34WtaWrEhBV-kEzJX1lhCZe7ydAw_AeGhQ7QTfL-fNxxpPE8s71VqRxDeemUQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "5258 Mission St, San Francisco, CA 94112, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7151258,
+                    "lng": -122.4423793
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.71642537989271,
+                        "lng": -122.4409534701073
+                    },
+                    "southwest": {
+                        "lat": 37.71372572010727,
+                        "lng": -122.4436531298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "dffa233220b27823a138ec1fe13c054965916d1f",
+            "name": "Mission Organic Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 5248,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAvjJEFc0wRyqoNAmbRgLBncurUwRKW2zT2W0auCF2360JfYycovOhjEIv8UiWCKbPkfTM1LNWCB-CfTMDkGptHDFZYsHoPP_szqZJ1iES6Egm0a82MalTRRm5H0u_s6m1EhCprkVAhqr5iuzXRAa6Im85GhTyhSlpliQKzhc0gbZLdBIHv17UaA",
+                    "width": 2952
+                }
+            ],
+            "place_id": "ChIJUVwVipx-j4ARzznBYHNUcQM",
+            "rating": 4,
+            "reference": "CmRbAAAADvVX1l1OZoXTzrlWRTb4M-A9jhE75U-cHUq2pw1agoF6_IFy6cQopEJr4GwyGkYEkBY7VoJFuiwbQW7xCjKz6CeclcyWD5xlx6ua4VbiwF-a0MShG5LuRvVkbH5-1fqiEhCvVu3l2CUtP3ALmYQdGiiMGhTQXMG6_ukrtgvb6NsSkl9mrDdrNQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "122 10th St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.774846,
+                    "lng": -122.415769
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.77627157989272,
+                        "lng": -122.4143229201073
+                    },
+                    "southwest": {
+                        "lat": 37.77357192010728,
+                        "lng": -122.4170225798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "8d6aa2086fb3974d6ffafa662862c43ea6740eb8",
+            "name": "Urban Pharm",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 640,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAACuhSk8k5_i0VHyiQTf4gml3lxiQntWqurY5FNDqrfl9DIsSOcNN1-9U-7ZSxh-N1ldAR-pwvoRI7M6gzqd8TJSaW09sKtHrL4i9_gI8UpTiEhGdHOZeaQUnvE5o5Dz9zEhDU6mT5cDRMX3U01IfOyrAeGhRT01Z8CG8TP4alRn__DUfDGr4uzw",
+                    "width": 960
+                }
+            ],
+            "place_id": "ChIJldcyCJ2AhYARCgiyeQqcpsE",
+            "rating": 4.6,
+            "reference": "CmRbAAAAbKC0YD8r18nVKNnIIsB8rXi3ZKedm3f0oaEVGJPcM1PHzxyv-vrPrmz8ZEchRZQ_51145bTwJ__ed_LfvylHTiIXSmNKMXadL-MLD6xcOU3htFKMgojQDEQfVJZ3UjvZEhDaQw0Ltjk9HVP7jYNGNUBjGhT-eSQeCRBFwg2E0gQW1PU59a85sg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2928 Hilltop Mall Rd, Richmond, CA 94806, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.97815900000001,
+                    "lng": -122.3318221
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.97950882989272,
+                        "lng": -122.3304722701073
+                    },
+                    "southwest": {
+                        "lat": 37.97680917010728,
+                        "lng": -122.3331719298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "d545bafd050d2a512eabda024bf0435dcf0c09ea",
+            "name": "Green Remedy Collective",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1836,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAARxP1CUgHbNeaZXEs4auFh02U9D-MWSEKp4Rc0tmUno5AK8gF2S7x5mcaos9VIQb9mYehfPETzesgZzHwLOw82GjALVb5XB8zJmjjvOE8J5PHjr4QQteXGC2QfmQ1LUGsEhCvDGuAOeWADx3tFTRRE47mGhSwcEnsN9J_f9qCF0270svyDwN1jQ",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJmRSvTbh3hYARpffiy7t-xnc",
+            "rating": 4.5,
+            "reference": "CmRbAAAAflwuR51hk3YxUhDnt3Mm4hgKdvv1hB1egzDLvxbyRlQf_MPrbBKJ7v8FgHTGiNqLAL8VRx1otkTuxw41WEGZP4AIFSeLGJGB-N9bWmFxCQPLkPCfrgH4dByqYYrLQO7xEhBw7hTMypMVrB3hxVVaYAbkGhQ9__LUrcpRX_8Q1VG5jeXn0tRKvQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "Pacific East Mall, 3288 Pierce St M108, Richmond, CA 94804, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8988708,
+                    "lng": -122.307584
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.90023932989272,
+                        "lng": -122.30679715
+                    },
+                    "southwest": {
+                        "lat": 37.89753967010728,
+                        "lng": -122.30994455
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "99ec783b94d1c06b02b8f4a98cba2d60c7e41cee",
+            "name": "7 Stars Holistic Healing Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 5376,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAvj6bEbQqGXjI8s_e8SANvUMHu8L_0BqzC8DT9-A912xsOuheJDXuQAfojLpdcayOdyrSFGi_vv0AguWkVwswRVVlEBgl3u6biemrf20PXUE-9oMWaAKTzlRz3AiUR64rEhCG6YkZvFDwYJ8GcHWASelNGhRlZAxtMQTWsWSQvdPcflqzi_d5bQ",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJByA5XCB5hYARUOaAoxJjPBA",
+            "rating": 3.8,
+            "reference": "CmRbAAAAvsuRiKiT_jX_t3vMSH4LFvgczXXu7FzyafsufmShjbN_KQNToR495hmmjjQ02ju7UnBMsWa-Aft6gfiZo9cR-DE5bEO8jxR4zcosFHV5Bx9k79wnJ0IbPU-tY812dPYAEhCf-Xc17dVee7Pn9hzEk9lXGhReTNU28ChDVYjmwZpvPen3e1vXmA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1720 Bancroft Way, Berkeley, CA 94703, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8663975,
+                    "lng": -122.2761332
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.86780642989272,
+                        "lng": -122.2747956701073
+                    },
+                    "southwest": {
+                        "lat": 37.86510677010728,
+                        "lng": -122.2774953298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "ef07f24300c7b45ae4bb648d3339d6d487cfe5b5",
+            "name": "Katie Mink L.Ac.",
+            "opening_hours": {
+                "open_now": false,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 278,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAhITkTy1_ZCtDZ8dB-HwvzcQpyectxUY4ijhfNR_kR1-iOxAmAGPinOe9eIQdoNShHRk45pIxZvg6YmDA_sdQF0D5uoapPplPsdRBTvBtxKVpn6HDUx0QjlG1smDxOzxYEhAZEO5aYl5Le3q4p1EBR4u-GhTAXzjR9iqFBsFNxYNDN4Rve0I-Gg",
+                    "width": 417
+                }
+            ],
+            "place_id": "ChIJqfTsZJp-hYARIiXieV3xmE4",
+            "reference": "CmRbAAAAlnB6AVNS1Zj8I2iMAGw0mEFalyoeGwWK3r6SnwM0XHmTHXyRHMXv2ihipavRo5BSGb9BEhZOABQzI33KYBo167WlmJi_fA6FWlimtA80D2xrI7ipI3lUehWJs8Tpv9lMEhBjjLUIxUCg77_us0RAvaVnGhSUbM4K0PP_H2SGjq_JeFDYssQ2BA",
+            "types": [
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "843 Howard St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7823497,
+                    "lng": -122.4035705
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78376172989272,
+                        "lng": -122.4023017701073
+                    },
+                    "southwest": {
+                        "lat": 37.78106207010728,
+                        "lng": -122.4050014298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "e2d8d54df0325f753a110debcf9f7e36b078ef4e",
+            "name": "The Green Door",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4160,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA21fjXy7e9Y0c0uSX884hSGUhLw2mYid3LVX4NvPlBE9jtwrKQjn4xGvE66LUjwwfYpJSWBkzKv3B-ujLp9Q1Ho4-1W5kszFzmf_OIgr9UqTBDqRrYFHpGZKqI4EHJoN7EhDmnz2XvIZoOZ-m3mQ8CyEwGhQQrqP_M0gguAiOrpxOWDjnXuda6w",
+                    "width": 3120
+                }
+            ],
+            "place_id": "ChIJX_w0JYeAhYARrhcP1ir5C5k",
+            "rating": 4.5,
+            "reference": "CmRbAAAAeIdkZbhxwozD3Hc-rauMFK0NyNLl2enTifH47fhLWmSqzlIz9-dTGss7zQ4HRjuS-RxxyQSHrOvrQIzDW1vSvSWrJMGxtcTcwPbNyN9HboByGFMw_M8WgxRGoH6Gc-Q4EhDN1HzWfMn2Ofvj3gJW-PpCGhT1O80MhB3sa4yjGdG-cqTdR6DXkg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2520 Mission St, San Francisco, CA 94110, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7566342,
+                    "lng": -122.4190327
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.75798817989272,
+                        "lng": -122.4176094201073
+                    },
+                    "southwest": {
+                        "lat": 37.75528852010728,
+                        "lng": -122.4203090798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "68a2954378f473785c44a36af1ae9048c5f23ad9",
+            "name": "Purple Star MD",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4160,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAk_WYepHPDmRAUqlbi9gbhdmc9q4HH7xM-tlvCYxcRM3QmekaYw4weKqqGqyWuGlYPSfqo45u4Yzus6CE8GoyYQRBfbj3eOJpAT4xKAcycj3zCR2K3af637tNUSnFDni2EhAQfhOq-X-vT09Aa_CLnlEgGhTqQofn_4br0VFqBWFII4D5NGA0Lw",
+                    "width": 3120
+                }
+            ],
+            "place_id": "ChIJyxLOyT5-j4ARxCo3n_HYaCQ",
+            "rating": 4.8,
+            "reference": "CmRbAAAAtMMBMPMUF97Q18Ia11JpZIm_jcjrC5uUVXM8kIuKtWhP6btsPxIzoTGCWDCx_KM-E_wA3axY4_gESsYVtu6dVsXlhRZzpAlA-VMenXkD_Og1xH11PHx3s_Bv2LO0L9wcEhB1Fz3E4x-ABoZIPmXLR0k3GhQDVAvdebWx9AG-Nb0PGa5QBDyiig",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1326 Grove St, San Francisco, CA 94117, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7760603,
+                    "lng": -122.438531
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.77731602989272,
+                        "lng": -122.4371621201073
+                    },
+                    "southwest": {
+                        "lat": 37.77461637010727,
+                        "lng": -122.4398617798928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "922b8c7d9f591a7f407fff077543bf69b6408959",
+            "name": "BASA Collective",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAPpHLc_4JsSA3vxT15bV8GageqjcKDYOW86tV9mKL88kzT0MxqbMvMUg7QkCgqEn0EanIFHCglaXmZi1bBzXeyySOr96ktejdfnlbx6giwuWcEqkKI7R5QcXp_qaaFlV4EhDzT9MvK3dCnnh7XBrgnlE2GhTVAZlA1bJOsroNqH2qM2WaAGQeJA",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJk1JB1LGAhYARhYySu5NfUYI",
+            "rating": 4.5,
+            "reference": "CmRbAAAAfQN__iIQXx-kNTxnSjNHpfTjsvHS_G26i4JbjJlShAZjlBUQ1pM29no-WKLeUOEtTPwdkOO1JYtyKEPbS38M4MuGezjD0Zbm87rxYDWyeXy6s99cmQzQUodSKCCpWL8YEhBnHW5_7mme-_cPyS35IVZzGhS9mWhNp_fAlshU37GNFODK9HHowA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1201 Solano Ave, Berkeley, CA 94707, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.890589,
+                    "lng": -122.2961139
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.89186007989272,
+                        "lng": -122.2947572701073
+                    },
+                    "southwest": {
+                        "lat": 37.88916042010728,
+                        "lng": -122.2974569298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "978accf9ace46cdddaf9b1cf4dee7ee094e710f4",
+            "name": "Naturally Healing MD",
+            "place_id": "ChIJG1bl0DN5hYARzazTAHCMeaY",
+            "rating": 5,
+            "reference": "CmRbAAAAfAvFVrvRWYEDVNaexPEVBU8h0WjqEYNAQBiVN38eZj1hHMnxESGfqERsABcGgJZmZdE4XsmrUAdSVrIJ_xkTpDeRqcVjZQ8JvI3hb34m2p_pKkfgbva-vONpQPeUG-EpEhDRdWu_-yRCl8zRpnnNmHPUGhRbzvGyVm6moy7tMbNbz_eA6qRc_A",
+            "types": [
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "415 4th St, Oakland, CA 94607, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.796901,
+                    "lng": -122.274784
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.79835992989273,
+                        "lng": -122.2733667201072
+                    },
+                    "southwest": {
+                        "lat": 37.79566027010728,
+                        "lng": -122.2760663798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "ac892f2ce7a8ccbd82d0bed8c7e2e153ee1d01d2",
+            "name": "Purple Heart Patient Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 5312,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA_nMeq472WyzD-qxeCeJjBNYQhv8d-ZYbY0rEoLOiUFfqjRLKNA72z4meio9Euvz2rg1ZUE10jgzFAMdZMmCmVmazvQKETEZBBP2khz-iIKWZb2QUPjTamD3F6iRb3so4EhDFLZzCPuBtWEkp5QPdtdcOGhRcaHZVzwxljVG44S_xhcA6xTZ6Ag",
+                    "width": 2988
+                }
+            ],
+            "place_id": "ChIJvVPiJMiAj4ARErsMNR6x9Ss",
+            "rating": 4.5,
+            "reference": "CmRbAAAA7hQyjzGWrvUs2Psf2dhUfePjVsFgkOLsJhvqV8oO61dQi3lTNn8jcFqBD0PdzCEKmUZYgTOY1P4j-Pkjrjv-3hJ_q7M79sxun1qD-h16tEQpaEDhwx--fZ1QxwAaldGmEhDPBDNr5j2kvPylY5gmDMZBGhTYeHQYDxg1bXFt-8u2mCZ-0GheLg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1284 Mission St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.776573,
+                    "lng": -122.4145311
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.77787802989272,
+                        "lng": -122.4131255201073
+                    },
+                    "southwest": {
+                        "lat": 37.77517837010728,
+                        "lng": -122.4158251798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "bec01a5880cd9bcdfaf960e20342a42f7affc458",
+            "name": "ReLeaf Herbal Cooperative",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3120,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAOE44Po0m7H1t-scuYBpT3P1ZTauCUAoC6C0yNXZjn1GH6i_V8yqNtjLBCu2ZqD1cwbjhC94O6ogvSLesaKlRS4IPtHBSwJ5pPxv8OMIgnvzu0lULBZ_cDRn0vBZNdldvEhA_keRR3Jlk_4RcJscmwt7tGhQbg7cIuhi28b1tpBDrLmtuVnF5qQ",
+                    "width": 4160
+                }
+            ],
+            "place_id": "ChIJ0RsF5pyAhYARgzRzF4fOxik",
+            "rating": 4.4,
+            "reference": "CmRbAAAA4T5gX6YVHl6BbIfHgWK5-kK177UYi8I3al5FsKq7hsg9cBPligm7KW-PrbLMrMu58kNaA7NSO0tu8Y8rwZZVWS3bKlcb_pH0TIA0OB8H9nBeLkNksvJa4g8uW_YorEyPEhDoElQ-vQFLdv0J3C3D7azXGhSCjCAuIVdbEgLDA33tf6_U1mtvJA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "3139 Mission St, San Francisco, CA 94110, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7470162,
+                    "lng": -122.418717
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.74840972989271,
+                        "lng": -122.4174768201073
+                    },
+                    "southwest": {
+                        "lat": 37.74571007010727,
+                        "lng": -122.4201764798928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "ca97122a36be86ae655edc610b26e9b98465c98e",
+            "name": "The Cookie Co.415",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1836,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA4b72iq7G9Nv3M9R-TPKv11KkvHYWnDgxAVjNl7tTelrtQ8L4Fhgrew08R28mhtgaBnEbK9hZ5LJDMxbwSkLabVyNTYvzvBsZK0oe0fjv3E_dc2T-hrTkD_6zL49tbamJEhDbxS9bY5SBi5CiAyRDepQYGhQh5xEYPuhFKuOLCDlS3sIiyYPWkg",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJo67ki0N-j4AR0bSVUbNY41k",
+            "rating": 4.4,
+            "reference": "CmRbAAAAu9D2V46N2cZphKZ_DkW90T1uVZiucWvpbnbCuKleuuhN0KlCp4ZSujBS0bJ5bqWkyW7WrzIhyliulTNYN8uz5gVCocTDAKtCtqdxwo6tgRALcmhutyeeVcqro24jZmvUEhBITAjscBrsHPwFEVYoh9KoGhSTaLiitgO68UZUCiv0fsTW9_pvtg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "539 Tennessee St, Vallejo, CA 94590, USA",
+            "geometry": {
+                "location": {
+                    "lat": 38.1096562,
+                    "lng": -122.2534689
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 38.11116532989272,
+                        "lng": -122.2521145201073
+                    },
+                    "southwest": {
+                        "lat": 38.10846567010728,
+                        "lng": -122.2548141798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "89f664615b7650baa4810f6d56c2e656eb46632c",
+            "name": "Vallejo Holistic Health Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3120,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAoG64x7BRZpUzPC0NT051SJS6v4KOTk79F-6_iQTvNAdn6Q1Hgj92wY-GPt34BbJGhXOF3LQL-D33nzuUiHQfN5--PK2lfPzDWEuo5fL0P96rlQY13vbN7ULgPe3KfNh5EhDRkHlomirIK2r8MuMi7z4QGhSJ9b1fnQcas_iJCemUeaWEwtwlvw",
+                    "width": 4160
+                }
+            ],
+            "place_id": "ChIJdc-RfUJzhYARSunf9oQtOsk",
+            "rating": 4.3,
+            "reference": "CmRbAAAAMvDS02L0g2exqtiazE-wiol1qVanzWk3t_iVvxcZiIDBonxmgvyNBWvW8P5LcF4LRyZf9J5bTeFTw5n6QlzMzk_HjsqXcIi7Vs7A9u1hKKA5AGmws9nGM_cUdrBZoUVgEhB23_bmeqZgn0lx_upqtRsgGhSivmBar5RA-WZb17PNlISr1_aMtA",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "490 Post St, San Francisco, CA 94102, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7883289,
+                    "lng": -122.4097786
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.78959017989273,
+                        "lng": -122.4084104701073
+                    },
+                    "southwest": {
+                        "lat": 37.78689052010728,
+                        "lng": -122.4111101298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "8e2cf8202f66bf7999f5a95f995b9c1cc5015173",
+            "name": "Dr. Adeola Mead, ND - San Francisco Naturopathic Doctor",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "place_id": "ChIJrYH1io6AhYARigbGc1wPgIE",
+            "reference": "CmRbAAAAu-pKly6oOVeTJDcm9eiEXicBkUtU2doibmbVLf1NxiFU3k9q8lv3qqjMRoSC6CY624YTVbJM0GZesfTBnL7-3tC8L3mQfrO26fuC8VNuKAkbfg1Zgo6PCOwYuJwcvwjgEhB92_7X4tUB2_Fb57IkYODqGhR_yqo8eHg366gNpJo8GKqBaj5cJA",
+            "types": [
+                "doctor",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "161 Adeline St, Oakland, CA 94607, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8009572,
+                    "lng": -122.2897752
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.80226287989273,
+                        "lng": -122.2883061701073
+                    },
+                    "southwest": {
+                        "lat": 37.79956322010728,
+                        "lng": -122.2910058298928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "33d600a91935f2c6fc437f81f81d29a1a6376052",
+            "name": "Magnolia Oakland",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1000,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAO-8CDnd1_B9UZVt1kSZ5BkEQWvtGV41fW1SF5yUx7c_ZcidmJuCDuvjyhHaXHm97As_2ClUAfR_28fzDyUo-rQl72_jtyAgkP6jFH-CKnvlhW_DrIdfCIGY0at49nTanEhCtTLIlnSJmiL8C1jabmbMpGhSpzV5O_P4PGn6DyX29nThf_jMP_A",
+                    "width": 2500
+                }
+            ],
+            "place_id": "ChIJY_U4oSjhmoAR0ivmK-zdYhs",
+            "rating": 4.5,
+            "reference": "CmRbAAAAcKbkZkR8ZULOAOezDYf5yXGVMKYqZiOs69DB3dJq5TBo8HmXhHxXyKIZSbRTSzP9lmLQFN1PRbtiXD9NYzFs4DBgoV-Hvuy_yjLMJXTUQQScMBYTECG8PhK2u2TMQlBjEhBoKpBAf1adchwRdQS4VEPVGhSFOwdjpkFLOZxGS059IGTbDMtrDg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "5234 Mission St, San Francisco, CA 94112, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7153831,
+                    "lng": -122.44218
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.71667432989272,
+                        "lng": -122.4407306701073
+                    },
+                    "southwest": {
+                        "lat": 37.71397467010728,
+                        "lng": -122.4434303298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "8881b4743f8b03034057d25286f26146dd1a3b23",
+            "name": "Connected Cannabis",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3072,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAI3WwaqxHyHbSbDp_fbp70Epa1UswVLm5xXEl63CG8TRWJHttmmVn_JcT3vBR-F9_b4iHhGIdgdSWqe1V69vdElstGXrmfATzHZHaM-lBpQ8vPo8kPPbriPnJMUzMAUmrEhA4Gt_8QZbgwh2Ycsny0AdnGhSvStXOnyWhbjSFVYl5Du33koiTCw",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJj5pfiZx-j4AR10SVY_p74YQ",
+            "rating": 3.3,
+            "reference": "CmRbAAAAmOZ05Q2OAKyy5yZHMJXSu0QcfkHp2L9R0kWo9ILYD3FWYNq9D5WptuTmyaqSxA0GMff8MSEflyv53YEAxclrPhK-N3sldqJcLEfeKC147D_SG9mFGWao7YONJC33cKurEhAfyHuKhOeyDQpqIX_TPindGhTx8nih2iH5__hbK2RsjKELiF-rrA",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "3003 Telegraph Ave, Oakland, CA 94609, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8192414,
+                    "lng": -122.2673525
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.82057142989272,
+                        "lng": -122.2658960201073
+                    },
+                    "southwest": {
+                        "lat": 37.81787177010727,
+                        "lng": -122.2685956798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "0144fa256b12cf32fb517a33042f9b69ed0a95b3",
+            "name": "Telegraph Health Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2592,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAl_mCR3w8DV_BjghUkwPbrmAipPYEVPDXExAa4b1CNa0iKXJYr90hOU_0VUs_R7u0c824e2o4dlz8XhGAqB-yzbvbl1IS_qrjuYrJDS6IQ7Jkdk2n0vW6j9s8stuxHo78EhCXyzfhiMkOMhVAI01zeQd5GhQgZBzMpvbR0X7d6Pqj_3qgVcdrxQ",
+                    "width": 1936
+                }
+            ],
+            "place_id": "ChIJl-0eJQB-hYARep_wMheL6pg",
+            "rating": 4.7,
+            "reference": "CmRbAAAAC_jlOsxzWGGoDOETCdrWpYNsnlth_NZczVNLHLTqvgpbdHS6HbR8crVwoQhp33QoSaY54vEIo2YvrHgbxts6pzJ4ozmQg7uaZU_Znz9u6FfmQE7b-xDZ_WKpIv0JC6ZiEhBD7GHSqKeIlwhAxYm2OsR7GhTzU5chUw9RgF56dHfqmIdkKDp7dA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "14 Valencia St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7718398,
+                    "lng": -122.422764
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.77319307989272,
+                        "lng": -122.4213283201073
+                    },
+                    "southwest": {
+                        "lat": 37.77049342010727,
+                        "lng": -122.4240279798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "8f28c090f01d7cab78600bb8cdbab4841f2aba10",
+            "name": "Ketama",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1288,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA_rQUzVxH4TA5GXtcAxZX7LyYU5sAh6ukrdeJoVmTamokaTzZl7Vo6Urp9B-xrXhPZMOaV3VJXiPynvEzReZfMElfrfp9_NfOmEsuRPDyV8EyGsBJFtIKFtOEndHZuwgZEhCAojvO3Nl_6JpaK7GD0SCqGhRQtPQFcd3E-QhJyv_3EvQTUN9Csw",
+                    "width": 1440
+                }
+            ],
+            "place_id": "ChIJdb-26Z-AhYAR96Tm71iUy84",
+            "rating": 4.7,
+            "reference": "CmRbAAAA-nNp6Sh-vAXRzgVNRoLgyEtl87k0DL35PPMFr7v14f6ZZhjebDK-5Kb6C4vahmWK0BfzyaJ0eIWXFrxdDTRQj4lxva9VrQAtqvvl-S7bEyOhMxsBIyCQ7MdIICVnCH-bEhAWGaF2xZ2M0k9FcFWc07t-GhRVx7xtzfPAJ10QHr6WgMUnKJIz3w",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "3823 San Pablo Dam Rd, El Sobrante, CA 94803, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.9652987,
+                    "lng": -122.3142242
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.96648297989272,
+                        "lng": -122.3128184701072
+                    },
+                    "southwest": {
+                        "lat": 37.96378332010728,
+                        "lng": -122.3155181298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "9f8f47affba18d67bbca0088441a665572547917",
+            "name": "Med's Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2322,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAFuJ_p_3Pirfv4XtIX1FvHYUMbqHlEOy872NNmDnsjHFuvdHrVzdMLlUFG-1tJhAg_rCtLOPT8X212A73mIDDBhwf-FdvG21kfSzfEHNtClaoxsdiwD07F1FI6dHg9SMaEhCsxiksgb2xNChGLZAU51QEGhRb1FRk2x0iLxZfB_93Wzjt-pOuHQ",
+                    "width": 4128
+                }
+            ],
+            "place_id": "ChIJjeWPGIN3hYAR9hk6i8UlMds",
+            "rating": 4.1,
+            "reference": "CmRbAAAATmTkDRd4awt31LNQHk4kLBIqLxptNC3QlOhwyliZO4QUVT8rPSOIwN2f0MGEQlDkm03ohfd6Gd93i8LHsuOoYC1NgNWsd1jBMq03nF-K_OenpWV8Pxex2Xae8qGrV4vBEhDwzr9Nnlm4g_wkPfPMoCgBGhR9Y_l69Q-byQ9H49VgsZwU4PmLIg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2261 Market St #196, San Francisco, CA 94114, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7647336,
+                    "lng": -122.4319338
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.76616137989271,
+                        "lng": -122.4306825701073
+                    },
+                    "southwest": {
+                        "lat": 37.76346172010727,
+                        "lng": -122.4333822298928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "97f8f00f199c8badc4141870a9b7934114984172",
+            "name": "Potbox",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "place_id": "ChIJf3lDXRx-j4ARm5zbJTw5xTU",
+            "rating": 3,
+            "reference": "CmRbAAAA160c5qF0PvtAje-F1BI6KKWw1CNYqVJcGSPgIuzQo7PiXJZR67VCbomcRldawdC8k5VRowgbf0X4D0ptNTWHY1YMFtw2D9CUV6SdgSh5qJ0q5DGnW3xuCScRqwi-cwZFEhDmJve8UfNbGOk8UkYPN6zHGhRdCobQQS3hc0tq_a3y6dwo92FD2Q",
+            "types": [
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "211 12th St, San Francisco, CA 94103, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7717006,
+                    "lng": -122.4164999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.77299432989272,
+                        "lng": -122.4151883201073
+                    },
+                    "southwest": {
+                        "lat": 37.77029467010728,
+                        "lng": -122.4178879798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "5d2de512e24684d5ebc20bd42612e4e9bd692df8",
+            "name": "SFFOGG",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2988,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAM-IHeKlpa0ZUHDs6KmODfFvKacF_fu350Zx0K2YHa9uzEsVaTV8uboyA2kXzSVwqzb4zP4BLm7V5pH931Cr8eHXRao2Wkp2-oR_XmVd0VNcucF9Qb3Ij6poLDFupLjVwEhCZ8OB6fUrC-03n9WvLiD_JGhSgz1RysaFtY-edPHwDTfdh5Qr0Rg",
+                    "width": 5312
+                }
+            ],
+            "place_id": "ChIJTTrXFCd-j4ARFYLWvyn4JSA",
+            "rating": 4.6,
+            "reference": "CmRbAAAA8oOGlWCQfiw8Wb7-f2uXks2Q0H2BL0xvkQPgh-jmYz6ngdGzyVkz-EZGlcJk_C_Jdh__JthOpnjQfLUbcE25wGU_U9ItDUgN13xITiiOnHsLNN6UiCD_2AoT48MqwgKOEhADoagC8byXW08LdsIbwchWGhTRhCrTxfcDEUDQJcgSmv9WSdERYg",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1151 14th St, Oakland, CA 94607, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8094318,
+                    "lng": -122.286323
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.81082767989272,
+                        "lng": -122.2849550701073
+                    },
+                    "southwest": {
+                        "lat": 37.80812802010728,
+                        "lng": -122.2876547298928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "529da743c9d479caf95182be883af005c727ea1d",
+            "name": "Bayside Patient Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 378,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAIEP7qqunKHi-95TbjYs22XZnMmwyjlwpMK4WjZ-eIf_F7jntoAY8hovRjVq9VO5-9jxkiVc2sUkA-dvp9SgVRH8WQp81RYArBfNoxesBx2K0cXEC5bsu1dexKcj1osBhEhAi7R-Ex4m5KHs_up0uJN58GhSO6NOhzvGTnv0TQegf1MlMxhI9xg",
+                    "width": 504
+                }
+            ],
+            "place_id": "ChIJKW2WvaGAj4ARRVB5y3EYREQ",
+            "rating": 2,
+            "reference": "CmRbAAAAQ_gtbAf44Et9mjQaD_CaApQOOKu1r5tLWXay0WlCBDikOcVFFtLhxkNdUkApwcNLWmwVjlHd9GpEIU9h9Zp3cwdyTS7k1nZVXhtNZKMYxI_9wA9_-z_gW-QVE5OeLZ9CEhCnQQ5CMEPJvgCuQkhlJpJWGhRm1JaLgxtQ2g4lL-wxL_seunNyUw",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1776 Broadway, Oakland, CA 94612, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.8076017,
+                    "lng": -122.2688745
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.80899182989272,
+                        "lng": -122.2676324201073
+                    },
+                    "southwest": {
+                        "lat": 37.80629217010728,
+                        "lng": -122.2703320798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "0fc5c172733e73e6952e3fd58fd5b1a9658aac39",
+            "name": "Oakland Community Partners",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2988,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAS9GHrNN_QwZIxgGU9FoOgown0vResu7AwJadjfXPgD66nw_6VndvnMRvox7JXv4B8dfN41XLrAlMqS21EIt-utV6OSrboCcTDKb4WPHrBUm9NNMzfH4ZZL4sVz2Q_SPYEhCweMuyf8jWnv__AQEGHvNXGhQomzXNe3ME5sgpHgUZNmGHHp-Yrw",
+                    "width": 5312
+                }
+            ],
+            "place_id": "ChIJSffcZ7KAj4ARlzzZeIf0r7M",
+            "rating": 4.2,
+            "reference": "CmRbAAAA6yJTWHw73kPyVqsL_akoQs02EMDcHLjUK5thofhfLO7HUJmCsoTmSswS1hZHFTlwCyqK4OwpCbty1HxERHsWF8Higl8HUP-MEWnTBEyygf7WEp9jMTQlCrREjnnVakGtEhCEJIXad4N0maw3LKaetkxMGhToglfXlxqwXWJPcGrkffU1XvcHyw",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1905 Palmetto Ave B, Pacifica, CA 94044, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.634522,
+                    "lng": -122.4918184
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.63587522989272,
+                        "lng": -122.4905796201073
+                    },
+                    "southwest": {
+                        "lat": 37.63317557010728,
+                        "lng": -122.4932792798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "f744724c84a9ed4aee7f63c17c3bf9bd684124bb",
+            "name": "SureFyre Collective",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1667,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAA-b7Ju-P7UjCijsuPxF08BZJbI9lncqn9U5OhqjZbx6tSQgrX72GobrkTW-LbTHolM2b0lyfDhudvwn0yQmHn9_tAF8TBhYNmPN6MT0zglZTeGgekSGkCp2h7R7Peqi_UEhA5GzeEVCeuTyPNXG_KXI3xGhTLqW7ziQWk58Czbr5BiLEQNGtzdg",
+                    "width": 2500
+                }
+            ],
+            "place_id": "ChIJuWPKc4l6j4ARbuUHLSZ10Xw",
+            "rating": 4.6,
+            "reference": "CmRbAAAAt5fsK4acGnvlopKVKQcT2hdHji0PkSxOMExIR2TAlQfAReR70-h3eb-V9ccxwjsTTGHRCz80KNsH0-rwAfNHE6xJF2k0O3gpNiUdBxAWO5U7Vba9gtIQwBtcUBu8i5FYEhC-bU_y-zspVHlm-AjJN9klGhR0LASyhowQ9kAZl0AbzRV73JWueQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2943 Daylight Way, San Jose, CA 95111, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.288824,
+                    "lng": -121.849358
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.29027962989272,
+                        "lng": -121.8478494701072
+                    },
+                    "southwest": {
+                        "lat": 37.28757997010727,
+                        "lng": -121.8505491298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "273368fd71158cae7cdeb5680975a5ea67ea69ee",
+            "name": "The Guild San Jose",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 4004,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAQ130Oq11alg81NATssnL3jOg-BKHbqSQENYZnBuWemIrX41MKr4Ff58lLYIt2uyV4RVMfCvYsyRqK6J1utVUqt2z9jmAkNNG3lwKg5W6LQPeWgfVRNlMv3GW0wb0ksvwEhDCJ0RIDvftkxGG_rNBcZVZGhS6KHnXbDZsKUln1uYrUbPXyFiUmw",
+                    "width": 6000
+                }
+            ],
+            "place_id": "ChIJ1c8tS1EyjoARJ6okrQf1eF0",
+            "rating": 4.3,
+            "reference": "CmRbAAAAvUqCIFI2wQ9I0R732u2iMKHeOupS-MAWGyzbS4PhMzQL2AF4e3IVdM0SwCppdbWnlnei-CRntwJIIaNFwwJdQJHp8KfCCEfhPCRduCwY5NRWGaaquqcjgUP8-u1365i8EhCpH9MEkldqjXTD8fcO3HkJGhSRcl3Fd36IzSsyVv_wbz8ZG4J4uQ",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "3611 Sonoma Blvd, Vallejo, CA 94590, USA",
+            "geometry": {
+                "location": {
+                    "lat": 38.1237714,
+                    "lng": -122.2557748
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 38.12513122989272,
+                        "lng": -122.2542454201073
+                    },
+                    "southwest": {
+                        "lat": 38.12243157010728,
+                        "lng": -122.2569450798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "89500a3814d4d8eead84c57d3553965f6d8ce826",
+            "name": "Better Health Group - Medical Marijuana Dispensaries",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 2448,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAKvTOUdcHcR2HosHXSfP_rzTU17p9LRUkx73uEZa5q9b-5unZGhADhXoOkwuwdPQHL4hG9TskVlBCBrHMAjl2MsLXbTa9Rvh8z6HWKUxe0i1xFOzXqKpOceKqIKEQUbG0EhA0qBvJahDFm7bkbX0n_aa3GhQG2MQ2Ki5qTTfTmGEpJhJKRxS1aQ",
+                    "width": 3264
+                }
+            ],
+            "place_id": "ChIJz3bcH11zhYARzFKBYObcoSs",
+            "rating": 4.2,
+            "reference": "CmRbAAAAabL_imvIBFVaJJwmx0TsbIkFrAXlr4zW5vC2EZMepCxaX9i9x2eZDT-gHgDftbaFFQsYktJE0U7Oq20PZ1xM0uSGs3_ake8leaa1LZzUtc7-YauIe4evAJborRpoIwCMEhBMEHdqV5A-yknWFkdHkvlwGhSjQ5Aq86h-ncTYFn2-AETn610mHw",
+            "types": [
+                "store",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1639-C Lewis Brown Dr, Vallejo, CA 94589, USA",
+            "geometry": {
+                "location": {
+                    "lat": 38.1387197,
+                    "lng": -122.2539353
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 38.14025817989273,
+                        "lng": -122.2528534201073
+                    },
+                    "southwest": {
+                        "lat": 38.13755852010728,
+                        "lng": -122.2555530798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "575c352887af18d2500e9cedca353f1a23480715",
+            "name": "California Collective Care Dispensary",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1080,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRZAAAABtblFiXxB0CUXBCF2AkSYhzvKr276x9c724vkqOfWiP68tEsBIQR6VW4WR4KUz3wBDuNWPZoNxlS3X6yBTAgQoLLI942K2t6twWFpUaHlX8TZrrkPiI_C6qB9OpNrQjQEhAcqUvQ_XG5dDx1KxOAQtxqGhQxf10rCx1VtxpvTMbZ5SC8f4BxTQ",
+                    "width": 1920
+                }
+            ],
+            "place_id": "ChIJc6zULKUMhYAR3rMi1piKarM",
+            "rating": 4,
+            "reference": "CmRbAAAAjH88wl3vZ7U9b5muGyO6poUj8-hrLYLUNU6AS8hEXy5uTTGv06sCSPfL0eQ8GnO5_YioCkR78ZA4oyS6R0ruH6rLClSS5-DtQ0tycWXhbFQEsu6MTaAePQTqeRJ_D7cNEhBnFDVWtTaieAJV2OLZtxJGGhSUhgjwYit-F-s-Zxfnx6Q9sLKS-g",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2506 Clay St, San Francisco, CA 94115, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.7908798,
+                    "lng": -122.4345369
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.79213302989272,
+                        "lng": -122.4331671701073
+                    },
+                    "southwest": {
+                        "lat": 37.78943337010728,
+                        "lng": -122.4358668298927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "4c0deca495d4003f03f72b4635b10e2e15e90b03",
+            "name": "THE MIND-BODY CLINIC",
+            "place_id": "ChIJndTXEcaAhYARcSCGfZZCyBI",
+            "reference": "CmRbAAAAOxpedOruzBt9DscLBaRO51yf1Zzr4YYs_KZixTfhfohzz-N4VLIL5e1mM9cBr-zUaLSz0ezlIOkFeKfPaoz4kwMKqPA-KxFZHAjQLUOzpxhyAv8TIgSnJCW3xp0q5gDDEhBlssy_oEFdOLqHKIF0nfx8GhTr6JZQN45dhfQpUK6G2th7su_H5g",
+            "types": [
+                "doctor",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "913 E Lewelling Blvd, Hayward, CA 94541, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.6876914,
+                    "lng": -122.1067733
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.68913142989272,
+                        "lng": -122.1054471201073
+                    },
+                    "southwest": {
+                        "lat": 37.68643177010727,
+                        "lng": -122.1081467798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "60b0694d1066ccf8a92efc48f0e0b35844f66c87",
+            "name": "We Are Hemp",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1920,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAjdqLdiQ20A1utUc9IP8vy0JLGhGi7BeK5aTLH-GqFWDPmZSN1ua7Vd-FyqcTpXLuVhnkM6SLpS2p6XbKY6idbzkHDgycdfiggHWpYSjGB-Xn-SHP3hcy-L1qna5LNqE6EhAlD6kcJRj5sOEbfGjmXLFBGhSdGnbKiSJdO19sjRbvcvLxceVt5A",
+                    "width": 1080
+                }
+            ],
+            "place_id": "ChIJb3tFYb2Rj4ARGChwAFTj80Q",
+            "rating": 4.4,
+            "reference": "CmRbAAAAUJJ2A6dqpx7d0UqQFCP_kMqCBM6iO_uj91e4BvV2FszWngGmVYYM4j-kBemqkBIPPttk3MXC42SLkevXGC8FzHbXzV3nAS8ljqJDbje7UDp9iawZmPn5Ob7L_E09opiREhAor_Rbx8y5NHcLiPzU1slJGhQ0_UCkSKzzy7amM7wsaVlMMs-LQQ",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "1804 Capitol St, Vallejo, CA 94590, USA",
+            "geometry": {
+                "location": {
+                    "lat": 38.1029694,
+                    "lng": -122.2378715
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 38.10424407989272,
+                        "lng": -122.2365219201073
+                    },
+                    "southwest": {
+                        "lat": 38.10154442010727,
+                        "lng": -122.2392215798928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "17cd45636926fa0c605d8a8869e422b3d1c8d6cb",
+            "name": "Vallejo Relief Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 1200,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRZAAAAim8Ql80oajC2BzwfqzJ3A7TvVjoDisvacGYhNQkhdB_3RVUrk97HO1yLg3t86_KsCkGo5bzLG17vw9S1LUVLVGg1AtBDvCIjMhTMUItwJBzLNxyw6ax0YKZGUMMqUdWIEhAwN_YGS-eIkSb7rFMJ9ol9GhSdIohWTXbIHJyKn0ZIK3CehkasNw",
+                    "width": 1600
+                }
+            ],
+            "place_id": "ChIJ8foH7w1zhYARh00qqJzVDU8",
+            "rating": 3.7,
+            "reference": "CmRbAAAABtEqEdxiBZaOYwq_Lg5CZ1rFEeZvU7fyrIcii2ecGQh_D2zCPmPd7GfhOCDUJhgtodyjSi7S3IRgGGFIjwnLRQV4BNc4LbI6ANmIeELX-Q4CAG1lEwzUZdQ8igYNElfUEhCyKlB_4h8Y9b_Jk_kGulCoGhSAx_mOlXBV4s0svWRD-dBKXM-sHQ",
+            "types": [
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "21227 Foothill Blvd, Hayward, CA 94541, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.6853373,
+                    "lng": -122.0928486
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.68673697989272,
+                        "lng": -122.0914406201073
+                    },
+                    "southwest": {
+                        "lat": 37.68403732010727,
+                        "lng": -122.0941402798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "93206ea23ee2d377ac051fd9c4daaf8ee70df523",
+            "name": "Garden of Eden",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 888,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAYZbzUqjtaYxRfHTQ0i0nQUfb-vtcAvUcrGVEdz-fAUX9kJpnksi1kVgW9XMMHnw0128CBCYl_ccts3Z0Uymj2zijCMXvvQiggJRa33MVrCltW9L3_Ri2m-cM0MOFahUeEhDXEiF74fjgUtNP058xea3jGhRtLplH5iuTbpE4Ccx_PJFDUpqpIg",
+                    "width": 888
+                }
+            ],
+            "place_id": "ChIJh_7IZIORj4ARmowz9JLCZo8",
+            "rating": 4.1,
+            "reference": "CmRbAAAA_wakv-pWKoeZOnmh0AdUTSyyPuwh1OF1G4hngBcyOTdOLMyD1n3u4DR5SHI6nDsaqD6CIoSiNfO3ozjwnK9XFNHfkErZa9yFWWGx8WEAD_zG0FaGWw95c25E_v-18Wd6EhAAdQW9265duyLH_Q-pi0ncGhQdXZMYcaAxA1qtvgMLWTInszZixA",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "38 Caledonia St Suite One, Sausalito, CA 94965, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.858481,
+                    "lng": -122.484844
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.85978537989272,
+                        "lng": -122.4835327201073
+                    },
+                    "southwest": {
+                        "lat": 37.85708572010728,
+                        "lng": -122.4862323798928
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+            "id": "c8d4748ff0f04b77996013b52371b76a390b2d8d",
+            "name": "Marin Oriental Medicine",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 358,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAN-mMdM4SfgraCVHbG9-prWHUeiwwniX-QbKfPdXg35dKdbVuTguq8X4qJWeyxEqOiDjO5LupK5GPpj9RZW8dveFRkV0He8GWQqYJaW4cvGkpKSZTGNUIbJN9WnsSfzdwEhAa2kHZHQQSv-fMppXr0E7dGhR90f8NdZKoM_pXyWsC-ThqwCrL_g",
+                    "width": 487
+                }
+            ],
+            "place_id": "ChIJ8WZLvVGEhYAR0Jr9N9xSI9Q",
+            "rating": 5,
+            "reference": "CmRbAAAAM-OxpAluYJfcZ_X23N249BzQI64Hw7ytXag5rM5cgidqN8kgF4dOZjmaIo6cUowhgYdPT1fLmqphcEZeKPr-GUizatgmM6CfZmB0QPHrGUIunjHOVkvRIPcG_pKcXUf8EhBOkx3mHMx1UJGZ36qvBUUdGhQYB05xySnvXkktj52jZXHhoOXHNg",
+            "types": [
+                "doctor",
+                "health",
+                "point_of_interest",
+                "establishment"
+            ]
+        },
+        {
+            "formatted_address": "2021 Palmetto Ave, Pacifica, CA 94044, USA",
+            "geometry": {
+                "location": {
+                    "lat": 37.6336272,
+                    "lng": -122.4919152
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 37.63498547989273,
+                        "lng": -122.4906652201073
+                    },
+                    "southwest": {
+                        "lat": 37.63228582010728,
+                        "lng": -122.4933648798927
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+            "id": "cfd475745f8dc66e02d6cf5786db9427667946cb",
+            "name": "Cannabis Wellness Center",
+            "opening_hours": {
+                "open_now": true,
+                "weekday_text": []
+            },
+            "photos": [
+                {
+                    "height": 3036,
+                    "html_attributions": [
+                        "Photos are copyrighted by their owners"
+                    ],
+                    "photo_reference": "CmRaAAAAYUm-T9JYnK1KttNR-CC5H-v_4xEXtvj2eGtaVa0RNuGvx4QZSq7F6AaZ0OouDKT1U6WFTWZSlqfZdqUo8XHJ_W0tQt1t18fRpBFE6XNY1T8HM9uUHLlcrPduitGiZj_LEhCMPGtL4LUF5pZHRau1pTAoGhTDbS0bA3V6bwgsXTI2o3jqGK16TA",
+                    "width": 4048
+                }
+            ],
+            "place_id": "ChIJwccvfVV6j4ARS_fbNdYSzWQ",
+            "rating": 4.3,
+            "reference": "CmRbAAAAisHv9wOxUOZ97HdHhdQwniJYyShf-2O5HcgruHlJ9H0hPVNaVaYhLpDHshEcFeYaOaZXcrWT2NCdz9yQhIauoZIRCe6I_nJWICyNaqWc3tzLXwMuQ8o4BLFjEUicFqBgEhC0WZBHx9B0aDrcsbxcP4lAGhTczbBPnK8yXuGt-4YCvZzVitxiOw",
+            "types": [
+                "store",
+                "point_of_interest",
+                "establishment"
+            ]
+        }
+    ],
+    "status": "OK"
+}

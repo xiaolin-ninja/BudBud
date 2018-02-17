@@ -1,0 +1,32 @@
+-----------
+    1.0
+-----------
+DONE
+
+-----------
+    2.0
+-----------
+- Fix formatting of pos_effects, neg_effects to remove brackets & quotes
+
+- Create Bud Journal
+    > Allow user to input:
+        . dosage (input integer)
+        . date taken (Calendar selector)
+        . rating (drop-down or radio selector)
+        . comments (string input)
+    > Visualize data
+        . D3 word bubble of comments?
+        . strains (x) v. rating (y) (box plot)
+        . strains (x) v. # of entries (y) (bar/histogram)
+        . dosage v. rating, etc.
+
+- Create algorithm to give predictive recommended strains based on journal log
+    > match flavors, symptoms, etc.
+
+-----------
+    3.0
+-----------
+1. Fix test for adding user searches to database
+2. Restructure map rendering to intercept response if no dispensary matches
+are in the database.
+3. add 9 pound hammer for Lizard
