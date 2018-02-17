@@ -1,0 +1,45 @@
+/*--------------------------------*/
+/* Main */
+/*--------------------------------*/
+
+body {
+    text-align: center;
+    background-color: #0B5345;
+    color: #FFFFFF
+}
+
+input {
+  color: #000000;
+}
+
+option {
+  color:#000;
+}
+
+.window-content {
+    color: #000;
+    background-color: #ade8a0;
+    opacity: 0.8;
+    padding: 0.5em;
+    border: #000 1.5px;
+    border-style: dotted solid;
+}
+
+h1 {
+    color: #F4D03F;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #E74C3C;
+}
+
+a:active {
+  text-decoration: none;
+  color: #fff;
+}

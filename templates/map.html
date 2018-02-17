@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnZPpl8aau3fCm9LKhwc5Yx9ugGxqddT8">
+    </script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/static/js/map.js"></script>
+    <link href="/static/css/style.css" rel="stylesheet">
+    <style>
+       #map {
+        height: 500px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <a href="/"> Back to Home </a><br>
+    <hr>
+    <h2>Here ya go, bud!</h2>
+    <h3>Dispensaries that offer {{ strain }}</h3>
+    <div id="map"></div>
+  </body>
+</html>

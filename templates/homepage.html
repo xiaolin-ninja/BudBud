@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#strains" ).autocomplete({
+      source: {{ auto_strains | tojson }},
+      minLength: 2
+    });
+  } );
+  </script>
+{% endblock %}
+
+{% block title %}Homepage{% endblock %}
+{% block theme %}Welcome!{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to BudBud 1.0</h1>
+
+<div class="ui-widget">
+<form action="/map">
+<h2>What strain are you looking for?</h2>
+<input type="text" name="strain" id="strains"><br>
+Find dispensaries!<br>
+<input type="submit">
+</form>
+</div>
+
+<a href="/strains"><h3>Not sure?</h3></a>
+
+{% if session.get('current_user') %}
+<a href="/journal"><h3>Hang Out with Your Buddy <br>(Bud Journal)</h3></a>
+<form action="/logout">
+<b>Log out</b><br>
+<input type="submit" value="We'll miss ya">
+{% else %}
+<p>Log In!<br>
+    <form action="/login" method="POST">
+        Email: <input type="text" name="email"><br>
+        Password: <input type="text" name="password"><br>
+        <input type="submit" value="Welcome back!">
+    </form>
+
+<a href="/register"><p>Register!</p><br></a>
+
+{% endif %}
+
+{% endblock %}
