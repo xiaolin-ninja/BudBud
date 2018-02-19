@@ -146,11 +146,10 @@ def show_journal():
 @app.route('/strains')
 def display_goodies():
     """Display registration landing page"""
-    strains = Strain.query.order_by(func.random()).limit(25).all()
-    hybrids = Strain.query.filter_by(s_type='Hybrid').all()
-    indicas = Strain.query.filter_by(s_type='Indica').all()
-    sativas = Strain.query.filter_by(s_type='Sativa').all()
-    return render_template("strains.html", strains=strains)
+    h = Strain.query.filter_by(s_type='Hybrid').all()
+    i = Strain.query.filter_by(s_type='Indica').all()
+    s = Strain.query.filter_by(s_type='Sativa').all()
+    return render_template("strains.html", hybrids=h, indicas=i, sativas=s)
 
 #---------------------------------------------------------------------------------#
 
