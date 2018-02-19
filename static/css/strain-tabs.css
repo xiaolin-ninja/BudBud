@@ -1,0 +1,57 @@
+/*--------------------------------*/
+/* jQuery tabs UI on Strains page */
+/*--------------------------------*/
+
+#tabs {
+    background: transparent;
+    border: none;
+}
+
+#tabs p {
+    color: #ffffff;
+}
+
+#tabs a {
+    color: #459e00;
+    text-decoration: none;
+}
+
+#tabs a:hover {
+    text-decoration: none;
+    color: #E74C3C;
+}
+
+#tabs .ui-widget-header {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+#tabs .ui-tabs-nav .ui-state-default {
+    background: transparent;
+    border: none;
+    height: 2.35em;
+    text-align: center;
+}
+
+#tabs .ui-tabs-nav .ui-state-active {
+    border: dotted 1px #ffffff;
+}
+
+#tabs .ui-tabs-nav li {
+    display: inline-block;
+    float: none;
+    top: 0px;
+    margin: 0em;
+    padding-bottom: 0px;
+}
+
+#tabs .ui-tabs-nav .ui-state-default a {
+    color: #ffffff;
+}
+#tabs .ui-tabs-nav .ui-state-active a {
+    color: #459e00;
+}
