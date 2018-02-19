@@ -1,11 +1,60 @@
 {% extends 'base.html' %}
 {% block title %}Strains{% endblock %}
 {% block theme %}All for One and One for All!{% endblock %}
+{% block head %}
+
+<link rel="stylesheet" href="static/css/strain-tabs.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
+
+{% endblock %}
 {% block content %}
+
 
 <h1>What tickles your fancy?</h1>
 
-<div id="root"></div>
+<div id="tabs" class="ui-tabs-nav">
+  <ul>
+    <li><a href="#hybrids"><span>Hybrids</span></a></li>
+    <li><a href="#indicas"><span>Indicas</span></a></li>
+    <li><a href="#sativas"><span>Sativas</span></a></li>
+  </ul>
 
+<div id="hybrids">
+    <p> {% for s in hybrids %}
+<p><b><a href="/map?strain={{s.s_name}}">{{ s.s_name }}</a></b>
+    <br>can make you feel:<br>
+    {{ s.pos_effects }}
+    </p>
+{% endfor %}
+</div>
 
+<div id="indicas">
+    <p> {% for s in indicas %}
+<p><b><a href="/map?strain={{s.s_name}}">{{ s.s_name }}</a></b>
+    <br>can make you feel:<br>
+    {{ s.pos_effects }}
+    </p>
+{% endfor %}
+</div>
+
+<div id="sativas">
+        <p> {% for s in sativas %}
+<p><b><a href="/map?strain={{s.s_name}}">{{ s.s_name }}</a></b>
+    <br>can make you feel:<br>
+    {{ s.pos_effects }}
+<!--     {% for effect in s.pos_effects.split(",") %}
+    <li>{{ effect }}</li>
+    {% endfor %} -->
+    </p>
+{% endfor %} </p>
+</div>
+</div>
 {% endblock %}
