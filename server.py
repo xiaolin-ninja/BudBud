@@ -151,6 +151,18 @@ def display_goodies():
     s = Strain.query.filter_by(s_type='Sativa').all()
     return render_template("strains.html", hybrids=h, indicas=i, sativas=s)
 
+
+@app.route('/strains.json')
+def get_strain_info():
+    """Creates JSON file of strain info to display for modal on click."""
+    print "I am preparing this strain's information from the db!"
+    s_id = request.args.get('id')
+    strain = Strain.query.get(s_id)
+    results = { 'name': strain.s_name,
+                'pos': strain.pos_effects }
+    print results
+    return jsonify(results)
+
 #---------------------------------------------------------------------------------#
 
 if __name__ == "__main__":

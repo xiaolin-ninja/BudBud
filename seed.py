@@ -24,6 +24,7 @@ def load_strains(json_file):
         neg_effects = [ effect["DisplayLabel"] for effect in s["NegativeEffects"]]
         s_type=s['Category']
         url = '{}/{}'.format(s_type.lower(), s['UrlName'])
+        logtags = s['LogTags']
 
         strain = Strain(s_name=s['Name'],
                         s_type=s_type,

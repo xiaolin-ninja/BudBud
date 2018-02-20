@@ -34,3 +34,5 @@ alternatives: "Blue Dream"
     {% endfor %}</p>
 </li>
 {% endfor %}
+
+a href="/map?strain={{s.s_name}}"
