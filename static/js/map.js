@@ -1,3 +1,4 @@
+// Rendering Google Maps //
 
 function initMap() {
     let sf = {lat: 37.7995971, lng: -122.327749};
