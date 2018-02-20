@@ -1,12 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}Strains{% endblock %}
 {% block theme %}All for One and One for All!{% endblock %}
-{% block head %}
-
+{% block content %}
 <link rel="stylesheet" href="static/css/strain-tabs.css">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="static/css/strain-modal.css">
 
 <script>
   $(document).ready(function() {
@@ -14,12 +11,8 @@
   } );
 </script>
 
-{% endblock %}
-{% block content %}
-
-
 <h1>What tickles your fancy?</h1>
-
+<!-- Tabs -->
 <div id="tabs" class="ui-tabs-nav">
   <ul>
     <li><a href="#hybrids"><span>Hybrids</span></a></li>
@@ -27,34 +20,56 @@
     <li><a href="#sativas"><span>Sativas</span></a></li>
   </ul>
 
-<div id="hybrids">
-    <p> {% for s in hybrids %}
-<p><b><a href="/map?strain={{s.s_name}}">{{ s.s_name }}</a></b>
-    <br>can make you feel:<br>
-    {{ s.pos_effects }}
-    </p>
-{% endfor %}
+    <div id="hybrids">
+        <p> {% for s in hybrids %}
+        <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
+              data-strain-id={{s.strain_id}}>
+        {{ s.s_name }}</a></b>:<br>
+        </p>
+        {% endfor %}
+    </div>
+
+    <div id="indicas">
+        <p> {% for s in indicas %}
+        <p><b><a href="#" data-toggle="modal" data-target="#straininfo" class="openmodal">
+        {{ s.s_name }}</a></b>:<br>
+        {{ s.pos_effects }}
+        </p>
+        {% endfor %}
+    </div>
+
+    <div id="sativas">
+            <p> {% for s in sativas %}
+        <p><b><a href="#" data-toggle="modal" data-target="#straininfo" class="openmodal">
+        {{ s.s_name }}</a></b>:<br>
+        {{ s.pos_effects }}
+        <!--     {% for effect in s.pos_effects.split(",") %}
+        <li>{{ effect }}</li>
+        {% endfor %} -->
+        </p>
+        {% endfor %} </p>
+    </div>
 </div>
 
-<div id="indicas">
-    <p> {% for s in indicas %}
-<p><b><a href="/map?strain={{s.s_name}}">{{ s.s_name }}</a></b>
-    <br>can make you feel:<br>
-    {{ s.pos_effects }}
-    </p>
-{% endfor %}
+<!-- Modal -->
+<div class="modal fade" id="straininfo" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+          Some text.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  </div>
 </div>
 
-<div id="sativas">
-        <p> {% for s in sativas %}
-<p><b><a href="/map?strain={{s.s_name}}">{{ s.s_name }}</a></b>
-    <br>can make you feel:<br>
-    {{ s.pos_effects }}
-<!--     {% for effect in s.pos_effects.split(",") %}
-    <li>{{ effect }}</li>
-    {% endfor %} -->
-    </p>
-{% endfor %} </p>
-</div>
-</div>
+<script src="/static/js/strains.js"></script>
 {% endblock %}

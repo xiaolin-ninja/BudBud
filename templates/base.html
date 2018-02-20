@@ -1,22 +1,23 @@
 <!doctype html>
 <html>
 <head>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
-  <link href="/static/css/style.css" rel="stylesheet">
   <title>
   {% block title %} TITLE GOES HERE! {% endblock %}</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   {% block head %}
   {% endblock %}
-
 </head>
 {% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <ul class=flashes>
     {% for message in messages %}
-      <li>{{ message }}</li>
+      <div class="alert alert-success alert-dismissable row col-xs-offset-2
+col-xs-7" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>{{ message }}</strong>
+</div>
     {% endfor %}
-    </ul>
-  {% endif %}
 {% endwith %}
 <body>
   <a href="/"> Back to Home </a><br>
@@ -27,6 +28,15 @@
   {% block content %} put your content here {% endblock %}
   </div>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+  <!-- Disappearing flashed messages. -->
+<script>
+    window.setTimeout(function() {
+        $(".alert").fadeTo(300, 0).slideUp(300, function(){
+            $(this).remove();
+        });
+    }, 4000);
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>
