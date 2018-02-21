@@ -21,7 +21,9 @@ $('.openmodal').click(function(evt) {
     let id = $(this).data('strain-id');
     $.get(`/strains.json?id=${id}`, function(data) {
         document.getElementsByClassName('modal-header')[0].innerHTML = data.name
-        document.getElementsByClassName('modal-body')[0].innerHTML = data.pos
+        document.getElementsByClassName('modal-body')[0].innerHTML =
+            data.pos +
+            `<p><a href='/map?strain=${data.name}'>Find Dispensaries</a><br>`
         modal.style.display = "block";
     })
 })

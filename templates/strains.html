@@ -24,28 +24,25 @@
         <p> {% for s in hybrids %}
         <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
               data-strain-id={{s.strain_id}}>
-        {{ s.s_name }}</a></b>:<br>
+        {{ s.s_name }}</a></b><br>
         </p>
         {% endfor %}
     </div>
 
     <div id="indicas">
         <p> {% for s in indicas %}
-        <p><b><a href="#" data-toggle="modal" data-target="#straininfo" class="openmodal">
-        {{ s.s_name }}</a></b>:<br>
-        {{ s.pos_effects }}
+        <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
+              data-strain-id={{s.strain_id}}>
+        {{ s.s_name }}</a></b><br>
         </p>
         {% endfor %}
     </div>
 
     <div id="sativas">
-            <p> {% for s in sativas %}
-        <p><b><a href="#" data-toggle="modal" data-target="#straininfo" class="openmodal">
-        {{ s.s_name }}</a></b>:<br>
-        {{ s.pos_effects }}
-        <!--     {% for effect in s.pos_effects.split(",") %}
-        <li>{{ effect }}</li>
-        {% endfor %} -->
+        <p> {% for s in sativas %}
+        <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
+              data-strain-id={{s.strain_id}}>
+        {{ s.s_name }}</a></b><br>
         </p>
         {% endfor %} </p>
     </div>
