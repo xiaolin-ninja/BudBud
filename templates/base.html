@@ -20,9 +20,14 @@ col-xs-7" role="alert">
     {% endfor %}
 {% endwith %}
 <body>
-  <a href="/"> Back to Home </a><br>
-  {% block theme %}Theme{% endblock %}
-  <hr>
+
+<!-- Navbar -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">BudBud</a>
+        <a class="btn btn-primary" href="#">Sign In</a>
+      </div>
+    </nav>
 
   <div id="content">
   {% block content %} put your content here {% endblock %}

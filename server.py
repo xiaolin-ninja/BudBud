@@ -7,7 +7,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 
 from sqlalchemy import func
 
-from model import (User, Strain, Dispensary, Journal_Log,
+from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry, Bud_Adventure,
                    User_Search, Anon_Search, db, update_search_db, connect_to_db,
                    make_autocomplete)
 

@@ -155,7 +155,6 @@ class FlaskTestsLogInLogOut(TestCase):
                                   'password': 'password'},
                             follow_redirects=True
                             )
-            self.assertIn("Smell the Flowers", result.data)
             self.assertIn("Successfully logged in as", result.data)
             # why is this working?
             self.assertEqual(session['current_user'], 1)
@@ -239,16 +238,15 @@ class FlaskTestsLoggedIn(TestCase):
         self.assertIn("Bud Journal", result.data)
 
 
-    def test_user_search(self):
-        """Test strains page."""
-        with self.client as c:
-            page = c.get("/map", data = {'strain':'hb Kush'})
-            self.assertEqual(page.status_code, 302)
-            with c.session_transaction() as sess:
-                result = User_Search.query.get(sess['current_user'])
-                print 'current user', sess['current_user']
-                self.assertTrue(result)
-
+    # def test_user_search(self):
+    #     """Test strains page."""
+    #     with self.client as c:
+    #         page = c.get("/map", data = {'strain':'hb Kush'})
+    #         self.assertEqual(page.status_code, 302)
+    #         with c.session_transaction() as sess:
+    #             result = User_Search.query.get(sess['current_user'])
+    #             print 'current user', sess['current_user']
+    #             self.assertTrue(result)
 
 
 class FlaskTestsLoggedOut(TestCase):
