@@ -76,30 +76,82 @@ class Dispensary(db.Model):
         """print info in useful form"""
         return "<Dispensary name={}>".format(self.name)
 
-class Journal_Log(db.Model):
+class Bud_Journal(db.Model):
     """Journal Log History"""
 
-    __tablename__ = "log"
+    __tablename__ = "journals"
 
-    log_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    journal_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     user_id =  db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
-    strain_id =  db.Column(db.Integer, db.ForeignKey("strains.strain_id"), nullable=False)
-    user_rating =  db.Column(db.Integer, nullable=False)
-    dosage =  db.Column(db.Integer, nullable=False)
-    ## USE A DATE PICKER for date-taken
-    date_taken = db.Column(db.DateTime, nullable=True)
-    user_comments =  db.Column(db.Text, nullable=False)
+    journal_label =  db.Column(db.String(100), nullable=False)
 
     user = db.relationship("User", backref=db.backref("log",
+                                                      order_by=Strain.strain_id))
+
+    def __repr__(self):
+        """print info in useful form"""
+        return "<Journal id={} user_id={}>".format(
+                                                self.journal_id, self.user_id)
+
+class Journal_Entry(db.Model):
+    """Journal Log History"""
+
+    __tablename__ = "entries"
+
+    log_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    journal_id = db.Column(db.Integer, db.ForeignKey("journals.journal_id"), nullable=False)
+    user_id =  db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
+    strain_id =  db.Column(db.Integer, db.ForeignKey("strains.strain_id"), nullable=False)
+    story_id = db.Column(db.Integer, db.ForeignKey("stories.story_id"), nullable=True)
+    user_rating =  db.Column(db.Integer, nullable=False)
+    # automated from time of entry
+    entry_date = db.Column(db.DateTime, nullable=True)
+    notes =  db.Column(db.Text, nullable=True)
+
+    user = db.relationship("User", backref=db.backref("entires",
+                                                      order_by=strain_id))
+    journal = db.relationship("Bud_Journal", backref=db.backref("entries",
                                                       order_by=strain_id))
     # CHECK IF THIS WORKS LATER, HOW TO SORT BY 2?
-    strain = db.relationship("Strain", backref=db.backref("log",
+    strain = db.relationship("Strain", backref=db.backref("entries"))
+    story = db.relationship("Bud_Adventure", backref=db.backref("entries"))
+
+    def __repr__(self):
+        """print info in useful form"""
+        return "<Journal Log id={} in journal={} by user={}>".format(
+                                                self.log_id, self.journal_id, self.user_id, self.strain_id)
+
+
+class Bud_Adventure(db.Model):
+    """Journal Log History"""
+
+    __tablename__ = "stories"
+
+    story_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    journal_id = db.Column(db.Integer, db.ForeignKey("journals.journal_id"), nullable=False)
+    user_id =  db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
+    strain_id =  db.Column(db.Integer, db.ForeignKey("strains.strain_id"), nullable=False)
+    ## USE A DATE PICKER for date-taken
+    use_date = db.Column(db.DateTime, nullable=True)
+    dosage =  db.Column(db.Integer, nullable=True)
+    ## auto-generated from page, time of addition of this post
+    timestamp = db.Column(db.DateTime, nullable=True)
+    story =  db.Column(db.Text, nullable=False)
+    dankness = db.Column(db.Integer, default=0, nullable=False)
+
+    user = db.relationship("User", backref=db.backref("stories",
+                                                      order_by=strain_id))
+    journal = db.relationship("Bud_Journal", backref=db.backref("stories",
+                                                      order_by=strain_id))
+    # CHECK IF THIS WORKS LATER, HOW TO SORT BY 2?
+    strain = db.relationship("Strain", backref=db.backref("stories",
                                                         order_by=user_id))
 
     def __repr__(self):
         """print info in useful form"""
-        return "<Journal Log id={} user_id={} strain_id={}>".format(
-                                                self.id, self.user_id, self.strain_id)
+        return "<Journal Log id={} in journal={} by user={}>".format(
+                                                self.log_id, self.journal_id, self.user_id, self.strain_id)
+
 
 class User_Search(db.Model):
     """Record of user searches, for data collection & recommendation AI"""
@@ -169,10 +221,13 @@ def example_data():
     """Create some sample data."""
 
     # In case this is run more than once, empty out existing data
-    User.query.delete()
-    Strain.query.delete()
+
+    Bud_Adventure.query.delete()
+    Journal_Entry.query.delete()
+    Bud_Journal.query.delete()
     Dispensary.query.delete()
-    Journal_Log.query.delete()
+    Strain.query.delete()
+    User.query.delete()
 
     # Add sample employees and departments
     anna = User(preferred_type='Sativa',
@@ -202,13 +257,39 @@ def example_data():
                         neg_effects='{Mel, melonmania}',
                         leafly_url='sativa/ubermelon')
 
-
     frf = Dispensary(name='Forbidden Random Forest',
                                 disp_lat=37.7995971,
                                 disp_lng=-122.327749,
                                 address='1234 123 street, SF, CA')
 
-    db.session.add_all([anna, hb_kush, frf])
+    db.session.add_all([anna, hb_kush, ubermelon, frf])
+    db.session.commit()
+
+    j = Bud_Journal(user_id=anna.user_id,
+                          journal_label='Making Art')
+
+    db.session.add(j)
+    db.session.commit()
+
+    # creation should be mocked...?
+    entry = Journal_Entry(user_id=anna.user_id,
+                          journal_id=j.journal_id,
+                          strain_id=ubermelon.strain_id,
+                          user_rating=5,
+                          # timestamp=??,
+                          notes="Don't smoke too much, don't cross with alcohol.")
+
+    story = Bud_Adventure(journal_id=j.journal_id,
+                          user_id=anna.user_id,
+                          strain_id=ubermelon.strain_id,
+                          dosage=15,
+                          story="I was smoking Ubermelon with my friends while eating \
+                                 a watermelon we ordered from Ubermelon and it was amazing! \
+                                 My friend Balloonicorn had the best idea ever for painting \
+                                 with the watermelon rinds and we made great art! haha",
+                          dankness=0)
+
+    db.session.add_all([story, entry])
     db.session.commit()
 
 ##############################################################################
