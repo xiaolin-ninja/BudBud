@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <title>Bud Journal</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% extends 'base.html' %}
+{% block title %}Map{% endblock %}
+{% block head %}
   <style>
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
+
+    div {
+      color: #000;
     }
+
+    h3, h2 {
+      color: #fff;
+    }
+
+    /* Add a gray background color and some padding to the footer */
 
     .carousel-inner img {
       width: 100%; /* Set width to 100% */
@@ -25,36 +28,18 @@
         display: none; 
       }
     }
-  </style>
-</head>
-<body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </style>
+{% endblock %}
+{% block heading %}
+Chill with Your Bud (Journal)!
+<hr>
+{% endblock %}
+{% block content %}
 
 <div class="container">
 <div class="row">
+  <h2> Trip Reports </h2>
   <div class="col-sm-8">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -68,7 +53,7 @@
         <div class="item active">
           <img src="https://placehold.it/800x400?text=IMAGE" alt="Image">
           <div class="carousel-caption">
-            <h3>Sell $</h3>
+            <h3>FILLER</h3>
             <p>Money Money.</p>
           </div>      
         </div>
@@ -76,7 +61,7 @@
         <div class="item">
           <img src="https://placehold.it/800x400?text=Another Image Maybe" alt="Image">
           <div class="carousel-caption">
-            <h3>More Sell $</h3>
+            <h3>SUPER FILLER</h3>
             <p>Lorem ipsum...</p>
           </div>      
         </div>
@@ -93,7 +78,35 @@
       </a>
     </div>
   </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="newJournal" tabindex="-1" role="dialog" 
+     aria-labelledby="newjournalmodal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newJournal">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="reg" action="/journal/new" method="POST">
+        Name: <input type="text" name="journal_label" required><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary" value="Save Changes">
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="col-sm-4">
+    <!-- create new journal modal -->
+    <button type="button" class="btn btn-outline-success"
+            data-toggle="modal" data-target="#newJournal">New Journal</button>
     <div class="well">
       <p>Some text..</p>
     </div>
@@ -171,9 +184,4 @@
   </div>
 </div><br>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
-
-</body>
-</html>
+{% endblock %}

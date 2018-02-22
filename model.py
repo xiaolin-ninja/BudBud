@@ -114,7 +114,7 @@ class Journal_Entry(db.Model):
                                                       order_by=strain_id))
     # CHECK IF THIS WORKS LATER, HOW TO SORT BY 2?
     strain = db.relationship("Strain", backref=db.backref("entries"))
-    story = db.relationship("Bud_Adventure", backref=db.backref("entries"))
+    story = db.relationship("Trip_Report", backref=db.backref("entries"))
 
     def __repr__(self):
         """print info in useful form"""
@@ -122,7 +122,7 @@ class Journal_Entry(db.Model):
                                                 self.log_id, self.journal_id, self.user_id, self.strain_id)
 
 
-class Bud_Adventure(db.Model):
+class Trip_Report(db.Model):
     """Journal Log History"""
 
     __tablename__ = "stories"
@@ -222,7 +222,7 @@ def example_data():
 
     # In case this is run more than once, empty out existing data
 
-    Bud_Adventure.query.delete()
+    Trip_Report.query.delete()
     Journal_Entry.query.delete()
     Bud_Journal.query.delete()
     Dispensary.query.delete()
@@ -279,7 +279,7 @@ def example_data():
                           # timestamp=??,
                           notes="Don't smoke too much, don't cross with alcohol.")
 
-    story = Bud_Adventure(journal_id=j.journal_id,
+    story = Trip_Report(journal_id=j.journal_id,
                           user_id=anna.user_id,
                           strain_id=ubermelon.strain_id,
                           dosage=15,

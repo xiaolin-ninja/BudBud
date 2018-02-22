@@ -7,9 +7,9 @@ from flask_debugtoolbar import DebugToolbarExtension
 
 from sqlalchemy import func
 
-from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry, Bud_Adventure,
-                   User_Search, Anon_Search, db, update_search_db, connect_to_db,
-                   make_autocomplete)
+from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry,
+                   Trip_Report, User_Search, Anon_Search, db, 
+                   update_search_db, connect_to_db, make_autocomplete)
 
 from dispensaries_helper import *
 
@@ -30,7 +30,7 @@ def index():
     return render_template("homepage.html", auto_strains=auto_strains)
 
 
-@app.route("/map")
+@app.route("/map.json")
 def render_map():
     """Render map with nearest dispensaries"""
     usr_input = request.args.get("strain")
@@ -40,7 +40,9 @@ def render_map():
         print strain, 'found in db'
         update_search_db(strain, session.get('current_user'))
         # if strain is in the database, show map.
-        return render_template("map.html", strain=strain.s_name, id=strain.strain_id)
+        results = { 'strain' : strain.s_name,
+                    'id': strain.strain_id }
+        return jsonify(results)
     else:
         flash("Strain not found! Sorry.")
         return redirect('/')
@@ -76,7 +78,7 @@ def login():
         if password == user.password:
             session['current_user'] = user.user_id
             flash('Successfully logged in as {}'.format(email))
-            return redirect("/journal")
+            return redirect("/")
         else:
             flash("Begone imposter!!")
     else:
@@ -143,6 +145,17 @@ def show_journal():
 # Add journal entry
 # View entries
 
+@app.route("/journal/new", methods=["POST"])
+def new_journal():
+    """Create New Bud Journal."""
+    journal_label = request.form.get('name')
+    user_id = session['current_user']
+
+    db.session.add(Bud_Journal(user_id=user_id,
+                               journal_label=journal_label))
+    db.session.commit()
+    return redirect("/journal")
+
 @app.route('/strains')
 def display_goodies():
     """Display registration landing page"""
@@ -169,6 +182,7 @@ if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the
     # point that we invoke the DebugToolbarExtension
     app.debug = True
+    app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
     # make sure templates, etc. are not cached in debug mode
     app.jinja_env.auto_reload = app.debug
 

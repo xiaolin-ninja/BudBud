@@ -1,53 +1,122 @@
 <!doctype html>
 <html>
 <head>
-  <title>
-  {% block title %} TITLE GOES HERE! {% endblock %}</title>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
   <link href="/static/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <title>{% block title %} TITLE GOES HERE! {% endblock %}</title>
   {% block head %}
   {% endblock %}
-</head>
+
+  <!-- Navbar -->
+{% block navbar %}
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" 
+              data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/">BudBud</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Search</a></li>
+        <li><a href="/strains">Strains</a></li>
+        <li><a href="/journal">Bud Journal</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        {% if session.get('current_user') %}
+        <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span>
+           Logout</a></li>
+
+        {% else %}
+        <li><a href="/register"><span class="glyphicon glyphicon-user">
+            </span>  Register</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+             role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-log-in">
+            </span>  Login <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <form id="login" action="/login" method="POST">
+              <label for="email">Email</label>
+              <input name="email" id="email" type="text" 
+                     placeholder="Demo: email"><p><p>
+              <label for="password">Password</label>
+              <input name="password" id="password" type="password"
+                     placeholder="Demo: password"><br>
+              <li role="separator" class="divider"></li>
+              <input type="submit" id="submit" value="Log In">
+            </form>
+          </ul>
+        </li>
+      </ul>
+
+<!--          Log-In form drop-down          -->
+<!--         <li class="dropdown" id="menuLogin">
+          <a href="#" class="dropdown-toggle" data-togge="dropdown" role="button"
+             aria-haspopup="true" aria-expanded="false" id="navLogin">
+          
+          <div class="dropdown-menu dropdown-lr animated slideInRight
+                      col-lg-12">
+              <form id="login-ajax" action="/login" method="post" 
+                    autocomplete="off">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" tabindex="1"
+                         class="form-control" placeholder="Demo: email" 
+                         value="" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" 
+                          tabindex="2" class="form-control" 
+                          placeholder="Demo: password" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-5 pull-right">
+                      <input type="submit" name="login-submit" id="login-submit"
+                             tabindex="3" class="form-control btn btn-success" 
+                             value="Log In">
+                    </div>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </li> -->
+
+      {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block alert %}
 {% with messages = get_flashed_messages() %}
     {% for message in messages %}
-      <div class="alert alert-success alert-dismissable row col-xs-offset-2
-col-xs-7" role="alert">
+      <div class="alert alert-success alert-dismissable row col-xs-12" role="alert">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>{{ message }}</strong>
 </div>
     {% endfor %}
 {% endwith %}
+{% endblock %}
+</head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
   <div id="content">
+    <h1>{% block heading %} BIG HEADING {% endblock %}</h1>
   {% block content %} put your content here {% endblock %}
   </div>
 
@@ -59,7 +128,16 @@ col-xs-7" role="alert">
         });
     }, 4000);
 </script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </body>
+
+<footer class="footer">
+      <div class="container">
+        <p> © 2018: <a href="https://github.com/shxxu0212/BudBud">
+          BudBud </a> | Shirley Xiaolin Xu</p>
+      </div>
+    </footer>
 </html>
