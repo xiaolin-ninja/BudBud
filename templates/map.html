@@ -6,16 +6,15 @@
   </script>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/static/js/map.js"></script>
-  <link href="/static/css/style.css" rel="stylesheet">
   <style>
       #map {
-      height: 500px;
+      height: 300px;
       width: 100%;
       }
   </style>
 {% endblock %}
+    {% block heading %} Here ya go, bud!{% endblock %}
 {% block content %}
-    <h2>Here ya go, bud!</h2>
     <hr>
     <h3>Dispensaries that offer {{ strain }}</h3>
     <div id="map"></div>

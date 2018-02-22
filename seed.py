@@ -3,8 +3,8 @@ import json
 import re
 from server import app
 import datetime
-from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry, Bud_Adventure,
-                   User_Search, Anon_Search, db, update_search_db, connect_to_db)
+from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry,
+                   Trip_Report, User_Search, Anon_Search, db, update_search_db, connect_to_db)
 
 def load_strains_data(json_file):
     """reads json file of strains & extracts relevant info"""
