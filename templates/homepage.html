@@ -27,7 +27,7 @@
 {% block title %}Homepage{% endblock %}
 {% block theme %}Welcome!{% endblock %}
 
-{% block heading %} Welcome to BudBud 1.0 {% endblock %}
+{% block heading %} Welcome to BudBud 2.0 {% endblock %}
 
 {% block content %}
 
@@ -71,7 +71,7 @@ function initMap(evt) {
   console.log('I made an info window~')
 
   // fill in the map
-  $.get('/dispensaries.json', {'strain':$('#user_input').val()}, 
+  $.get('/map.json', {'strain':$('#user_input').val()}, 
       function(disp_json) {
           console.log('I am getting the dispensaries information for map');
           document.getElementById("text").innerHTML="<h3>Dispensaries near you that offer "+disp_json.strain+"</h3><hr>"
