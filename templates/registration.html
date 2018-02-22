@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}Registration{% endblock %}
-{% block theme %}Please Complete Registration.{% endblock %}
+{% block heading %}Fill Out Your User Profile{% endblock %}
 {% block content %}
-
-<h1>Fill Out Your User Profile</h1>
-<h2>Register!</h2>
 <hr>
+<h2>Register!</h2>
     <form id="reg" action="/registration" method="POST">
         Email: <input type="text" name="email" required><br>
         Password: <input type="text" name="password" required><br>
