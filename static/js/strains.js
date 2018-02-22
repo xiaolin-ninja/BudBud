@@ -1,32 +1,18 @@
 // Modal for displaying individual strain info on Strains page //
-"use strict"
-
-// Get the modal
-let modal = document.getElementsByClassName('modal')[0];
-
-// // Get the button that opens the modal
-// let open = document.getElementById("openmodal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// // When the user clicks on the button, open the modal
-// open.onclick = function() {
-//     modal.style.display = "block";
-// }
+let span = document.getElementsByClassName('close')[0];
 
 $('.openmodal').click(function(evt) {
     evt.preventDefault();
-    let id = $(this).data('strain-id');
-    map = 
-    $.get(`/strains.json?id=${id}`, function(data) {
-        document.getElementsByClassName('modal-header')[0].innerHTML = data.name
-        document.getElementsByClassName('modal-body')[0].innerHTML =
-            data.pos
-            $.get(`/map?strain=${data.name}`, function() {
-                document.getElementsByClassName('modal-map')[0].innerHTML =
-                })
-            // `<a href='/map?strain=${data.name}'>Find Dispensaries</a><br>`
+    console.log("I'm inside the event listener")
+    let strain = $(this).data('strain');
+
+    $.get('/map.json', {'strain': strain}, function(json) {
+        console.log('I am inside the modal');
+        initMap(json);
+        document.getElementsByClassName('modal-header')[0].innerHTML = json.name;
+        document.getElementsByClassName('modal-body')[0].innerHTML = json.pos;
         modal.style.display = "block";
     })
 })

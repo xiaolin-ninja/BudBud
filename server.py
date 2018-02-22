@@ -30,15 +30,17 @@ def index():
     return render_template("homepage.html", auto_strains=auto_strains)
 
 
-@app.route("/dispensaries.json")
+@app.route("/map.json")
 def disp_info():
     """Get user input strain, check if in db.
        If strain is in db, call Leafly web scraper for strain availability page,
-       Extract lat, long, address from each dispensary returned."""
+       Extract lat, long, address from each dispensary returned.
+       Compiles strain information for strain page modals."""
 
     print "I am seeing if the strain is in the database."
     usr_input = request.args.get("strain")
     strain = Strain.query.filter(func.lower(Strain.s_name)==func.lower(usr_input)).first()
+
     if strain:
         print strain, 'found in db!'
         update_search_db(strain, session.get('current_user'))
@@ -48,7 +50,9 @@ def disp_info():
         dispensaries = get_locations(url)
         results = { 'dispensaries': dispensaries,
                     'count': len(dispensaries),
-                    'strain': usr_input }
+                    'strain': usr_input,
+                    'pos': strain.pos_effects,
+                    'name': strain.s_name, }
         return jsonify(results)
     else:
         flash("Strain not found! Sorry.")
@@ -154,16 +158,15 @@ def display_goodies():
     return render_template("strains.html", hybrids=h, indicas=i, sativas=s)
 
 
-@app.route('/strains.json')
-def get_strain_info():
-    """Creates JSON file of strain info to display for modal on click."""
-    print "I am preparing this strain's information from the db!"
-    s_id = request.args.get('id')
-    strain = Strain.query.get(s_id)
-    results = { 'name': strain.s_name,
-                'pos': strain.pos_effects }
-    print results
-    return jsonify(results)
+# @app.route('/strains.json')
+# def get_strain_info():
+#     """Creates JSON file of strain info to display for modal on click."""
+#     print "I am preparing this strain's information from the db!"
+#     s_id = request.args.get('id')
+#     results = { 'name': strain.s_name,
+#                 'pos': strain.pos_effects }
+#     print results
+#     return jsonify(results)
 
 #---------------------------------------------------------------------------------#
 

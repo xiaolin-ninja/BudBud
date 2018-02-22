@@ -8,7 +8,6 @@
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnZPpl8aau3fCm9LKhwc5Yx9ugGxqddT8">
 </script>
 <script src="https://code.jquery.com/jquery.js"></script>
-<script src="/static/js/map.js"></script>
 <style>
     #map {
     height: 300px;
@@ -23,7 +22,7 @@
 <script>
   $(document).ready(function() {
     $( "#tabs" ).tabs();
-  } );
+  });
 </script>
 
 <!-- Tabs -->
@@ -37,7 +36,7 @@
     <div id="hybrids">
         <p> {% for s in hybrids %}
         <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
-              data-strain-id={{s.strain_id}}>
+              data-strain={{s.s_name}}>
         {{ s.s_name }}</a></b><br>
         </p>
         {% endfor %}
@@ -78,12 +77,9 @@
         <div class="modal-map">
           <div id="map"></div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
       </div>
   </div>
 </div>
-
+<script src="/static/js/map.js"></script>
 <script src="/static/js/strains.js"></script>
 {% endblock %}
