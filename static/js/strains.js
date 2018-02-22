@@ -1,5 +1,4 @@
 // Modal for displaying individual strain info on Strains page //
-
 "use strict"
 
 // Get the modal
@@ -19,11 +18,15 @@ var span = document.getElementsByClassName("close")[0];
 $('.openmodal').click(function(evt) {
     evt.preventDefault();
     let id = $(this).data('strain-id');
+    map = 
     $.get(`/strains.json?id=${id}`, function(data) {
         document.getElementsByClassName('modal-header')[0].innerHTML = data.name
         document.getElementsByClassName('modal-body')[0].innerHTML =
-            data.pos +
-            `<p><a href='/map?strain=${data.name}'>Find Dispensaries</a><br>`
+            data.pos
+            $.get(`/map?strain=${data.name}`, function() {
+                document.getElementsByClassName('modal-map')[0].innerHTML =
+                })
+            // `<a href='/map?strain=${data.name}'>Find Dispensaries</a><br>`
         modal.style.display = "block";
     })
 })

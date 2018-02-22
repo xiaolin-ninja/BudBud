@@ -3,47 +3,134 @@
 {% block head %}
 <script>
   $( function() {
-    $( "#strains" ).autocomplete({
+    $( "#user_input" ).autocomplete({
       source: {{ auto_strains | tojson }},
       minLength: 2
     });
+    console.log('autocomplete working')
   } );
   </script>
+
+<!-- Google maps -->
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnZPpl8aau3fCm9LKhwc5Yx9ugGxqddT8">
+</script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<style>
+    #map {
+    height: 300px;
+    width: 100%;
+    }
+</style>
 {% endblock %}
 
 {% block title %}Homepage{% endblock %}
 {% block theme %}Welcome!{% endblock %}
 
+{% block heading %} Welcome to BudBud 1.0 {% endblock %}
+
 {% block content %}
 
-<h1>Welcome to BudBud 1.0</h1>
-
+<!-- autocomplete widget -->
 <div class="ui-widget">
-<form action="/map">
+<!-- on submit, initiate map -->
+<form onsubmit="initMap()">
 <h2>What strain are you looking for?</h2>
-<input type="text" name="strain" id="strains"><br>
-Find dispensaries!<br>
-<input type="submit">
+<input type="text" name="strain" id="user_input" 
+       placeholder="Find Dispensaries!"> <input type="submit" value="Show Me">
 </form>
 </div>
 
 <a href="/strains"><h3>Not sure?</h3></a>
 
-{% if session.get('current_user') %}
-<a href="/journal"><h3>Hang Out with Your Buddy <br>(Bud Journal)</h3></a>
-<form action="/logout">
-<b>Log out</b><br>
-<input type="submit" value="We'll miss ya">
-{% else %}
-<p>Log In!<br>
-    <form action="/login" method="POST">
-        Email: <input type="text" name="email"><br>
-        Password: <input type="text" name="password"><br>
-        <input type="submit" value="Welcome back!">
-    </form>
+<div id="search-results" style="display:none">
+<h3>Dispensaries that offer {{ session['strain'] }}</h3>
+<div id="map"></div>
+</div>
 
-<a href="/register"><p>Register!</p><br></a>
+</div>
 
-{% endif %}
+<script>
+function initMap(evt) {
+    console.log('the submit button is working')
+    evt.preventDefault();
+    let x = document.getElementById("search-results");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          }
+
+    let sf = {lat: 37.7995971, lng: -122.327749};
+    let map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: sf,
+        scrollwheel: true,
+        zoomControl: true,
+        panControl: false,
+        streetViewControl: false,
+    });
+    console.log('Hi I initiated the map')
+
+    let infoWindow = new google.maps.InfoWindow({
+      width: 150
+    })
+    console.log('I made an info window~')
+
+    // function showMap(evt) {
+
+    //   $.get('/map.json', {'strain':$('#user_input').val()}, function(response) {
+
+
+    // makes get request to dispensaries
+    $.get('/dispensaries.json', function(disp_json) {
+        console.log('I am GETting the dispensaries information for map!');
+        console.log(disp_json);
+        if (disp_json.count === 0) {
+            alert('No dispenaries near you offer this strain, sorry!')
+        } else {
+            let marker, disp, html;
+
+            for (let key in disp_json.dispensaries) {
+                disp = disp_json.dispensaries[key];
+
+                marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(disp.lat, disp.lng),
+                  map: map,
+                  title: disp.name,
+                });
+
+                html = (
+                    '<div class="window-content">' +
+                          '<p><b>Dispensary: </b>' + disp.name + '</p>' +
+                          '<p><b>Address: </b>' + disp.address + '</p>' +
+                          '<a href="https://www.google.com/maps?saddr=My+Location&daddr='+disp.lat+','+disp.lng+'" target="_blank">' +
+                          '<p><b>Take Me There!</b></p></a>' +
+                    '</div>');
+
+                bindInfoWindow(marker, map, infoWindow, html);
+            } //end for loop
+        } //end else
+    }); //end ajax
+
+    function bindInfoWindow(marker, map, infoWindow, html) {
+        google.maps.event.addListener(marker, 'mouseover', function () {
+            infoWindow.close();
+            infoWindow.setContent(html);
+            infoWindow.open(map, marker);
+        });
+    }
+}
+
+// function showMap(evt) {
+//     console.log('the submit button is working')
+//     $.get('/map.json', {'strain':$('#user_input').val()}, function(response) {
+//         let x = document.getElementById("search-results");
+//         if (x.style.display === "none") {
+//             x.style.display = "block";
+//         }
+//     // FAIL FUNCTION
+//     })
+// }
+
+</script>
 
 {% endblock %}
