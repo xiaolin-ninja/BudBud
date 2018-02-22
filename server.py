@@ -30,40 +30,29 @@ def index():
     return render_template("homepage.html", auto_strains=auto_strains)
 
 
-@app.route("/map.json")
-def render_map():
-    """Render map with nearest dispensaries"""
+@app.route("/dispensaries.json")
+def disp_info():
+    """Get user input strain, check if in db.
+       If strain is in db, call Leafly web scraper for strain availability page,
+       Extract lat, long, address from each dispensary returned."""
+
+    print "I am seeing if the strain is in the database."
     usr_input = request.args.get("strain")
-    session['strain'] = usr_input
     strain = Strain.query.filter(func.lower(Strain.s_name)==func.lower(usr_input)).first()
     if strain:
-        print strain, 'found in db'
+        print strain, 'found in db!'
         update_search_db(strain, session.get('current_user'))
-        # if strain is in the database, show map.
-        results = { 'strain' : strain.s_name,
-                    'id': strain.strain_id }
+        url = strain.leafly_url
+        print "found it:", url
+
+        dispensaries = get_locations(url)
+        results = { 'dispensaries': dispensaries,
+                    'count': len(dispensaries),
+                    'strain': usr_input }
         return jsonify(results)
     else:
         flash("Strain not found! Sorry.")
         return redirect('/')
-
-
-@app.route("/dispensaries.json")
-def disp_info():
-    """Call Leafly web scraper for strain availability page,
-      Extract lat, long, address from each dispensary returned."""
-
-    print "I am preparing dispensaries information in Flask!"
-    strain = Strain.query.filter(func.lower(Strain.s_name)==func.lower(session['strain'])).first()
-    # 'type/strain-name'
-    url = strain.leafly_url
-    print "found it!", url
-
-    dispensaries = get_locations(url)
-    results = { 'dispensaries': dispensaries,
-                'count': len(dispensaries) }
-    return jsonify(results)
-    # get set of all dispensaries that offer the strain from scraper
 
 
 @app.route('/login', methods=['POST'])
