@@ -8,12 +8,6 @@
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnZPpl8aau3fCm9LKhwc5Yx9ugGxqddT8">
 </script>
 <script src="https://code.jquery.com/jquery.js"></script>
-<style>
-    #map {
-    height: 300px;
-    width: 100%;
-    }
-</style>
 
 {% endblock %}
 
@@ -36,7 +30,7 @@
     <div id="hybrids">
         <p> {% for s in hybrids %}
         <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
-              data-strain={{s.s_name}}>
+              data-strain={{ s.strain_id }}>
         {{ s.s_name }}</a></b><br>
         </p>
         {% endfor %}
@@ -45,8 +39,8 @@
     <div id="indicas">
         <p> {% for s in indicas %}
         <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
-              data-strain-id={{s.strain_id}}>
-        {{ s.s_name }}</a></b><br>
+              data-strain={{ s.strain_id }}>
+        <div id="strain">{{ s.s_name }}</div></a></b><br>
         </p>
         {% endfor %}
     </div>
@@ -54,7 +48,7 @@
     <div id="sativas">
         <p> {% for s in sativas %}
         <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
-              data-strain-id={{s.strain_id}}>
+              data-strain={{ s.strain_id }}>
         {{ s.s_name }}</a></b><br>
         </p>
         {% endfor %} </p>
@@ -62,20 +56,21 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="straininfo" role="dialog">
+<div class="modal fade " id="straininfo" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h4 class="modal-title">Please Wait...</h4>
         </div>
         <div class="modal-body">
-          <p>
-          Some text.</p>
+          Page loading.
         </div>
         <div class="modal-map">
-          <div id="map"></div>
+          <hr>
+        </div>
+        <div class="modal-recs">
         </div>
       </div>
   </div>
