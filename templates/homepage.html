@@ -46,6 +46,15 @@
 // on submit of the form:
 $(".strain_lookup").submit(
 function initMap(evt) {
+  let x = document.getElementById("search-results");
+    if (x.style.display === "block") {
+        x.style.display = "none";}
+  let y = document.getElementById("loading");
+    if (y.style.display === "none") {
+        y.style.display = "block";}
+  let z = document.getElementById("no-results");
+        z.style.display = "none";
+
   evt.preventDefault();
   console.log('the submit button is working');
     // create map
@@ -69,10 +78,15 @@ function initMap(evt) {
   $.get('/map.json', {'strain':$('#user_input').val()},
       function(disp_json) {
           console.log('I am getting the dispensaries information for map');
-          document.getElementById("text").innerHTML="<h3>Dispensaries near you that offer "+disp_json.strain+"</h3><hr>"
-      if (disp_json.count === 0) {
-          alert('No dispenaries near you offer this strain, sorry!')
+          document.getElementById("text").innerHTML="<h3>Dispensaries near you that offer "
+            + disp_json.strain + "</h3><hr>"
+          document.getElementById("desc").innerHTML="<br><br>" + disp_json.desc +
+            "<p align='right'><i>source: Leafly.com</i></p>";
+      if (disp_json.count === 0 || !disp_json.strain) {
+          y.style.display = "none";
+          z.style.display = "block";
       } else {
+          z.style.display = "none";
           let marker, disp, html;
           for (let key in disp_json.dispensaries) {
               disp = disp_json.dispensaries[key];
@@ -95,10 +109,11 @@ function initMap(evt) {
               bindInfoWindow(marker, map, infoWindow, html);
           } //end for loop
           // only show div if strain is found
-          let x = document.getElementById("search-results");
+          if (y.style.display === "block") {
+              y.style.display = "none"; }
           if (x.style.display === "none") {
-              x.style.display = "block";
-          } // end if
+              x.style.display = "block"; }
+           // end if
       } //end else
 
   }); //end ajax
@@ -114,13 +129,14 @@ function bindInfoWindow(marker, map, infoWindow, html) {
 ); // end event listener
 </script>
 
-<a href="/strains"><h3>Not sure?</h3></a>
-
+<a href="/strains"><h3>Not sure?</h3></a><hr>
 <div id="search-results" style="display:none">
-<hr>
 <div id="text"></div>
 <div id='map'></div>
+<div id="desc" align="left"></div>
 </div>
+<div id="loading" style="display:none"><h4>~ Searching ~</h4></div>
+<div id="no-results" style="display:none"><h4>No dispenaries near you offer this strain, sorry!</h4></div>
 
 </div>
 {% endblock %}

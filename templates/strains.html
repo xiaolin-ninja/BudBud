@@ -40,7 +40,8 @@
         <p> {% for s in indicas %}
         <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
               data-strain={{ s.strain_id }}>
-        <div id="strain">{{ s.s_name }}</div></a></b><br>
+        {{ s.s_name }}
+        </a></b><br>
         </p>
         {% endfor %}
     </div>
@@ -67,11 +68,10 @@
         <div class="modal-body">
           Page loading.
         </div>
-        <div class="modal-map">
-          <hr>
-        </div>
-        <div class="modal-recs">
-        </div>
+        <hr>
+        <div class="modal-map"></div>
+        <hr>
+        <div class="modal-recs"></div>
       </div>
   </div>
 </div>
