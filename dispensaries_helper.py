@@ -27,7 +27,6 @@ def get_locations(url):
     """helper function that scrapes for all dispensaries that offer this strain (from Leafly),
     checks if it's in the DB, returns a dictionary"""
     dispensaries = get_dispensaries(url)
-    print "here", dispensaries
 
     disp_json = {}
     # if dispensary is in the database
@@ -42,5 +41,5 @@ def get_locations(url):
                 "address": d.address,
             }
 
-    print 'succesfully created json file'
+    print 'succesfully created json file of dispensaries'
     return disp_json

@@ -15,13 +15,11 @@ function initMap(data) {
     let infoWindow = new google.maps.InfoWindow({
       width: 150
     })
-    console.log('I made an info window~')
+    console.log('I made the info window~')
 
-    // doesn't ever make this get request
-    console.log('I am getting the dispensaries information for map.');
+    console.log('I am querying the dispensaries database.');
     if (data.count === 0) {
         alert('No dispenaries near you offer this strain, sorry!');
-        console.log('no dispensaries')
     } else {
         let marker, disp, html;
 
@@ -32,6 +30,7 @@ function initMap(data) {
               position: new google.maps.LatLng(disp.lat, disp.lng),
               map: map,
               title: disp.name,
+              icon: '/static/img/bud-icon.png',
             });
 
             html = (
