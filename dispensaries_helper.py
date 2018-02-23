@@ -5,7 +5,7 @@ import requests
 
 #---------------------------------------------------------------------------------#
 
-def get_dispensaries(strain):
+def get_dispensaries(route):
     """scrape leafly page for a specific strain given url,
     return dispensaries in SF that offer the strain
 
@@ -13,7 +13,7 @@ def get_dispensaries(strain):
     set([u'Trestl', u'Community Gardens', u'Blum - Oakland', u'{{model.locationName}}', u'Elevated San Francisco', u'Cannabis Express', u'Verde Local', u'Top Shelf Express Delivery', u'BayQueen Delivery'])
 
     """
-    url = 'https://www.leafly.com/{}/availability/san-francisco-ca'.format(strain)
+    url = 'https://www.leafly.com/{}/availability/san-francisco-ca'.format(route)
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     # import pdb; pdb.set_trace()
@@ -43,3 +43,11 @@ def get_locations(url):
 
     print 'succesfully created json file of dispensaries'
     return disp_json
+
+
+def get_strain_info(route):
+    """Get description of strains from Leafly"""
+    url = 'https://www.leafly.com/{}'.format(route)
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    return soup.findAll("div", {"class": "description"})[0].text
