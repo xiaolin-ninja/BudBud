@@ -19,7 +19,9 @@ function initMap(data) {
 
     console.log('I am querying the dispensaries database.');
     if (data.count === 0) {
-        alert('No dispenaries near you offer this strain, sorry!');
+        let x = document.getElementById("map");
+        x.style.display = "none";
+        document.getElementsByClassName('modal-map')[0].innerHTML = "No dispenaries near you offer this strain, sorry!";
     } else {
         let marker, disp, html;
 

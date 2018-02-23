@@ -41,9 +41,13 @@ def disp_info():
     if not usr_input:
         usr_input = request.args.get("id")
 
+
     strain = Strain.query.filter(func.lower(Strain.s_name)==func.lower(usr_input)).first()
     if not strain:
-        strain = Strain.query.get(usr_input)
+        try:
+            strain = Strain.query.get(usr_input)
+        except:
+            return ""
 
     print "I am checking if {} is in the database.".format(usr_input)
 
@@ -52,12 +56,14 @@ def disp_info():
     print strain, url, 'found in db!'
 
     dispensaries = get_locations(url)
+    description = get_strain_info(url)
     results = { 'dispensaries': dispensaries,
                 'count': len(dispensaries),
                 'strain': usr_input,
                 'pos': strain.pos_effects,
                 'type': strain.s_type,
                 'name': strain.s_name,
+                'desc': description,
                 }
     return jsonify(results)
 

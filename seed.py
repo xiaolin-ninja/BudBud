@@ -21,7 +21,7 @@ def load_strains(json_file):
     """loads strains into database, calls load_strains_data()"""
     for s in load_strains_data(json_file):
         pos_effects = [ effect["DisplayLabel"] for effect in s["Tags"] ]
-        neg_effects = [ effect["DisplayLabel"] for effect in s["NegativeEffects"]]
+        neg_effects = [ ' {} '.format(effect["DisplayLabel"]) for effect in s["NegativeEffects"]]
         s_type=s['Category']
         url = '{}/{}'.format(s_type.lower(), s['UrlName'])
         logtags = s['LogTags']
