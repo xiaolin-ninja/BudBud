@@ -36,8 +36,8 @@
 <!-- on submit, initiate map -->
 <form class="strain_lookup">
 <h2>What strain are you looking for?</h2>
-<input type="text" name="strain" id="user_input" 
-       placeholder="Find Dispensaries!">
+<input type="text" name="strain" id="user_input"
+       placeholder="Start typing...">
 <input type="submit" value="Show Me">
 </form>
 </div>
@@ -45,14 +45,9 @@
 <script>
 // on submit of the form:
 $(".strain_lookup").submit(
-
 function initMap(evt) {
   evt.preventDefault();
   console.log('the submit button is working');
-  let x = document.getElementById("search-results");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        }
     // create map
   let sf = {lat: 37.7995971, lng: -122.327749};
   let map = new google.maps.Map(document.getElementById('map'), {
@@ -68,10 +63,10 @@ function initMap(evt) {
   let infoWindow = new google.maps.InfoWindow({
     width: 150
   });
-  console.log('I made an info window~')
+  console.log('I made the info window~')
 
   // fill in the map
-  $.get('/map.json', {'strain':$('#user_input').val()}, 
+  $.get('/map.json', {'strain':$('#user_input').val()},
       function(disp_json) {
           console.log('I am getting the dispensaries information for map');
           document.getElementById("text").innerHTML="<h3>Dispensaries near you that offer "+disp_json.strain+"</h3><hr>"
@@ -86,6 +81,7 @@ function initMap(evt) {
                 position: new google.maps.LatLng(disp.lat, disp.lng),
                 map: map,
                 title: disp.name,
+                icon: '/static/img/bud-icon.png',
               });
 
               html = (
@@ -98,7 +94,13 @@ function initMap(evt) {
 
               bindInfoWindow(marker, map, infoWindow, html);
           } //end for loop
+          // only show div if strain is found
+          let x = document.getElementById("search-results");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } // end if
       } //end else
+
   }); //end ajax
 
 function bindInfoWindow(marker, map, infoWindow, html) {
@@ -110,15 +112,13 @@ function bindInfoWindow(marker, map, infoWindow, html) {
   }
 } // end initMap
 ); // end event listener
-
 </script>
 
 <a href="/strains"><h3>Not sure?</h3></a>
 
 <div id="search-results" style="display:none">
 <hr>
-<div id="text">
-</div>
+<div id="text"></div>
 <div id='map'></div>
 </div>
 

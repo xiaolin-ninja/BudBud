@@ -8,7 +8,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 from sqlalchemy import func
 
 from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry,
-                   Trip_Report, User_Search, Anon_Search, db, 
+                   Trip_Report, User_Search, Anon_Search, db,
                    update_search_db, connect_to_db, make_autocomplete)
 
 from dispensaries_helper import *
@@ -37,26 +37,29 @@ def disp_info():
        Extract lat, long, address from each dispensary returned.
        Compiles strain information for strain page modals."""
 
-    print "I am seeing if the strain is in the database."
     usr_input = request.args.get("strain")
+    if not usr_input:
+        usr_input = request.args.get("id")
+
     strain = Strain.query.filter(func.lower(Strain.s_name)==func.lower(usr_input)).first()
+    if not strain:
+        strain = Strain.query.get(usr_input)
 
-    if strain:
-        print strain, 'found in db!'
-        update_search_db(strain, session.get('current_user'))
-        url = strain.leafly_url
-        print "found it:", url
+    print "I am checking if {} is in the database.".format(usr_input)
 
-        dispensaries = get_locations(url)
-        results = { 'dispensaries': dispensaries,
-                    'count': len(dispensaries),
-                    'strain': usr_input,
-                    'pos': strain.pos_effects,
-                    'name': strain.s_name, }
-        return jsonify(results)
-    else:
-        flash("Strain not found! Sorry.")
-        return redirect('/')
+    update_search_db(strain, session.get('current_user'))
+    url = strain.leafly_url
+    print strain, url, 'found in db!'
+
+    dispensaries = get_locations(url)
+    results = { 'dispensaries': dispensaries,
+                'count': len(dispensaries),
+                'strain': usr_input,
+                'pos': strain.pos_effects,
+                'type': strain.s_type,
+                'name': strain.s_name,
+                }
+    return jsonify(results)
 
 
 @app.route('/login', methods=['POST'])
@@ -148,6 +151,7 @@ def new_journal():
                                journal_label=journal_label))
     db.session.commit()
     return redirect("/journal")
+
 
 @app.route('/strains')
 def display_goodies():
