@@ -11,13 +11,13 @@ from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry,
                    Trip_Report, User_Search, Anon_Search, db,
                    update_search_db, connect_to_db, make_autocomplete)
 
-from dispensaries_helper import *
+from helpers import *
 
 app = Flask(__name__)
 app.secret_key = 'supertopsecret'
 app.jinja_env.undefined = StrictUndefined
 
-#---------------------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 # @app.before_request
 # def add_test():
@@ -64,6 +64,7 @@ def disp_info():
                 'type': strain.s_type,
                 'name': strain.s_name,
                 'desc': description,
+                'url': url
                 }
     return jsonify(results)
 
@@ -150,7 +151,7 @@ def show_journal():
 @app.route("/journal/new", methods=["POST"])
 def new_journal():
     """Create New Bud Journal."""
-    journal_label = request.form.get('name')
+    journal_label = request.form.get('journal_label')
     user_id = session['current_user']
 
     db.session.add(Bud_Journal(user_id=user_id,
@@ -158,6 +159,11 @@ def new_journal():
     db.session.commit()
     return redirect("/journal")
 
+@app.route("/strains.json")
+def strain_info():
+    """Returns json file of strain information"""
+    strains = Strain.query.order_by(func.random()).limit(5).all()
+    s = {'strains' : 'strains'}
 
 @app.route('/strains')
 def display_goodies():
@@ -178,7 +184,7 @@ def display_goodies():
 #     print results
 #     return jsonify(results)
 
-#---------------------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the
