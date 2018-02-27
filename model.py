@@ -1,5 +1,3 @@
-"""Models and database functions for bud database"""
-
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
@@ -173,6 +171,7 @@ class User_Search(db.Model):
         return "<Search Log id={} user_id={} strain_id={}>".format(self.id, self.user_id,
                                                             self.strain_id, self.location)
 
+
 class Anon_Search(db.Model):
     """Record of anonymous searches, for data collection of popular strains by area"""
 
@@ -181,8 +180,6 @@ class Anon_Search(db.Model):
     anon_search_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     strain_id =  db.Column(db.Integer, db.ForeignKey("strains.strain_id"), nullable=False)
     date_searched =  db.Column(db.DateTime, nullable=False)
-    # location_lat = db.Column(db.LatLng, nullable=False)
-    # location_lng = db.Column(db.LatLng, nullable=False)
 
     def __repr__(self):
         """print info in useful form"""
