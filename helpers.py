@@ -24,8 +24,8 @@ def get_dispensaries(route):
 
 
 def get_locations(url):
-    """helper function that scrapes for all dispensaries that offer this strain (from Leafly),
-    checks if it's in the DB, returns a dictionary"""
+    """helper function that scrapes for all dispensaries that offer this strain
+    (from Leafly), checks if it's in the DB, returns a dictionary"""
     dispensaries = get_dispensaries(url)
 
     disp_json = {}
@@ -51,3 +51,14 @@ def get_strain_info(route):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     return soup.findAll("div", {"class": "description"})[0].text
+
+
+# ---------------------------------------------------------------------------- #
+if __name__ == "__main__":
+    import doctest
+
+    print
+    result = doctest.testmod()
+    if not result.failed:
+        print "ALL TESTS PASSED. GOOD WORK!"
+    print
