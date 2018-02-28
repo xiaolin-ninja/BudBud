@@ -24,19 +24,19 @@ Chill with Your Bud (Journal)!
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
+          <img src="https://placehold.it/800x400?text=IMAGE" alt="Image">
           <div class="carousel-caption">
             <h3 class="header">FILLER</h3>
             <p>Money Money.</p>
           </div>
-          <img src="./static/img/smoke1.jpg" alt="Image">
         </div>
 
         <div class="item">
+          <img src="https://placehold.it/800x400?text=Another Image Maybe" alt="Image">
           <div class="carousel-caption">
             <h3 class="header">SUPER FILLER</h3>
             <p>Lorem ipsum...</p>
           </div>
-          <img src="./static/img/party1.jpg" alt="Image">
         </div>
       </div>
 
@@ -66,68 +66,94 @@ Chill with Your Bud (Journal)!
   </div>
 </div>
 
-<!-- Modal Template -->
-
-<div class="modal fade" id="newJournalmodal" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal -->
+<div class="modal fade" id='newJournalmodal' tabindex="-1" role="dialog"
+     aria-labelledby="newjournalmodal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title" id="newJournalTitle">Modal title</h5>
       </div>
+
       <div class="modal-body">
-        <p>Modal body text.</p>
-      </div>
-      <div class="modal-footer">
+        <form id="createJournal" action="/journal/new" method="POST">
+        Name: <input type="text" name="journal_label" required><br>
+        <hr>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <input type="submit" class="btn btn-primary" value="Save Changes" id='newjbtn'>
+        </form>
       </div>
+
     </div>
   </div>
 </div>
-
-<!-- end modal -->
 <hr>
-
-<!-- Bud Journals Section -->
 
 <div class="container text-center">
   <h3 class="header">Bud Journals</h3>
+  {% for entry in journals %}
 
-  <!-- create new journal | button trigger modal -->
+  <!-- create new journal modal -->
   <button type="button" class="btn btn-outline-success"
         data-toggle="modal" data-target="#newJournalmodal">New Journal</button>
+  <br><p>
 
-</div>
+<script>
+  $(document).ready(function() {
+    let counter = 1;
+    $("#newjbtn").click(function (evt) {
+       // grab input value from user (add id to modal input)
+       // put/append that value into bud journals div and display to user
+       // make post request to server and pass input value to server route for saving in db
+
+
+
+
+
+
+
+
+
+
+            // $('#newJournalmodal').style.display = "none";
+            $('<div/>',{'class':'col-sm-3 panel panel-default', 'id':'journal' + counter}).html(
+              $('<div/>', {'class':'panel-heading'}). html(
+                $('<h4/>', {'class':'panel-title'}).
+                html(
+                  $('<a/>').attr({'data-toggle':'collapse', 'href':'#collapse'+counter}).html(
+                    $.get('/journal/new')['journal_label'])
+                  ))
+            )
+            .append($('<div class="strains"/>').html( 'strains go here' ))
+            .appendTo( '#journalsGroup' )
+            counter++;
+            //
+            $.get('/journal/new')
+    })
+  });
+</script>
 
 <!-- Journals -->
-<div class="row panel-group" id="journalsGroup">
-
-{% for journal in journals %}
-  <div class="col-sm-3">
-    <div class="panel panel-default" id={{ journal.journal_id }}>
+  <div class="row panel-group" id="journalsGroup">
+<!--  <div class="col-sm-3 panel panel-default" id="journal1">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-target="#journal">
-            {{ journal.journal_label }}
-          </a>
-        </h4>
-      </div>
+          <a data-toggle="collapse" href="#collapse1">TITLE</a></h4>
+          <div class="strains">
+            <ul>
+              <li> this strain is good </li>
+              <li> So is this! </li>
+            </ul>
+          </div>
+    </div>
+  </div> -->
+  </div>
 
-      <div id="journal" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <ul>
-          {% for entry in journal.entries %}
-          <li> {{ entry.strain.s_name }}
-          </ul>
-
-
-what's inside here?
-
-</div>
-
-
-</div>
-<!-- Close container div -->
-
+<!-- toggle journal display -->
+<script>
+$('.panel-heading').click(function() {
+  $('.strains').toggle();
+})
+</script>
 
 {% endblock %}

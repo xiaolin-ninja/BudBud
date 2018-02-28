@@ -259,7 +259,7 @@ def example_data():
                                 disp_lng=-122.327749,
                                 address='1234 123 street, SF, CA')
 
-    db.session.add_all([anna, hb_kush, ubermelon, frf])
+    db.session.add_all([anna, hb_kush, ubermelon, frf, ballonicorn])
     db.session.commit()
 
     j = Bud_Journal(user_id=anna.user_id,
@@ -286,12 +286,20 @@ def example_data():
                                  with the watermelon rinds and we made great art! haha",
                           dankness=0)
 
-    db.session.add_all([story, entry])
+    entry2 = Journal_Entry(user_id=anna.user_id,
+                      journal_id=j.journal_id,
+                      strain_id=ballonicorn.strain_id,
+                      user_rating=4,
+                      story_id=story.story_id,
+                      # timestamp=??,
+                      notes="I feel like a balloon!")
+
+    db.session.add_all([story, entry, entry2])
     db.session.commit()
 
 ##############################################################################
 
-def connect_to_db(app, db_uri="postgresql:///budbud"):
+def connect_to_db(app, db_uri="postgresql:///testdb"):
     """Connect the database to our Flask app."""
 
     # Configure to use our PstgreSQL database
