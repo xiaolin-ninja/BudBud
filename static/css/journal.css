@@ -14,9 +14,19 @@
 
     /* Add a gray background color and some padding to the footer */
 
-    .carousel-inner img {
+    .carousel-inner {
       width: 100%; /* Set width to 100% */
-      min-height: 200px;
+      height: 400px;
+    }
+
+    .carousel-inner img {
+      margin: auto;
+      height: 100%;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      padding-bottom: 100px;
     }
 
     /* Hide the carousel text when the screen is less than 600 pixels wide */
