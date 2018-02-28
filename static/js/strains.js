@@ -12,7 +12,7 @@ $('.openmodal').click(function(evt) {
         console.log('I am inside the modal');
         document.getElementsByClassName('modal-title')[0].innerHTML = json.name;
         document.getElementsByClassName('modal-body')[0].innerHTML = json.pos +
-            "<br><br><div class='description' align='left'>" + json.desc + 
+            "<br><br><div class='description' align='left'>" + json.desc +
             "</div><br><p align='right'><i>"+
             "source: <a href='https://www.leafly.com/"+json.url+"' target='_blank'>"+
             "Leafly.com</a></i></p>";
