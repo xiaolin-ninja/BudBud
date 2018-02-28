@@ -4,7 +4,7 @@ import re
 from server import app
 import datetime
 from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry,
-                   Trip_Report, User_Search, Anon_Search, db, update_search_db, connect_to_db)
+                   Trip_Report, User_Search, Anon_Search, db, update_search_db, connect_to_db, example_data)
 
 def load_strains_data(json_file):
     """reads json file of strains & extracts relevant info"""
@@ -98,3 +98,4 @@ if __name__ == "__main__":
     load_strains('seed_data/sativas.json')
     load_dispensaries()
     load_test_user()
+    example_data()

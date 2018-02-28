@@ -139,7 +139,8 @@ def show_journal():
     logged_in = session.get('current_user')
     if logged_in:
         current_user = User.query.get(logged_in)
-        return render_template('journal_home.html', user=current_user.fname)
+        journals = Bud_Journal.query.filter_by(user_id=user_id).all()
+        return render_template('journal_home.html', user=current_user.fname, journals=journals)
     else:
         flash("Please log in to access journal")
         return redirect("/")
@@ -153,17 +154,24 @@ def new_journal():
     """Create New Bud Journal."""
     journal_label = request.form.get('journal_label')
     user_id = session['current_user']
+    print 'I am creating a new journal'
 
-    db.session.add(Bud_Journal(user_id=user_id,
-                               journal_label=journal_label))
+    new_journal = Bud_Journal(user_id=user_id,
+                               journal_label=journal_label)
+    db.session.add(new_journal)
     db.session.commit()
-    return redirect("/journal")
 
-@app.route("/strains.json")
-def strain_info():
-    """Returns json file of strain information"""
-    strains = Strain.query.order_by(func.random()).limit(5).all()
-    s = {'strains' : 'strains'}
+    journal = {'label':journal_label,
+               'id': new_journal.id }
+
+    return jsonify(journal)
+
+
+# @app.route("/strains.json")
+# def strain_info():
+#     """Returns json file of strain information"""
+#     strains = Strain.query.order_by(func.random()).limit(5).all()
+#     s = {'strains' : 'strains'}
 
 @app.route('/strains')
 def display_goodies():
