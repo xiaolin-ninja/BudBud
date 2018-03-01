@@ -1,19 +1,23 @@
 {% extends 'base.html' %}
 {% block title %}Bud Journal{% endblock %}
-{% block head %}
-<link href="/static/css/journal.css" rel="stylesheet">
+{% block navbar_current %}
+      <ul class="nav navbar-nav">
+        <li><a href="/">Search</a></li>
+        <li><a href="/strains">Strains</a></li>
+        <li class="active"><a href="/journal">Bud Journal</a></li>
+      </ul>
 {% endblock %}
-{% block heading %}
-Chill with Your Bud (Journal)!
-<hr>
-{% endblock %}
+
+{% block heading %} Chill with Your Bud (Journal) {% endblock %}
 {% block content %}
+<hr>
+<link href="/static/css/journal.css" rel="stylesheet">
 
 <div class="container">
 
 <div class="row">
   <div class="col-sm-8">
-    <h2 class="header"> Trip Reports </h2>
+    <h2 class="header"> Storytime! </h2>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -24,20 +28,22 @@ Chill with Your Bud (Journal)!
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
+          <img src="./static/img/smoke2.jpg" alt="Image">
           <div class="carousel-caption">
-            <h3 class="header">FILLER</h3>
-            <p>Money Money.</p>
+            <h3 class="header">Add your own!</h3>
+            <p>Add a story in bud jorunal...</p>
+          </div>
+        </div>
+        {% for story in stories %}
+        <div class="item">
+          <div class="carousel-caption">
+            <h3 class="header">{{ story.user.fname }} | {{ story.strain.s_name }}</h3>
+            <p>{{ story.story }}</p>
+            <p> Is this dank? +{{ story.dankness }}</p>
           </div>
           <img src="./static/img/smoke1.jpg" alt="Image">
         </div>
-
-        <div class="item">
-          <div class="carousel-caption">
-            <h3 class="header">SUPER FILLER</h3>
-            <p>Lorem ipsum...</p>
-          </div>
-          <img src="./static/img/party1.jpg" alt="Image">
-        </div>
+        {% endfor %}
       </div>
 
       <!-- Left and right controls -->
@@ -66,68 +72,109 @@ Chill with Your Bud (Journal)!
   </div>
 </div>
 
-<!-- Modal Template -->
-
-<div class="modal fade" id="newJournalmodal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- end modal -->
 <hr>
 
 <!-- Bud Journals Section -->
-
-<div class="container text-center">
+<div class="container text-center journals">
   <h3 class="header">Bud Journals</h3>
+<!-- create new journal | button trigger toggle -->
+<hr id="headinghr">
 
-  <!-- create new journal | button trigger modal -->
-  <button type="button" class="btn btn-outline-success"
-        data-toggle="modal" data-target="#newJournalmodal">New Journal</button>
+<button class="btn btn-success active" type="button" data-toggle="collapse"
+        data-target="#newJournalform" aria-expanded="false" aria-controls="newJournalform">
+  Add New Journal
+</button>
+
+<div class="collapse" id="newJournalform">
+<form id="createJournal" action="/journal/new" method="POST">
+    <div id="createJournalform">
+    <label for="journal_label" style="color:white; margin-bottom:10px">
+      Journal Name:</label>
+    <input type="text" name="journal_label" class="form-control" id="journal_label" aria-describedby="name"
+           placeholder="Enter an activity you enjoy :)" required>
+    <small id="name" class="form-text text-muted" style="color:lightgray">
+      Organize your buds for the best time with your buds.</small>
+    <br><br>
+    <input type="submit" class="btn btn-success btn-sm" value="Yeaaaah buddy!">
+    </div>
+</form>
+</div>
+
+<!-- Add to existing journal -->
+<button type="button" class="btn btn-info active" id="updateJournal"
+      data-toggle="collapse" data-target="#updateJournalform" aria-expanded="false" aria-controls="updateJournalform">
+  Update Journal
+</button>
+
+<div class="collapse" id="updateJournalform">
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
 
 </div>
 
+
 <!-- Journals -->
 <div class="row panel-group" id="journalsGroup">
-
+  <hr style="border-top: 1px dashed #8c8b8b">
 {% for journal in journals %}
   <div class="col-sm-3">
     <div class="panel panel-default" id={{ journal.journal_id }}>
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-target="#journal">
+          <a data-toggle="collapse" data-target="#journal{{journal.journal_id}}">
             {{ journal.journal_label }}
           </a>
         </h4>
       </div>
 
-      <div id="journal" class="panel-collapse collapse in">
+      <div id="journal{{journal.journal_id}}" class="panel-collapse collapse">
         <div class="panel-body">
-          <ul>
+          <ul style="list-style-type:none; padding:0em">
           {% for entry in journal.entries %}
-          <li> {{ entry.strain.s_name }}
+          <li><a href='https://www.leafly.com/{{ entry.strain.leafly_url }}' target='_blank'>{{ entry.strain.s_name }}</a>,
+          {{ entry.strain.s_type }}</li>
+          {% endfor %}
           </ul>
-
-
-what's inside here?
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
 
 </div>
 
+</div>
 
 </div>
+<script src="/static/js/journal.js"></script>
 <!-- Close container div -->
-
-
 {% endblock %}

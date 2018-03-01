@@ -139,8 +139,13 @@ def show_journal():
     logged_in = session.get('current_user')
     if logged_in:
         current_user = User.query.get(logged_in)
-        journals = Bud_Journal.query.filter_by(user_id=user_id).all()
-        return render_template('journal_home.html', user=current_user.fname, journals=journals)
+        auto_strains = make_autocomplete()
+        journals = Bud_Journal.query.filter_by(user_id=logged_in).all()
+        stories = Trip_Report.query.order_by(func.random()).limit(5).all()
+        return render_template('journal_home.html', user=current_user.fname,
+                                                    journals=journals,
+                                                    stories=stories,
+                                                    auto_strains=auto_strains,)
     else:
         flash("Please log in to access journal")
         return redirect("/")
@@ -161,10 +166,44 @@ def new_journal():
     db.session.add(new_journal)
     db.session.commit()
 
-    journal = {'label':journal_label,
-               'id': new_journal.id }
+    return redirect('/journal')
 
-    return jsonify(journal)
+
+@app.route("/journal/update", methods=["POST"])
+def new_entry():
+    """Modify Existing Bud Journal."""
+    journal = request.form.get('journal')
+    input_strain = request.form.get('strain')
+    rating = request.form.get('rating')
+    user_id = session['current_user']
+    story = request.form.get('new_story')
+
+    strain = Strain.query.filter_by(s_name=input_strain).first()
+
+    entry = Journal_Entry(user_id=anna.user_id,
+                      journal_id=j.journal_id,
+                      strain_id=ubermelon.strain_id,
+                      user_rating=5,
+                      # timestamp=??,
+                      notes="Don't smoke too much, don't cross with alcohol.")
+
+
+    print 'I am creating a new journal'
+
+    db.session.add(entry)
+    db.session.commit()
+
+    story = Trip_Report(journal_id=journal.journal_id,
+                          user_id=user_id,
+                          strain_id=strain.strain_id,
+                          dosage=dosage,
+                          story=story,
+                          dankness=0)
+
+    db.session.add(story)
+    db.session.commit()
+
+    return redirect('/journal')
 
 
 # @app.route("/strains.json")
