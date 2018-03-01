@@ -1,37 +1,79 @@
 
-    div {
-      color: #000;
-    }
+div label {
+  color: #000;
+}
 
-    li {
-      text-align: left;
-      padding: 0.5em;
-    }
+#journal_label {
+  width: 80%;
+  margin:0 auto;
+}
 
-    .header {
-      color: #fff;
-    }
+#headinghr {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
 
-    /* Add a gray background color and some padding to the footer */
+#createJournalform {
+  padding: 1.5em;
+  border: white 2px solid;
+  width: 30%;
+  margin: 20px auto;
+  position: relative;
+}
 
-    .carousel-inner {
-      width: 100%; /* Set width to 100% */
-      height: 400px;
-    }
+#updateJournalform {
+  padding: 1.5em;
+  border: white 2px solid;
+  width: 50%;
+  margin: 20px auto;
+  position: relative;
+}
 
-    .carousel-inner img {
-      margin: auto;
-      height: 100%;
-    }
+.well li {
+  text-align: left;
+  padding: 0.5em;
+  color: #000;
+}
 
-    .carousel-caption {
-      position: absolute;
-      padding-bottom: 100px;
-    }
+.header {
+  color: #fff;
+}
 
-    /* Hide the carousel text when the screen is less than 600 pixels wide */
-    @media (max-width: 600px) {
-      .carousel-caption {
-        display: none;
-      }
-    }
+.panel-group {
+  margin: 10px 70px;
+}
+
+.panel {
+  background-color: transparent;
+  border: none;
+  height: 150px;
+}
+
+.panel-body {
+  color: #fff;
+}
+
+.carousel-inner {
+  width: 100%; /* Set width to 100% */
+  height: 400px;
+}
+
+.carousel-inner img {
+  margin: auto;
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  padding-bottom: 100px;
+  bottom: 100px;
+  text-align: left;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}

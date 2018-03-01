@@ -98,4 +98,4 @@ if __name__ == "__main__":
     load_strains('seed_data/sativas.json')
     load_dispensaries()
     load_test_user()
-    example_data()
+    # example_data()
