@@ -265,7 +265,10 @@ def example_data():
     j = Bud_Journal(user_id=anna.user_id,
                           journal_label='Making Art')
 
-    db.session.add(j)
+    k = Bud_Journal(user_id=anna.user_id,
+                          journal_label='Eating')
+
+    db.session.add_all([j, k])
     db.session.commit()
 
     # creation should be mocked...?
@@ -276,9 +279,9 @@ def example_data():
                           # timestamp=??,
                           notes="Don't smoke too much, don't cross with alcohol.")
 
-    story = Trip_Report(journal_id=j.journal_id,
+    story = Trip_Report(journal_id=k.journal_id,
                           user_id=anna.user_id,
-                          strain_id=ubermelon.strain_id,
+                          strain_id=ballonicorn.strain_id,
                           dosage=15,
                           story="I was smoking Ubermelon with my friends while eating \
                                  a watermelon we ordered from Ubermelon and it was amazing! \
@@ -286,20 +289,24 @@ def example_data():
                                  with the watermelon rinds and we made great art! haha",
                           dankness=0)
 
+    db.session.add_all([story, entry])
+    db.session.commit()
+
+
     entry2 = Journal_Entry(user_id=anna.user_id,
-                      journal_id=j.journal_id,
+                      journal_id=k.journal_id,
                       strain_id=ballonicorn.strain_id,
                       user_rating=4,
                       story_id=story.story_id,
                       # timestamp=??,
                       notes="I feel like a balloon!")
 
-    db.session.add_all([story, entry, entry2])
+    db.session.add(entry2)
     db.session.commit()
 
 ##############################################################################
 
-def connect_to_db(app, db_uri="postgresql:///testdb"):
+def connect_to_db(app, db_uri="postgresql:///budbud"):
     """Connect the database to our Flask app."""
 
     # Configure to use our PstgreSQL database
