@@ -56,8 +56,9 @@ class Strain(db.Model):
     def __repr__(self):
         """print info in useful form"""
 
-        return "<Strain {} name={} type={}>".format(self.strain_id, self.s_name,
-                                            self.s_type)
+        return "<Strain {} name={} type={}>".format(self.strain_id,
+                self.s_name, self.s_type)
+
 
 class Dispensary(db.Model):
     """Popular strains"""
@@ -73,6 +74,7 @@ class Dispensary(db.Model):
     def __repr__(self):
         """print info in useful form"""
         return "<Dispensary name={}>".format(self.name)
+
 
 class Bud_Journal(db.Model):
     """Journal Log History"""
@@ -90,6 +92,7 @@ class Bud_Journal(db.Model):
         """print info in useful form"""
         return "<Journal id={} user_id={}>".format(
                                                 self.journal_id, self.user_id)
+
 
 class Journal_Entry(db.Model):
     """Journal Log History"""
