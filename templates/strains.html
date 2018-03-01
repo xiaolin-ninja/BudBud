@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 {% block title %}Strains{% endblock %}
 {% block theme %}All for One and One for All!{% endblock %}
+{% block navbar_current %}
+      <ul class="nav navbar-nav">
+        <li><a href="/">Search</a></li>
+        <li class="active"><a href="/strains">Strains</a></li>
+        <li><a href="/journal">Bud Journal</a></li>
+      </ul>
+{% endblock %}
 {% block head %}
 <link rel="stylesheet" href="static/css/strain-tabs.css">
 <link rel="stylesheet" href="static/css/strain-modal.css">
@@ -63,13 +70,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Please Wait...</h4>
+          <h4 class="modal-title">Patience Please...</h4>
         </div>
         <div class="modal-body">
-          Page loading.
+          Loading page
         </div>
         <hr>
-        <div class="modal-map"></div>
+        <div class="modal-map"><center>:)</center></div>
         <hr>
         <div class="modal-recs"></div>
       </div>

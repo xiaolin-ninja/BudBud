@@ -10,7 +10,6 @@
   {% endblock %}
 
   <!-- Navbar -->
-{% block navbar %}
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -23,11 +22,13 @@
       <a class="navbar-brand" href="/">BudBud</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
+      {% block navbar_current %}
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Search</a></li>
+        <li><a href="/">Search</a></li>
         <li><a href="/strains">Strains</a></li>
         <li><a href="/journal">Bud Journal</a></li>
       </ul>
+      {% endblock %}
 
       <ul class="nav navbar-nav navbar-right">
         {% if session.get('current_user') %}
@@ -62,7 +63,6 @@
     </div>
   </div>
 </nav>
-{% endblock %}
 
 {% block alert %}
 {% with messages = get_flashed_messages() %}

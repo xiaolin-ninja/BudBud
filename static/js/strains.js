@@ -25,18 +25,19 @@ $('.openmodal').click(function(evt) {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
-    document.getElementsByClassName('modal-title')[0].innerHTML = "Please Wait...";
-    document.getElementsByClassName('modal-body')[0].innerHTML = "Loading page";
-    document.getElementsByClassName('modal-map')[0].innerHTML = ":)";
+    reset_modal()
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
-        document.getElementsByClassName('modal-title')[0].innerHTML = "Please Wait...";
-        document.getElementsByClassName('modal-body')[0].innerHTML = "Loading page";
-        document.getElementsByClassName('modal-map')[0].innerHTML = ":)";
+        reset_modal()
     }
+}
+
+function reset_modal() {
+    modal.style.display = "none";
+    document.getElementsByClassName('modal-title')[0].innerHTML = "Patience Please...";
+    document.getElementsByClassName('modal-body')[0].innerHTML = "Loading page";
+    document.getElementsByClassName('modal-map')[0].innerHTML = ":)";
 }
