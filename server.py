@@ -172,38 +172,40 @@ def new_journal():
 @app.route("/journal/update", methods=["POST"])
 def new_entry():
     """Modify Existing Bud Journal."""
-    journal = request.form.get('journal')
+    user_id = session['current_user']
+    journal_id = request.form.get('journal')
     input_strain = request.form.get('strain')
     rating = request.form.get('rating')
-    user_id = session['current_user']
+    note = request.form.get('note')
+    dosage = request.form.get('dosage')
     story = request.form.get('new_story')
 
+    print 'hi'
     strain = Strain.query.filter_by(s_name=input_strain).first()
+    print strain
 
-    entry = Journal_Entry(user_id=anna.user_id,
-                      journal_id=j.journal_id,
-                      strain_id=ubermelon.strain_id,
-                      user_rating=5,
-                      # timestamp=??,
-                      notes="Don't smoke too much, don't cross with alcohol.")
+    if story:
+        story = Trip_Report(journal_id=journal_id,
+                              user_id=user_id,
+                              strain_id=strain.strain_id,
+                              dosage=dosage,
+                              story=story,
+                              dankness=0)
 
+        db.session.add(story)
+        db.session.commit()
 
-    print 'I am creating a new journal'
+    entry = Journal_Entry(journal_id=journal_id,
+                        user_id=user_id,
+                        strain_id=strain.strain_id,
+                        rating=rating,
+                        story_id=story.story_id,
+                        )
 
     db.session.add(entry)
     db.session.commit()
 
-    story = Trip_Report(journal_id=journal.journal_id,
-                          user_id=user_id,
-                          strain_id=strain.strain_id,
-                          dosage=dosage,
-                          story=story,
-                          dankness=0)
-
-    db.session.add(story)
-    db.session.commit()
-
-    return redirect('/journal')
+    return "I updated ", journal, "!"
 
 
 # @app.route("/strains.json")
