@@ -103,11 +103,9 @@ class Journal_Entry(db.Model):
     journal_id = db.Column(db.Integer, db.ForeignKey("journals.journal_id"), nullable=False)
     user_id =  db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
     strain_id =  db.Column(db.Integer, db.ForeignKey("strains.strain_id"), nullable=False)
-    story_id = db.Column(db.Integer, db.ForeignKey("stories.story_id"), nullable=True)
     user_rating =  db.Column(db.Integer, nullable=False)
-    # automated from time of entry
-    entry_date = db.Column(db.DateTime, nullable=True)
     notes =  db.Column(db.Text, nullable=True)
+    story_id = db.Column(db.Integer, db.ForeignKey("stories.story_id"), nullable=True)
 
     user = db.relationship("User", backref=db.backref("entires",
                                                       order_by=strain_id))
@@ -119,8 +117,11 @@ class Journal_Entry(db.Model):
 
     def __repr__(self):
         """print info in useful form"""
-        return "<Journal Log id={} in journal={} by user={}>".format(
-                                                self.log_id, self.journal_id, self.user_id, self.strain_id)
+        return "<Entry id={}, strain={} in journal={} by user={}>".format(
+                                                self.log_id,
+                                                self.strain.s_name,
+                                                self.journal.journal_label,
+                                                self.user_id)
 
 
 class Trip_Report(db.Model):
@@ -132,8 +133,8 @@ class Trip_Report(db.Model):
     journal_id = db.Column(db.Integer, db.ForeignKey("journals.journal_id"), nullable=False)
     user_id =  db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
     strain_id =  db.Column(db.Integer, db.ForeignKey("strains.strain_id"), nullable=False)
-    ## USE A DATE PICKER for date-taken
-    use_date = db.Column(db.DateTime, nullable=True)
+    # ## USE A DATE PICKER for date-taken
+    # use_date = db.Column(db.DateTime, nullable=True)
     dosage =  db.Column(db.Integer, nullable=True)
     ## auto-generated from page, time of addition of this post
     timestamp = db.Column(db.DateTime, nullable=True)
