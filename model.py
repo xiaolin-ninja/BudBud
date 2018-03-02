@@ -130,7 +130,6 @@ class Trip_Report(db.Model):
     __tablename__ = "stories"
 
     story_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    journal_id = db.Column(db.Integer, db.ForeignKey("journals.journal_id"), nullable=False)
     user_id =  db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
     strain_id =  db.Column(db.Integer, db.ForeignKey("strains.strain_id"), nullable=False)
     # ## USE A DATE PICKER for date-taken
@@ -143,9 +142,6 @@ class Trip_Report(db.Model):
 
     user = db.relationship("User", backref=db.backref("stories",
                                                       order_by=strain_id))
-    journal = db.relationship("Bud_Journal", backref=db.backref("stories",
-                                                      order_by=strain_id))
-    # CHECK IF THIS WORKS LATER, HOW TO SORT BY 2?
     strain = db.relationship("Strain", backref=db.backref("stories",
                                                         order_by=user_id))
 
