@@ -54,14 +54,14 @@
 // on submit of the form:
 $(".strain_lookup").submit(
 function initMap(evt) {
-  let x = document.getElementById("search-results");
-    if (x.style.display === "block") {
-        x.style.display = "none";}
-  let y = document.getElementById("loading");
-    if (y.style.display === "none") {
-        y.style.display = "block";}
-  let z = document.getElementById("no-results");
-        z.style.display = "none";
+  let searchResults = document.getElementById("search-results");
+    if (searchResults.style.display === "block") {
+        searchResults.style.display = "none";}
+  let loadingMsg = document.getElementById("loading");
+    if (loadingMsg.style.display === "none") {
+        loadingMsg.style.display = "block";}
+  let noResults = document.getElementById("no-results");
+        noResults.style.display = "none";
 
   evt.preventDefault();
   console.log('the submit button is working');
@@ -90,11 +90,13 @@ function initMap(evt) {
             + disp_json.strain + "</h3><hr>"
           document.getElementById("desc").innerHTML="<br><br>" + disp_json.desc +
             "<p align='right'><i>source: Leafly.com</i></p>";
+      // if nothing is returned, display no results
       if (disp_json.count === 0 || !disp_json.strain) {
-          y.style.display = "none";
-          z.style.display = "block";
+          loadingMsg.style.display = "none";
+          noResults.style.display = "block";
       } else {
-          z.style.display = "none";
+        // hide no results, show map
+          noResults.style.display = "none";
           let marker, disp, html;
           for (let key in disp_json.dispensaries) {
               disp = disp_json.dispensaries[key];
@@ -116,11 +118,11 @@ function initMap(evt) {
 
               bindInfoWindow(marker, map, infoWindow, html);
           } //end for loop
-          // only show div if strain is found
-          if (y.style.display === "block") {
-              y.style.display = "none"; }
-          if (x.style.display === "none") {
-              x.style.display = "block"; }
+          // toggle loading message & results
+          if (loadingMsg.style.display === "block") {
+              loadingMsg.style.display = "none"; }
+          if (searchResults.style.display === "none") {
+              searchResults.style.display = "block"; }
            // end if
       } //end else
 
