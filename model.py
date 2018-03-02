@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+import random
 
 db = SQLAlchemy()
 
@@ -138,7 +139,8 @@ class Trip_Report(db.Model):
     ## auto-generated from page, time of addition of this post
     timestamp = db.Column(db.DateTime, nullable=True)
     story =  db.Column(db.Text, nullable=False)
-    dankness = db.Column(db.Integer, default=0, nullable=False)
+    dankness = db.Column(db.Integer, default=random.randint(1,50),
+       nullable=False)
 
     user = db.relationship("User", backref=db.backref("stories",
                                                       order_by=strain_id))

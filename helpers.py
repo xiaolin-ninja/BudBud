@@ -3,7 +3,7 @@ import urllib2
 from server import *
 import requests
 
-#---------------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------#
 
 def get_dispensaries(route):
     """scrape leafly page for a specific strain given url,
@@ -53,7 +53,22 @@ def get_strain_info(route):
     return soup.findAll("div", {"class": "description"})[0].text
 
 
-# ---------------------------------------------------------------------------- #
+def check_strain(user_input):
+    """Check if strain is in database,
+    takes in either strain name or ID"""
+    print "I am checking if {} is in the database.".format(user_input)
+    strain = Strain.query.filter(func.lower(Strain.s_name)==func.lower
+        (user_input)).first()
+    # if can't check by name, check by ID.
+    if not strain:
+        try:
+            strain = Strain.query.get(user_input)
+        except:
+            # if strain not found, return empty string
+            return ""
+    return "success"
+
+# --------------------------------------------------------------------------- #
 if __name__ == "__main__":
     import doctest
 

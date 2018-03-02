@@ -2,14 +2,19 @@
 let count = 1;
 
 $('#addStrain').click(function() {
-  if (!$('#findStrain').val()) {
+  let user_input = $('#findStrain').val();
+  if (!user_input) {
     alert('Please enter a strain')
   } else {
-  console.log("I'm inside the event listener");
-  console.log('journal',$('#journal').val(), $('#findStrain').val())
-  if (count > 1) {
+    if (count > 1) {
     alert('Please add one strain at a time.')
-  } else {
+    } else {
+    console.log(`I am checking if ${user_input} is in the database`);
+    $.get('/check_strain', {'strain': user_input}, function(result){
+      console.log(result);
+      if (result=="") {
+        alert('Strain not found in database.')
+      } else {
     $('#strainFormsGroup').show();
     $('#strainFormsGroup').append("\
     <div class='newStrain' id='newStrain"+count+"'>\
@@ -54,8 +59,10 @@ $('#addStory').click(function() {
        placeholder='Share with us your adventure!' name='story'\
        required></textarea> </div> </div> </div>")
     ) //close append new strain
-});} //close else
-}}) //close main else, close main event
+}); //close addStory
+}});  // GET else, GET request
+} // else
+}}) //close main else, close main event listener
 
 function updateJournal(result) {
   console.log(result);
@@ -78,6 +85,7 @@ $('#submitUpdate').click(function(evt) {
         'story': $('#story').val(),
   };
   $.post("/journal/update", newStrainData, updateJournal);
+// To-do: alert error if user inputs random strain
   };
 })
 
