@@ -11,6 +11,8 @@ from model import (User, Strain, Dispensary, Bud_Journal, Journal_Entry,
                    Trip_Report, User_Search, Anon_Search, db,
                    update_search_db, connect_to_db, make_autocomplete)
 
+from datetime import datetime
+
 from helpers import *
 
 app = Flask(__name__)
@@ -168,45 +170,80 @@ def new_journal():
 
     return redirect('/journal')
 
+@app.route("/journal/remove", methods=["POST"])
+def remove_journal():
+    """Remove journal from database"""
+    journal_id = request.form.get('journal')
+    journal = Bud_Journal.query.get(journal_id)
+    print "I'm removing this journal"
+    db.session.delete(journal)
+    db.session.commit()
+
+    return "I deleted {}!".format(journal.journal_label)
+
 
 @app.route("/journal/update", methods=["POST"])
 def new_entry():
     """Modify Existing Bud Journal."""
+    print "I'm inside the route"
     user_id = session['current_user']
     journal_id = request.form.get('journal')
-    input_strain = request.form.get('strain')
-    rating = request.form.get('rating')
-    note = request.form.get('note')
+    usr_input = request.form.get('strain')
+    rating = request.form.get('user_rating')
+    notes = request.form.get('notes')
     dosage = request.form.get('dosage')
-    story = request.form.get('new_story')
+    story_input = request.form.get('story')
+    # Need to hardcode story_id if no submission by user
+    story_id = None
 
-    print 'hi'
-    strain = Strain.query.filter_by(s_name=input_strain).first()
-    print strain
+    # find strain in the database
+    strain = Strain.query.filter_by(s_name=usr_input).first()
 
-    if story:
-        story = Trip_Report(journal_id=journal_id,
+    # if user has a story, add it to database first
+    if story_input:
+        print "I am adding a new story."
+        new_story = Trip_Report(journal_id=journal_id,
                               user_id=user_id,
                               strain_id=strain.strain_id,
                               dosage=dosage,
-                              story=story,
-                              dankness=0)
+                              story=story_input,
+                              dankness=0,
+                              timestamp=datetime.now())
 
-        db.session.add(story)
+        db.session.add(new_story)
         db.session.commit()
+        print "I added a new story"
+        story_id = new_story.story_id
 
+    # Add new entry to journal
+    print "I am adding an entry"
     entry = Journal_Entry(journal_id=journal_id,
-                        user_id=user_id,
-                        strain_id=strain.strain_id,
-                        rating=rating,
-                        story_id=story.story_id,
-                        )
+                            user_id=user_id,
+                            strain_id=strain.strain_id,
+                            user_rating=rating,
+                            notes=notes,
+                            story_id=story_id,
+                            )
 
     db.session.add(entry)
     db.session.commit()
+    print "I added an entry"
 
-    return "I updated ", journal, "!"
+    return "I updated {}!".format(entry)
 
+
+@app.route("/journal/remove_strain.json", methods=["POST"])
+def remove_strain():
+    """Remove strain from journal & database"""
+    log_id = request.form.get('entry')
+    entry = Journal_Entry.query.get(log_id)
+    db.session.delete(entry)
+    print "I am removing this journal entry."
+    db.session.commit()
+    # import pdb; pdb.set_trace()
+    return jsonify({'status': 'success'})
+    # print "I deleted entry {} from {}!".format(entry,
+    #     entry.journal.journal_label)
 
 # @app.route("/strains.json")
 # def strain_info():
