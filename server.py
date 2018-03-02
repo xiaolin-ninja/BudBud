@@ -170,12 +170,17 @@ def new_journal():
 
     return redirect('/journal')
 
+
 @app.route("/journal/remove", methods=["POST"])
 def remove_journal():
     """Remove journal from database"""
     journal_id = request.form.get('journal')
     journal = Bud_Journal.query.get(journal_id)
-    print "I'm removing this journal"
+    entries = Journal_Entry.query.filter_by(journal_id=journal.journal_id).all()
+    for entry in entries:
+        print "I am removing all entries."
+        db.session.delete(entry)
+    print "I'm removing this journal."
     db.session.delete(journal)
     db.session.commit()
 
@@ -202,8 +207,7 @@ def new_entry():
     # if user has a story, add it to database first
     if story_input:
         print "I am adding a new story."
-        new_story = Trip_Report(journal_id=journal_id,
-                              user_id=user_id,
+        new_story = Trip_Report(user_id=user_id,
                               strain_id=strain.strain_id,
                               dosage=dosage,
                               story=story_input,
