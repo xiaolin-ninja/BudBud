@@ -19,7 +19,7 @@ app = Flask(__name__)
 app.secret_key = 'supertopsecret'
 app.jinja_env.undefined = StrictUndefined
 
-#------------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------#
 
 # @app.before_request
 # def add_test():
@@ -39,19 +39,16 @@ def disp_info():
        Extract lat, long, address from each dispensary returned.
        Compiles strain information for strain page modals."""
 
+    # user will either input strain name or select by ID
     usr_input = request.args.get("strain")
     if not usr_input:
         usr_input = request.args.get("id")
 
+    # helper function
+    strain = check_strain(usr_input)
 
-    strain = Strain.query.filter(func.lower(Strain.s_name)==func.lower(usr_input)).first()
     if not strain:
-        try:
-            strain = Strain.query.get(usr_input)
-        except:
-            return ""
-
-    print "I am checking if {} is in the database.".format(usr_input)
+        return ""
 
     update_search_db(strain, session.get('current_user'))
     url = strain.leafly_url
@@ -245,15 +242,10 @@ def remove_strain():
     print "I am removing this journal entry."
     db.session.commit()
     # import pdb; pdb.set_trace()
+    print "I deleted entry {} from {}!".format(entry, entry.journal.journal_label)
     return jsonify({'status': 'success'})
-    # print "I deleted entry {} from {}!".format(entry,
-    #     entry.journal.journal_label)
 
-# @app.route("/strains.json")
-# def strain_info():
-#     """Returns json file of strain information"""
-#     strains = Strain.query.order_by(func.random()).limit(5).all()
-#     s = {'strains' : 'strains'}
+
 
 @app.route('/strains')
 def display_goodies():
@@ -264,17 +256,13 @@ def display_goodies():
     return render_template("strains.html", hybrids=h, indicas=i, sativas=s)
 
 
-# @app.route('/strains.json')
-# def get_strain_info():
-#     """Creates JSON file of strain info to display for modal on click."""
-#     print "I am preparing this strain's information from the db!"
-#     s_id = request.args.get('id')
-#     results = { 'name': strain.s_name,
-#                 'pos': strain.pos_effects }
-#     print results
-#     return jsonify(results)
+@app.route('/check_strain')
+def strain_in_db():
+    """checks if strain is in database"""
+    strain = request.args.get('strain')
+    return check_strain(strain)
 
-#------------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------#
 
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the
