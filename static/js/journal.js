@@ -17,7 +17,8 @@ $('#addStrain').click(function() {
       <label for='rating' class='col-sm-4 col-push-4\
       control-label'>Dankness:</label>\
       <div class='col-sm-2'>\
-        <select type='rating' class='form-control' name='rating' required>\
+        <select type='rating' class='form-control' name='rating' id='rating'\
+        required>\
           <option value='1'>1</option>\
           <option value='2'>2</option>\
           <option value='3'>3</option>\
@@ -30,7 +31,7 @@ $('#addStrain').click(function() {
         <label for='notes' class='col-sm-4 col-push-4 control-label'>\
           Notes:</label> <div class='col-sm-6'>\
         <textarea class='form-control' rows='2' id='notes'\
-        name='notes' placeholder='Optional, talk to your future self.'><textarea> </div> </div>\
+        name='notes' placeholder='Optional, talk to your future self.'></textarea> </div> </div>\
         <div class='checkbox'>\
         <label> <input type='checkbox' id='addStory'>\
         Do you have a story to tell?</label>\
@@ -50,14 +51,17 @@ $('#addStory').click(function() {
       <div class='form-group'>\
       <div class='col-sm-10 col-sm-offset-1'>\
       <textarea class='form-control' rows='4' id='story'\
-       placeholder='Share with us your adventure!' name='story'></textarea>\
-       </div> </div> </div>")
+       placeholder='Share with us your adventure!' name='story'\
+       required></textarea> </div> </div> </div>")
     ) //close append new strain
 });} //close else
 }}) //close main else, close main event
 
 function updateJournal(result) {
-  $('#strainFormsGroup').hide();
+  console.log(result);
+  $('#strainFormsGroup').empty();
+  $('#findStrain').clear();
+  count = 1;
 }
 
 $('#submitUpdate').click(function(evt) {
@@ -67,12 +71,39 @@ $('#submitUpdate').click(function(evt) {
   } else {
   let newStrainData = {
         'journal': $('#journal').val(),
-        'strain': $('#strain').val(),
+        'strain': $('#findStrain').val(),
         'user_rating': $('#rating').val(),
-        'note': $('#note').val(),
+        'notes': $('#notes').val(),
         'dosage': $('#dosage').val(),
         'story': $('#story').val(),
   };
   $.post("/journal/update", newStrainData, updateJournal);
-}
+  };
+})
+
+$('#finishUpdates').click(function(){
+  location.reload();
+})
+
+$('.removeStrain').click(function() {
+  let entry= $(this).data('entry')
+
+  $.post("/journal/remove_strain.json", {
+    'entry' : entry,
+  }, function(result) {
+    console.log(result);
+    location.reload();
+
+  })
+})
+
+$('.removeJournal').click(function(evt) {
+  evt.preventDefault();
+  let journal= $(this).data('journal')
+  $.post("/journal/remove", {
+    'journal' : journal,
+  }, function(result) {
+    console.log(result);
+    location.reload();
+  })
 })
