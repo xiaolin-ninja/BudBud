@@ -60,7 +60,7 @@ $('#addStory').click(function() {
 function updateJournal(result) {
   console.log(result);
   $('#strainFormsGroup').empty();
-  $('#findStrain').clear();
+  $('#findStrain').val('');
   count = 1;
 }
 
@@ -81,7 +81,8 @@ $('#submitUpdate').click(function(evt) {
   };
 })
 
-$('#finishUpdates').click(function(){
+$('#finishUpdates').click(function(evt){
+  evt.preventDefault();
   location.reload();
 })
 
@@ -107,3 +108,5 @@ $('.removeJournal').click(function(evt) {
     location.reload();
   })
 })
+
+// Generate photo for carousel background
