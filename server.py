@@ -47,8 +47,7 @@ def disp_info():
     # helper function
     strain = check_strain(usr_input)
 
-    if not strain:
-        return ""
+    print strain
 
     update_search_db(strain, session.get('current_user'))
     url = strain.leafly_url
@@ -141,10 +140,14 @@ def show_journal():
         auto_strains = make_autocomplete()
         journals = Bud_Journal.query.filter_by(user_id=logged_in).all()
         stories = Trip_Report.query.order_by(func.random()).limit(5).all()
+        strains = Strain.query.order_by(func.random()).limit(3).all()
+        strains2 = Strain.query.order_by(func.random()).limit(3).all()
         return render_template('journal_home.html', user=current_user.fname,
                                                     journals=journals,
                                                     stories=stories,
-                                                    auto_strains=auto_strains,)
+                                                    auto_strains=auto_strains,
+                                                    strains=strains,
+                                                    strains2=strains2)
     else:
         flash("Please log in to access journal")
         return redirect("/")
@@ -208,7 +211,6 @@ def new_entry():
                               strain_id=strain.strain_id,
                               dosage=dosage,
                               story=story_input,
-                              dankness=0,
                               timestamp=datetime.now())
 
         db.session.add(new_story)
@@ -240,9 +242,10 @@ def remove_strain():
     entry = Journal_Entry.query.get(log_id)
     db.session.delete(entry)
     print "I am removing this journal entry."
-    db.session.commit()
+    db.session.flush()
     # import pdb; pdb.set_trace()
     print "I deleted entry {} from {}!".format(entry, entry.journal.journal_label)
+    db.session.commit()
     return jsonify({'status': 'success'})
 
 
@@ -259,8 +262,11 @@ def display_goodies():
 @app.route('/check_strain')
 def strain_in_db():
     """checks if strain is in database"""
-    strain = request.args.get('strain')
-    return check_strain(strain)
+    user_input = request.args.get('strain')
+    if check_strain(user_input) != "":
+        return "success"
+    else:
+        return check_strain(user_input)
 
 #-----------------------------------------------------------------------------#
 
