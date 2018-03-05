@@ -1,5 +1,6 @@
 // Strain event listener
 let count = 1;
+var entry;
 
 $('#addStrain').click(function() {
   let user_input = $('#findStrain').val();
@@ -74,7 +75,7 @@ function updateJournal(result) {
 $('#submitUpdate').click(function(evt) {
   evt.preventDefault();
   if ($('#strainFormsGroup').is(":hidden")) {
-    alert('Please enter a strain and click the check icon.')
+    alert('Please click the "add" button.')
   } else {
   let newStrainData = {
         'journal': $('#journal').val(),
@@ -95,7 +96,8 @@ $('#finishUpdates').click(function(evt){
 })
 
 $('.removeStrain').click(function() {
-  let entry= $(this).data('entry')
+  entry = $(this).data('entry')
+  console.log(entry)
 
   $.post("/journal/remove_strain.json", {
     'entry' : entry,
@@ -118,3 +120,12 @@ $('.removeJournal').click(function(evt) {
 })
 
 // Generate photo for carousel background
+let images = ['./static/img/carousel_bg/1.jpg',
+'./static/img/carousel_bg/2.jpg','./static/img/carousel_bg/3.jpg','./static/img/carousel_bg/4.jpg','./static/img/carousel_bg/5.jpg',
+'./static/img/carousel_bg/6.jpg']
+
+for (element of $('.carousel-bg')) {
+  $(element).attr('src', images[Math.floor
+  (Math.random() * images.length)] );
+  console.log('random image generator working')
+}

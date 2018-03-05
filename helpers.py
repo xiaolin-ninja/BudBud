@@ -62,11 +62,12 @@ def check_strain(user_input):
     # if can't check by name, check by ID.
     if not strain:
         try:
+            print "I am not in this"
             strain = Strain.query.get(user_input)
         except:
             # if strain not found, return empty string
             return ""
-    return "success"
+    return strain
 
 # --------------------------------------------------------------------------- #
 if __name__ == "__main__":
