@@ -38,7 +38,7 @@ label {
   padding: 2em 0em 1em;
 }
 
-.glyphicon-ok {
+.glyphicon-plus {
   position: absolute;
   top:0.6em;
   left: 0px;
@@ -55,10 +55,18 @@ label {
   margin: 0px;
 }
 
+.recs {
+  padding: 0em, 0.25em;
+}
+
 .well li {
   text-align: left;
-  padding: 0.5em;
+  padding: 0.25em;
   color: #000;
+}
+
+.well {
+  background-color: transparent;
 }
 
 .header {
