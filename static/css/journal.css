@@ -7,6 +7,10 @@ label {
   color: #fff;
 }
 
+body {
+  width: 100%;
+}
+
 #headinghr {
   width: 30%;
   margin: 0 auto;
