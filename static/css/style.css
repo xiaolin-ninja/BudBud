@@ -44,33 +44,48 @@ footer {
   margin: 0 auto;
 }
 
-#search-results {
-  background: linear-gradient(
+#weed-info {
+/*  background: linear-gradient(
                      rgba(20, 20, 20, 0.78),
-                     rgba(20, 20, 20, 0.5))
+                     rgba(20, 20, 20, 0.5))*/
 }
 
 body {
-    padding-top: 50px;
-    background-image: url("../img/budbud1.jpg");
+    padding-top:15px;
+    background-image: url("../img/budbud3.jpg");
     background-size: cover;
     text-align: center;
     background-color: #0B5345;
     color: #FFFFFF;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
 }
 
+/*.strains-page {
+    padding-top:60px;
+    width: 100%;
+    background-image: url("../img/budbud1.jpg");
+    background-size: cover;
+}*/
+
 .home {
+  padding-top: 50px;
   background-size: cover;
-  width: 65%;
+  width: 60%;
   height: 100%;
+  align-items: center;
   overflow: scroll;
-  resize: both;
+  /*resize:both; allows for manual resizing*/
+/*  resize: width;*/
   background-position: center;
 /*  background-image: url("../img/doge.jpg"),
                     linear-gradient(
                       rgba(0, 0, 0, 0.78),
                       rgba(0, 0, 0, 0.5))*/
   background-image: url("../img/doge.jpg");
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 /*
 linear-gradient(
@@ -95,9 +110,10 @@ option {
     border-style: dotted solid;
 }
 
-/*.navbar {
-  background-color: transparent;
-}*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.78);
+  border: 0px transparent solid;
+}
 
 h1 {
     color: #F4D03F;

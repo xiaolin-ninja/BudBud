@@ -32,18 +32,16 @@
       </ul>
 {% endblock %}
 
-{% block title %}Homepage{% endblock %}
-{% block theme %}Welcome!{% endblock %}
+{% block title %}Welcome to BudBud{% endblock %}
 
 {% block content %}
-
-<div class="container-fluid home">
-<h1> Welcome to BudBud 2.0 </h1>
-<!-- autocomplete widget -->
-<div class="ui-widget">
+<div class="container home">
+<h1> Hey Bud,</h1>
 <!-- on submit, initiate map -->
 <form class="strain_lookup">
 <h2>What strain are you looking for?</h2>
+<!-- autocomplete widget -->
+<div class="ui-widget"><br>
 <input type="text" name="strain" id="user_input"
        placeholder="Start typing...">
 <input type="submit" value="Show Me">
@@ -53,19 +51,27 @@
 <a href="/strains"><h3>Not sure?</h3></a> <hr>
 <div id="space">
 </div>
-<div id="search-results" style="display:none">
 
-<div class="col-sm-12" id="text"></div>
 <div class="col-sm-12" id="loading" style="display:none"><h4>~ Searching
 ~</h4></div>
 <div class="col-sm-12" id="no-results" style="display:none"><h4>No dispenaries
 near you offer this strain, sorry!</h4></div>
 
-<div class="row">
+<div class="row" id="weed-info">
+<div class="col-sm-12" id="text"></div>
 <div class="col-sm-6"> <div id='map'></div> </div>
-<div class="col-sm-6"> <div id="desc" align="left"></div> </div>
+<div class="col-sm-6" id="desc-size"> <div id="desc" align="left"></div> </div>
 </div>
-</div>
+
+<hr>
+  <div class="footer">
+        <p><a href="https://github.com/shxxu0212/BudBud">
+          <strong><u>BudBud</u>: A Buddy for Your Bud! </a></strong> |
+          <strong>© <a href="https://www.linkedin.com/in/shxxu/">Shirley</a>
+          Xiaolin Xu</strong> 2018 | <a href=""> Artwork:</a> Priyanka
+        Java</p>
+  </div>
+
 {% endblock %}
 
 {% block script %}
@@ -73,9 +79,12 @@ near you offer this strain, sorry!</h4></div>
 // on submit of the form:
 $(".strain_lookup").submit(
 function initMap(evt) {
-  let searchResults = document.getElementById("search-results");
-    if (searchResults.style.display === "block") {
-        searchResults.style.display = "none";}
+  $('#map').empty().show();
+  $('#desc').empty();
+  $('#text').empty();
+  $('#weed-info').css('background','none');
+  $('#desc-size').removeClass('col-sm-12').addClass('col-sm-6');
+
   let loadingMsg = document.getElementById("loading");
     if (loadingMsg.style.display === "none") {
         loadingMsg.style.display = "block";}
@@ -84,22 +93,6 @@ function initMap(evt) {
 
   evt.preventDefault();
   console.log('the submit button is working');
-    // create map
-  let sf = {lat: 37.7995971, lng: -122.327749};
-  let map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 11,
-      center: sf,
-      scrollwheel: true,
-      zoomControl: true,
-      panControl: false,
-      streetViewControl: false,
-    });
-  console.log('Hi I initiated the map')
-
-  let infoWindow = new google.maps.InfoWindow({
-    width: 150
-  });
-  console.log('I made the info window~')
 
   // fill in the map
   $.get('/map.json', {'strain':$('#user_input').val()},
@@ -109,11 +102,34 @@ function initMap(evt) {
             + disp_json.strain + "</h3><hr>";
           document.getElementById("desc").innerHTML="<br><br>" + disp_json.desc
           + "<p align='right'><i>source: Leafly.com</i></p><br><br>";
+      // add dark background for text
+          $('#weed-info').css("background",
+            "linear-gradient(rgba(20, 20, 20, 0.78), rgba(20, 20, 20, 0.5))"
+            )
       // if nothing is returned, display no results
       if (disp_json.count === 0 || !disp_json.strain) {
           loadingMsg.style.display = "none";
           noResults.style.display = "block";
+          $('#map').hide();
+          $('#desc-size').removeClass('col-sm-6').addClass('col-sm-12').css
+          ('height','100%');
       } else {
+            // create map
+          let sf = {lat: 37.7995971, lng: -122.327749};
+          let map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 11,
+              center: sf,
+              scrollwheel: true,
+              zoomControl: true,
+              panControl: false,
+              streetViewControl: false,
+            });
+          console.log('Hi I initiated the map')
+
+          let infoWindow = new google.maps.InfoWindow({
+            width: 150
+          });
+          console.log('I made the info window~')
         // hide no results, show map
           noResults.style.display = "none";
           let marker, disp, html;
@@ -140,8 +156,6 @@ function initMap(evt) {
           // toggle loading message & results
           if (loadingMsg.style.display === "block") {
               loadingMsg.style.display = "none"; }
-          if (searchResults.style.display === "none") {
-              searchResults.style.display = "block"; }
            // end if
       } //end else
 

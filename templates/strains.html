@@ -18,14 +18,17 @@
 
 {% endblock %}
 
-{% block heading %}What tickles your fancy?{% endblock %}
-{% block content %}
+{% block script %}
 <script>
   $(document).ready(function() {
     $( "#tabs" ).tabs();
   });
 </script>
+{% endblock %}
 
+{% block content %}
+<div class="strains-page">
+<h1>What tickles your fancy?</h1>
 <!-- Tabs -->
 <div id="tabs" class="ui-tabs-nav">
   <ul>
@@ -82,6 +85,9 @@
       </div>
   </div>
 </div>
+
+</div>
+
 <script src="/static/js/map.js"></script>
 <script src="/static/js/strains.js"></script>
 {% endblock %}
