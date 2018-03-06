@@ -16,8 +16,8 @@ class User(db.Model):
     lname =  db.Column(db.String(64), nullable=False)
     email = db.Column(db.String(64), nullable=False, unique=True)
     password = db.Column(db.String(64), nullable=False)
-    zipcode = db.Column(db.Integer, nullable=False)
-    age = db.Column(db.Integer, nullable=True)
+    zipcode = db.Column(db.Integer, nullable=True)
+    age = db.Column(db.Integer, nullable=False)
     user_type = db.Column(db.String(20), nullable=True)
     # 4 choices: Sativa, Indica, Hybrid, Nada
     preferred_type = db.Column(db.String(15), nullable=False)
