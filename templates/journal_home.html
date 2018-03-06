@@ -8,13 +8,12 @@
       </ul>
 {% endblock %}
 
-{% block heading %} Chill with Your Bud (Journal) {% endblock %}
 {% block content %}
-<hr>
 <link href="/static/css/journal.css" rel="stylesheet">
 
 <div class="container">
-
+<h1>Chill with Your Bud (Journal)</h1>
+<hr>
 <div class="row">
   <div class="col-sm-8">
     <h2 class="header"> Storytime! </h2>
@@ -27,12 +26,13 @@
         <li data-target="#myCarousel" data-slide-to="3"></li>
         <li data-target="#myCarousel" data-slide-to="4"></li>
         <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="carousel-bg" src="./static/img/carousel_bg/2.jpg"
+          <img class="carousel-bg" src=""
           alt="Image">
           <div class="carousel-caption">
             <h3 class="header">Add your own!</h3>
@@ -47,7 +47,7 @@
             <div class='storyDankness'><p> Is this dank? +{{ story.dankness
             }}</p></div>
           </div>
-          <img class="carousel-bg" src="./static/img/carousel_bg/1.jpg"
+          <img class="carousel-bg" src=""
           alt="Image">
         </div>
         {% endfor %}
@@ -243,9 +243,17 @@ $( function() {
 
 </div>
 
+<hr>
+  <div class="footer">
+        <p><a href="https://github.com/shxxu0212/BudBud">
+          <u>BudBud</u>: A Buddy for Your Bud! | </a>
+           <a href="https://www.linkedin.com/in/shxxu/">© Shirley Xiaolin
+        Xu 2018</a><a href=""> | Artwork: Priyanka Java</a></p>
+  </div>
 
 </div>
-
+{% block script %}
 <script src="/static/js/journal.js"></script>
+{% endblock %}
 <!-- Close container div -->
 {% endblock %}

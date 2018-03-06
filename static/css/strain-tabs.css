@@ -2,6 +2,27 @@
 /* jQuery tabs UI on Strains page */
 /*--------------------------------*/
 
+body {
+    padding-top:60px;
+    background-image: url("../img/budbud1.jpg");
+    background-size: cover;
+    text-align: center;
+    background-color: #0B5345;
+    color: #FFFFFF;
+    height: 90%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.navbar {
+  background-color: rgba(250, 250, 250, 0.7);
+  border: 0px transparent solid;
+}
+
+.navbar-inverse .navbar-nav .active a {
+    background-color: #D8BFD8;
+}
+
 #tabs {
     background: transparent;
     border: none;
