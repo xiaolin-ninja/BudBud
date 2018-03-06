@@ -5,9 +5,10 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
   <link href="/static/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <title>{% block title %} TITLE GOES HERE! {% endblock %}</title>
-  {% block head %}
-  {% endblock %}
+
+{% block head %} {% endblock %}
+
+<title>{% block title %} TITLE GOES HERE! {% endblock %}</title>
 
   <!-- Navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -64,25 +65,15 @@
   </div>
 </nav>
 
-{% block alert %}
+<!-- alerts -->
 {% with messages = get_flashed_messages() %}
     {% for message in messages %}
-      <div class="alert alert-success alert-dismissable row col-xs-12" role="alert">
+<div class="alert alert-success alert-dismissable row col-xs-12" role="alert">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>{{ message }}</strong>
+    <strong><center>{{ message }}</center></strong>
 </div>
     {% endfor %}
 {% endwith %}
-{% endblock %}
-</head>
-
-<body>
-
-  <div id="content">
-    <h1>{% block heading %} BIG HEADING {% endblock %}</h1>
-  {% block content %} put your content here {% endblock %}
-  </div>
-
   <!-- Disappearing flashed messages. -->
 <script>
     window.setTimeout(function() {
@@ -92,17 +83,25 @@
     }, 4000);
 </script>
 
+</head>
+
+
+<body>
+
+<!-- <h1>{% block heading %} BIG HEADING {% endblock %}</h1> -->
+
+{% block content %} put your content here {% endblock %}
+{% block script %} script {% endblock %}
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </body>
 <hr>
   <footer class="footer">
-      <div class="container">
         <p> © 2018 <a href="https://github.com/shxxu0212/BudBud">
           <strong><u>BudBud</u></strong>: A Buddy for Your Bud! </a><br>
           By: <a href="https://www.linkedin.com/in/shxxu/">
           <strong>Shirley Xiaolin Xu</strong></p></a>
-      </div>
   </footer>
 </html>

@@ -4,25 +4,77 @@
 {% block content %}
 <hr>
 <h2>Register!</h2>
-    <form id="reg" action="/registration" method="POST">
-        Email: <input type="text" name="email" required><br>
-        Password: <input type="password" name="password" required><br>
-        First Name: <input type="text" name="fname" required><br>
-        Last Name: <input type="text" name="lname" required><br>
-        Zipcode: <input type="text" name="zipcode" required><br>
-        Age: <input type="text" name="age" required><br>
-        Usage: <select name="user_type">
-               <option value="Medical">Medical</option>
-               <option value="Recreational">Recreational</option>
-               <option value="Both">Both</option>
-               </select><br>
-        Preference: <select name="preferred_type" required>
-               <option value="Indica">Indica</option>
-               <option value="Sativa">Sativa</option>
-               <option value="Hybrid">Hybrid</option>
-               <option value="Nada">None</option>
-               </select><br>
-        <input type="submit" value="Join us!">
-    </form>
+<div class="container reg-form">
+<form class="form-horizonal">
+  <div class="form-group">
+    <label for="new_email" class="col-sm-2 control-label">Email:</label>
+    <div class="col-sm-10">
+    <input type="email" name="email" class="form-control" id="new_email"
+    placeholder="email@email.com" required></div>
+  </div>
+
+  <div class="form-group">
+    <label for="new_password" class="col-sm-2 control-label">Password:</label>
+    <div class="col-sm-10">
+    <input type="password" name="password" class="form-control"
+    id="new_password"
+    placeholder="eNt3r pAssw0rD" required></div>
+  </div>
+
+  <div class="form-group">
+    <label for="fname" class="col-sm-2 control-label">First Name:</label>
+    <div class="col-sm-10">
+    <input type="fname" name="fname" class="form-control" id="fname"
+    placeholder="Mister" required></div>
+  </div>
+
+  <div class="form-group">
+    <label for="lname" class="col-sm-2 control-label">Last Name:</label>
+    <div class="col-sm-10">
+    <input type="lname" name="lname" class="form-control" id="lname"
+    placeholder="Potato" required></div>
+  </div>
+
+  <div class="form-group">
+    <label for="zipcode" class="col-sm-2 control-label">Zipcode:</label>
+    <div class="col-sm-10">
+    <input type="zipcode" name="zipcode" class="form-control" id="zipcode"
+    placeholder="12345"></div>
+  </div>
+
+  <div class="form-group">
+    <label for="age" class="col-sm-2 control-label">Age:</label>
+    <div class="col-sm-10">
+    <input type="age" name="age" class="form-control" id="age"
+    placeholder="18+" required></div>
+  </div>
+
+  <div class="form-group">
+    <label for="user_type" class="col-sm-2 control-label">Usage:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="user_type">
+         <option value="Medical">Medical</option>
+         <option value="Recreational">Recreational</option>
+         <option value="Both">Both</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="preference" class="col-sm-2 control-label">Preference:</label>
+    <div class="col-sm-10">
+      <select class="form-control" name="preferred_type" required>
+         <option value="Indica">Indica</option>
+         <option value="Sativa">Sativa</option>
+         <option value="Hybrid">Hybrid</option>
+         <option value="Nada">None</option>
+     </select>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-default">Join us!</button>
+
+</form>
+</div>
 
 {% endblock %}
