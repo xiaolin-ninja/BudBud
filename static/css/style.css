@@ -2,8 +2,16 @@
 /* Main */
 /*--------------------------------*/
 
+#map {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1.4em;
+}
+
 .alert {
-  z-index: 1; /* Sit on top */
+  z-index: 10;
+  position: absolute;
+  /* Sit on top */
 }
 
 .loginMenu {
@@ -38,10 +46,14 @@
   background-size: 100%;
 }*/
 
-footer {
-  bottom: 0;
-  height: 60px;
-  margin: 0 auto;
+.footer {
+  position: absolute;
+  bottom: 0px;
+  font-size: small;
+  left: 18px;
+  right: 18px;
+  margin: auto;
+  font-size: 0.8em;
 }
 
 #weed-info {
@@ -51,14 +63,14 @@ footer {
 }
 
 body {
-    padding-top:15px;
+    padding-top:0px;
     background-image: url("../img/budbud3.jpg");
     background-size: cover;
     text-align: center;
     background-color: #0B5345;
     color: #FFFFFF;
-    height: 90%;
-    width: 90%;
+    height: 100vh;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -70,13 +82,15 @@ body {
 }*/
 
 .home {
+  position: relative;
   padding-top: 50px;
   background-size: cover;
-  width: 60%;
+  width:60%;
   height: 100%;
   align-items: center;
   overflow: scroll;
-  /*resize:both; allows for manual resizing*/
+/*  resize:both;
+*//*   allows for manual resizing*/
 /*  resize: width;*/
   background-position: center;
 /*  background-image: url("../img/doge.jpg"),
@@ -117,6 +131,11 @@ option {
 
 h1 {
     color: #F4D03F;
+    font-family: Bookman;
+}
+
+h2 {
+    font-family: Georgia;
 }
 
 a {
