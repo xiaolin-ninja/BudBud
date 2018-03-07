@@ -13,6 +13,17 @@
   <!-- Navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
+
+<!-- alerts -->
+{% with messages = get_flashed_messages() %}
+    {% for message in messages %}
+<div class="alert alert-success alert-dismissable row col-xs-12" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong><center>{{ message }}</center></strong>
+</div>
+    {% endfor %}
+{% endwith %}
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse"
               data-target="#myNavbar">
@@ -65,15 +76,6 @@
   </div>
 </nav>
 
-<!-- alerts -->
-{% with messages = get_flashed_messages() %}
-    {% for message in messages %}
-<div class="alert alert-success alert-dismissable row col-xs-12" role="alert">
-    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong><center>{{ message }}</center></strong>
-</div>
-    {% endfor %}
-{% endwith %}
   <!-- Disappearing flashed messages. -->
 <script>
     window.setTimeout(function() {
