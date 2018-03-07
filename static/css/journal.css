@@ -1,3 +1,6 @@
+/*--------------------------------*/
+/* Bud Journal Layout */
+/*--------------------------------*/
 
 div {
   color: #000;
@@ -116,6 +119,15 @@ body {
   text-align: left;
 }
 
+.footer {
+  position: static;
+  bottom: 0px;
+  font-size: small;
+  left: 18px;
+  right: 18px;
+  margin: auto;
+  font-size: 0.8em;
+}
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 /*@media (max-width: 600px) {
   .carousel-caption {
