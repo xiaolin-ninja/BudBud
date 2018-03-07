@@ -56,8 +56,8 @@ $('#addStory').click(function() {
         placeholder='in milligrams(mg)'> </div> </div>\
       <div class='form-group'>\
       <div class='col-sm-10 col-sm-offset-1'>\
-      <textarea class='form-control' rows='4' id='story'\
-       placeholder='Share with us your adventure!' name='story'\
+      <textarea class='form-control story' name='story' rows='4'\
+      placeholder='Share with us your adventure!'\
        required></textarea> </div> </div> </div>")
     ) //close append new strain
 }); //close addStory
@@ -83,8 +83,9 @@ $('#submitUpdate').click(function(evt) {
         'user_rating': $('#rating').val(),
         'notes': $('#notes').val(),
         'dosage': $('#dosage').val(),
-        'story': $('#story').val(),
+        'story': $('.story').val(),
   };
+  console.log('Story:',newStrainData['story'])
   $.post("/journal/update", newStrainData, updateJournal);
 // To-do: alert error if user inputs random strain
   };
