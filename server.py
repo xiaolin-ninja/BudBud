@@ -249,7 +249,6 @@ def remove_strain():
     return jsonify({'status': 'success'})
 
 
-
 @app.route('/strains')
 def display_goodies():
     """Display registration landing page"""
@@ -280,7 +279,7 @@ if __name__ == "__main__":
 
     connect_to_db(app)
 
-    # Use the DebugToolbar
-    DebugToolbarExtension(app)
+    # # Use the DebugToolbar
+    # DebugToolbarExtension(app)
 
     app.run(port=5000, host='0.0.0.0')
