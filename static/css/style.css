@@ -2,6 +2,10 @@
 /* Main */
 /*--------------------------------*/
 
+*:focus {
+    outline: none;
+}
+
 #map {
   height: 100%;
   width: 100%;
@@ -200,9 +204,4 @@ a:hover {
 a:active {
   text-decoration: none;
   color: #fff;
-}
-
-button:focus {
-    outline-color: transparent;
-    outline-style: none;
 }

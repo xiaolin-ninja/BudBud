@@ -1,6 +1,9 @@
 /*--------------------------------*/
 /* jQuery tabs UI on Strains page */
 /*--------------------------------*/
+*:focus {
+    outline: none;
+}
 
 body {
     background-image: url("../img/budbud1.jpg");

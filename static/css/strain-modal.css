@@ -1,6 +1,10 @@
 /*--------------------------------*/
 /* jQuery modal UI on Strains page */
 /*--------------------------------*/
+*:focus {
+    outline: none;
+}
+
 #map {
     height: 300px;
     width: 100%;
