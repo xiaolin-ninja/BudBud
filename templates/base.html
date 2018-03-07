@@ -31,12 +31,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">BudBud</a>
+      <a class="navbar-brand" href="/"><img
+     src="./static/img/budlogo.png" id="logo"></a>
+      <a href="/" class="navbar-brand" id="logoLabel">BudBud</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       {% block navbar_current %}
       <ul class="nav navbar-nav">
-        <li><a href="/">Search</a></li>
+        <li><a href="/">| Search</a></li>
         <li><a href="/strains">Strains</a></li>
         <li><a href="/journal">Bud Journal</a></li>
       </ul>
@@ -82,7 +84,7 @@
         $(".alert").fadeTo(300, 0).slideUp(300, function(){
             $(this).remove();
         });
-    }, 4000);
+    }, 2000);
 </script>
 
 </head>

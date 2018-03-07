@@ -122,10 +122,8 @@ $('.removeJournal').click(function(evt) {
 // Generate photo for carousel background
 let images = ['./static/img/carousel_bg/1.jpg',
 './static/img/carousel_bg/2.jpg','./static/img/carousel_bg/3.jpg','./static/img/carousel_bg/4.jpg','./static/img/carousel_bg/5.jpg',
-'./static/img/carousel_bg/6.jpg','./static/img/carousel_bg/7.jpg','./static/img/carousel_bg/8.jpg',
-'./static/img/carousel_bg/13.jpg', './static/img/carousel_bg/11.jpg',
-'./static/img/carousel_bg/12.jpg', './static/img/carousel_bg/10.jpg',
-'./static/img/carousel_bg/9.jpg']
+'./static/img/carousel_bg/6.jpg','./static/img/carousel_bg/7.jpg','./static/img/carousel_bg/8.jpg','./static/img/carousel_bg/11.jpg',
+'./static/img/carousel_bg/10.jpg', './static/img/carousel_bg/9.jpg']
 
 let i = 0;
 let j = randomize();
