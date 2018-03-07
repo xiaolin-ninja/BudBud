@@ -28,42 +28,44 @@
 
 {% block content %}
 <div class="strains-page">
-<h1>What tickles your fancy?</h1>
-<!-- Tabs -->
-<div id="tabs" class="ui-tabs-nav">
-  <ul>
-    <li><a href="#hybrids"><span>Hybrids</span></a></li>
-    <li><a href="#indicas"><span>Indicas</span></a></li>
-    <li><a href="#sativas"><span>Sativas</span></a></li>
-  </ul>
 
-    <div id="hybrids">
-        <p> {% for s in hybrids %}
-        <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
-              data-strain={{ s.strain_id }}>
-        {{ s.s_name }}</a></b><br>
-        </p>
-        {% endfor %}
-    </div>
+  <!-- Tabs -->
+  <div id="tabs" class="ui-tabs-nav">
+    <h1>What tickles your fancy?</h1>
+    <ul>
+      <li><a href="#hybrids"><span>Hybrids</span></a></li>
+      <li><a href="#indicas"><span>Indicas</span></a></li>
+      <li><a href="#sativas"><span>Sativas</span></a></li>
+    </ul>
 
-    <div id="indicas">
-        <p> {% for s in indicas %}
-        <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
-              data-strain={{ s.strain_id }}>
-        {{ s.s_name }}
-        </a></b><br>
-        </p>
-        {% endfor %}
-    </div>
+      <div id="hybrids">
+          <p> {% for s in hybrids %}
+          <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
+                data-strain={{ s.strain_id }}>
+          {{ s.s_name }}</a></b><br>
+          </p>
+          {% endfor %}
+      </div>
 
-    <div id="sativas">
-        <p> {% for s in sativas %}
-        <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
-              data-strain={{ s.strain_id }}>
-        {{ s.s_name }}</a></b><br>
-        </p>
-        {% endfor %} </p>
-    </div>
+      <div id="indicas">
+          <p> {% for s in indicas %}
+          <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
+                data-strain={{ s.strain_id }}>
+          {{ s.s_name }}
+          </a></b><br>
+          </p>
+          {% endfor %}
+      </div>
+
+      <div id="sativas">
+          <p> {% for s in sativas %}
+          <b><a href="#" class="openmodal" data-toggle="modal" data-target="#straininfo"
+                data-strain={{ s.strain_id }}>
+          {{ s.s_name }}</a></b><br>
+          </p>
+          {% endfor %} </p>
+      </div>
+
 </div>
 
 <!-- Modal -->
