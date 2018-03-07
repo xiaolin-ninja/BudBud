@@ -11,40 +11,14 @@
 .alert {
   z-index: 10;
   position: absolute;
+  background-color: black;
   /* Sit on top */
-}
-
-.loginMenu {
-  text-align: center;
-}
-
-.dropdown-menu {
-  padding: 1em;
-  background-color: #000;
-  color: #fff;
-}
-
-.dropdown-menu #submit {
-  text-align: center;
-  border: 1px dashed green;
-  background-color: #000;
-  color: #fff;
 }
 
 .home {
   width: 65%;
   border: 0 auto;
 }
-/*
-.row {
-  display: flex;
-}
-
-.background {
-  background-image: url("../img/bridge-long.jpg");
-  flex: 1;
-  background-size: 100%;
-}*/
 
 .footer {
   position: absolute;
@@ -56,34 +30,22 @@
   font-size: 0.8em;
 }
 
-#weed-info {
-/*  background: linear-gradient(
-                     rgba(20, 20, 20, 0.78),
-                     rgba(20, 20, 20, 0.5))*/
-}
-
 body {
     padding-top:0px;
     background-image: url("../img/budbud3.jpg");
     background-size: cover;
     text-align: center;
-    background-color: #0B5345;
+/*    background-color: #0B5345;*/
     color: #FFFFFF;
     height: 100vh;
     width: 100%;
     margin: 0 auto;
+    font-family: Georgia;
 }
-
-/*.strains-page {
-    padding-top:60px;
-    width: 100%;
-    background-image: url("../img/budbud1.jpg");
-    background-size: cover;
-}*/
 
 .home {
   position: relative;
-  padding-top: 50px;
+  padding-top: 60px;
   background-size: cover;
   width:60%;
   height: 100%;
@@ -91,7 +53,6 @@ body {
   overflow: scroll;
 /*  resize:both;
 *//*   allows for manual resizing*/
-/*  resize: width;*/
   background-position: center;
 /*  background-image: url("../img/doge.jpg"),
                     linear-gradient(
@@ -100,19 +61,6 @@ body {
   background-image: url("../img/doge.jpg");
   box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
-}
-/*
-linear-gradient(
-                     rgba(0, 0, 0, 0.78),
-                     rgba(0, 0, 0, 0.5)),*/
-                     /*rgba(20,20,20, .5)),*/
-
-input {
-  color: #000000;
-}
-
-option {
-  color:#000;
 }
 
 .window-content {
@@ -124,18 +72,119 @@ option {
     border-style: dotted solid;
 }
 
-.navbar {
-  background-color: rgba(0, 0, 0, 0.78);
-  border: 0px transparent solid;
+.control-label {
+  text-align: left;
 }
 
+
+/*Navbar */
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 0px transparent solid;
+  font-family: Courier;
+}
+
+.navbar-brand {
+  margin-right: 0.5em;
+  padding: 0;
+  padding-left: 1em;
+}
+
+#logoLabel.navbar-brand {
+  margin-top: 15px;
+  margin-left: 0.3em;
+  padding: 0;
+  max-height: 35px;
+  overflow: hidden;
+  color: #E6E6FA;
+  text-shadow: 0 0 3px #000000;
+}
+
+#logo {
+/*  -webkit-filter: drop-shadow(0 3px 0 #000);*/
+  filter: drop-shadow(0 2px 0 #555);
+  max-height: 40px;
+  margin-top: 5px;
+}
+
+.loginMenu {
+  text-align: center;
+}
+
+.dropdown-menu {
+  padding: 1em;
+  background-color: #000;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.dropdown-menu input {
+  color: #4B0082;
+}
+
+.dropdown-menu #submit {
+  text-align: center;
+  border: 1px dashed green;
+  background-color: rgba(75,0,130, 0.3);
+  color: #fff;
+}
+
+
+/* Home page form */
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.42857;
+    background-color: transparent;
+}
+
+#user_input {
+  border-radius: 15px;
+  text-align: center;
+  height: 35px;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 15px;
+  color: #fff;
+  margin-left: 1.3em;
+}
+
+.ui-widget {
+  margin-bottom: 2.5em;
+}
+
+#insideMap {
+  margin-bottom: 35px;
+}
+
+#story {
+  margin-top:10px;
+/*  margin-bottom: 15px;*/
+}
+
+#carousel {
+  margin-bottom: 3em;
+}
+
+/* Text fonts & decorations */
+
 h1 {
-    color: #F4D03F;
-    font-family: Bookman;
+    color: #f5a545;
+    font-family: Georgia;
+    text-shadow: -1px 0 #5a3103, 0 1px #5a3103, 1px 0 #5a3103, 0 -1px #5a3103;
 }
 
 h2 {
     font-family: Georgia;
+    color: #f6f6f4;
+    text-shadow: -1px 0 #fff, 0 #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+#desc {
+  font-family: Helvetica;
 }
 
 a {
@@ -145,10 +194,15 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #E74C3C;
+  color: #beb4c9;
 }
 
 a:active {
   text-decoration: none;
   color: #fff;
+}
+
+button:focus {
+    outline-color: transparent;
+    outline-style: none;
 }

@@ -12,11 +12,11 @@
 <link href="/static/css/journal.css" rel="stylesheet">
 
 <div class="container">
-<h1>Chill with Your Bud (Journal)</h1>
+<h1>Chill with Your Bud (Journal)!</h1>
 <hr>
-<div class="row">
+<div class="row" id="carousel">
   <div class="col-sm-8">
-    <h2 class="header"> Storytime! </h2>
+    <h2 class="header" id="story">tell me a story</h2>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -65,23 +65,24 @@
     </div>
   </div>
 
-    <div class="col-sm-4" style="margin-top: 1.7em">
+    <div class="col-sm-4" style="margin-top: 2.1em">
     <!-- Recommendation -->
-    <h4 class="header">How to use Bud Journal:</h4>
+    <h4 class="header">how to use</h4>
     <div class="well">
       <p>Have you ever had an entirely different cannabis
-      experience than a friend from the same strain?<br>
-      Create personalized cannabis play-lists to the perfect bud
-      for
-    every vibe.</p>
+      experience than a friend from the same strain?</p>
+      <p>Weed affects everyone differently!</p>
+      <p>Categorize strains with labels that make sense for you,
+        add ratings, comments, and share communal stories
+       to find the perfect bud for every vibe.</p>
     </div>
     </div>
 
   <div class="col-sm-4">
     <!-- Party Bud -->
-    <h4 class="header">Party Bud recommends...</h4>
+    <h4 class="header rec">recommendations</h4>
     <div class="well">
-      <div class="row recs">
+      <div class="row">
       <div class="col-xs-6 recs">
       <p><ul>
         {% for strain in strains %}
@@ -110,7 +111,7 @@
 
 <!-- Bud Journals Section -->
 <div class="container text-center journals">
-  <h3 class="header">Bud Journals</h3>
+  <h3 class="header" id="BudJournals">Bud Journals</h3>
 <!-- create new journal | button trigger toggle -->
 <hr id="headinghr">
 
@@ -143,10 +144,21 @@ $( function() {
   });
   console.log('autocomplete working')
 } );
+
+$('#changeBorder').click(function(){
+  console.log('does this work?');
+})
+
+$('.collapse.in').on('load', function(){
+  console.log('toggle panel heading radius?');
+      $('.panel-heading').css({'border-bottom-left-radius':'0px',
+    'border-bottom-right-radius':'0px'});
+});
+
 </script>
 
 <!-- Add to existing journal -->
-<button type="button" class="btn btn-info active" id="updateJournal"
+<button type="button" class="btn btn-sample" id="updateJournal"
       data-toggle="collapse" data-target="#updateJournalform" aria-expanded="false" aria-controls="updateJournalform">
   Update Journal
 </button>
@@ -184,7 +196,7 @@ $( function() {
 
   <div class="form-group">
     <div class="col-sm-12">
-      <button type="submit" class="btn btn-info btn-sm"
+      <button type="submit" class="btn btn-sample btn-sm"
       id="submitUpdate">Submit</button><br>
       <small id="name" class="form-text text-muted" style="color:lightgray">
       Submit all changes, then save.</small>
@@ -192,7 +204,7 @@ $( function() {
   </div>
   <div class="form-group">
     <div class="col-sm-12">
-      <button type="submit" class="btn btn-primary btn-xs"
+      <button type="submit" class="btn btn-sample active btn-xs"
       id="finishUpdates">Save Changes</button><br>
     </div>
   </div>
@@ -245,10 +257,10 @@ $( function() {
 
 <div class="footer">
     <hr>
-        <p><a href="https://github.com/shxxu0212/BudBud">
+        <center><p><a href="https://github.com/shxxu0212/BudBud">
           <u>BudBud</u>: A Buddy for Your Bud! | </a>
            <a href="https://www.linkedin.com/in/shxxu/">© Shirley Xiaolin
-        Xu 2018</a><a href=""> | Artwork: Priyanka Java</a></p>
+        Xu 2018</a><a href=""> | Artwork: Priyanka Java</a></p></center>
   </div>
 
 </div>

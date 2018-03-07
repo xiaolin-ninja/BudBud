@@ -253,9 +253,9 @@ def remove_strain():
 @app.route('/strains')
 def display_goodies():
     """Display registration landing page"""
-    h = Strain.query.filter_by(s_type='Hybrid').all()
-    i = Strain.query.filter_by(s_type='Indica').all()
-    s = Strain.query.filter_by(s_type='Sativa').all()
+    h = Strain.query.filter_by(s_type='Hybrid').order_by(Strain.s_name).all()
+    i = Strain.query.filter_by(s_type='Indica').order_by(Strain.s_name).all()
+    s = Strain.query.filter_by(s_type='Sativa').order_by(Strain.s_name).all()
     return render_template("strains.html", hybrids=h, indicas=i, sativas=s)
 
 

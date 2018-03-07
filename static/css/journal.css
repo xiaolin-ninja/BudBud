@@ -3,11 +3,38 @@
 /*--------------------------------*/
 
 div {
-  color: #000;
+  color: #beb4c9;
+  backdrop-filter: blur(1px);
+}
+
+h4.header {
+  margin-top: -5px;
+}
+
+h4.rec {
+  margin-top: 5px;
+}
+
+.panel-body div {
+    text-align: left;
+}
+
+.form-control {
+  border-radius: 15px;
+  text-align: center;
+  height: 35px;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 15px;
+  color: #fff;
 }
 
 label {
   color: #fff;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px 0px #5a3103;
 }
 
 body {
@@ -17,10 +44,49 @@ body {
   background-size: cover;
   background-color: #0B5345;
   padding-top: 50px;
-  text-align: center;
+  text-align: left;
   height: 100%;
   width: auto;
   margin: 0 auto;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  margin-left: 2.1em;
+}
+
+.btn-success,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  border-color: #193309;
+}
+
+.btn-sample {
+  color: #ffffff;
+  background-color: #684E8A;
+  border-color: #130269;
+}
+
+.btn-sample:hover,
+.btn-sample:focus,
+.btn-sample:active,
+.btn-sample.active,
+.open .dropdown-toggle.btn-sample {
+  color: #ffffff;
+  background-color: #573F75;
+  border-color: #130269;
+}
+
+.btn-sample:active,
+.btn-sample.active,
+.open .dropdown-toggle.btn-sample {
+  background-image: none;
+}
+
+.btn-sample .badge {
+  color: #684E8A;
+  background-color: #ffffff;
 }
 
 #headinghr {
@@ -71,22 +137,24 @@ body {
   margin: 0px;
 }
 
-.recs {
-  padding: 0em, 0.25em;
-}
-
 .well li {
-  text-align: left;
-  padding: 0.25em;
-  color: #000;
+  padding: 0.2em 0em;
+  color: #fff;
 }
+/*
+.recs {
+  margin: -15px, -5px, -15px, -5px;
+}*/
 
 .well {
-  background-color: transparent;
+  background-color: rgba(20,20,20,0.3);
+  color: #fff;
 }
 
 .header {
   color: #fff;
+  font-family: Courier;
+  text-shadow: 2px 1px 5px #555;
 }
 
 .panel {
@@ -95,9 +163,28 @@ body {
   height: 150px;
 }
 
+.panel .panel-heading {
+  background-color: rgba(0,0,0, 0.3);
+  border: 1px double white;
+  border-radius: 5px;
+}
+
+.panel-title {
+  margin: 0px -15px;
+  font-family: Courier;
+  color: #fff;
+  z-index: 1;
+}
+
+.panel-collapse.collapse.in {
+  border: 1px white solid;
+  border-top: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 .panel-body {
   color: #fff;
-  text-align:left;
 }
 
 .carousel-inner {
@@ -114,19 +201,26 @@ body {
 
 .carousel-caption {
   position: absolute;
-  padding-bottom: 13em;
+  padding-bottom: 10em;
   bottom: 100px;
   text-align: left;
 }
 
 .footer {
   position: static;
+  padding-top:5em;
   bottom: 0px;
   font-size: small;
   left: 18px;
   right: 18px;
   margin: auto;
   font-size: 0.8em;
+}
+
+#BudJournals {
+  font-family: Georgia;
+  text-shadow: -1px 0 #5a3103, 0 1px #5a3103, 1px 0 #5a3103, 0 -1px #5a3103;
+  text-shadow: 2px 1px 5px #555;
 }
 /* Hide the carousel text when the screen is less than 600 pixels wide */
 /*@media (max-width: 600px) {

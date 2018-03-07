@@ -32,27 +32,31 @@
 <div class="container home">
 <h1> Hey Bud,</h1>
 <!-- on submit, initiate map -->
-<form class="strain_lookup">
-<h2>What strain are you looking for?</h2>
+<form>
+<h2>What strain are you looking for?</h2><br>
 <!-- autocomplete widget -->
-<div class="ui-widget"><br>
+<div class="ui-widget">
+<div class="form-group">
 <input type="text" name="strain" id="user_input"
        placeholder="Start typing...">
-<input type="submit" value="Show Me">
+<button type="button" class="btn btn-default btn-circle"
+id="strain_lookup">
+  <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+</button>
+</div>
 </form>
 </div>
-
-<a href="/strains"><h3>Not sure?</h3></a> <hr>
-<div id="space">
-</div>
+<!--
+<a href="/strains"><h4>Not sure?</h4></a>  --><hr>
+<!-- <div id="space">
+</div> -->
 
 <div class="col-sm-12" id="loading" style="display:none"><h4>~ Searching
 ~</h4></div>
+<div class="col-sm-12" id="text"></div>
 <div class="col-sm-12" id="no-results" style="display:none"><h4>No dispenaries
 near you offer this strain, sorry!</h4></div>
-
 <div class="row" id="weed-info">
-<div class="col-sm-12" id="text"></div>
 <div class="col-sm-6"> <div id='map'></div> </div>
 <div class="col-sm-6" id="desc-size"> <div id="desc" align="left"></div> </div>
 </div>
@@ -61,9 +65,9 @@ near you offer this strain, sorry!</h4></div>
     <hr>
         <p><a href="https://github.com/shxxu0212/BudBud">
           <strong><u>BudBud</u>: A Buddy for Your Bud! </a></strong> |
-          <strong>© <a href="https://www.linkedin.com/in/shxxu/">Shirley</a>
-          Xiaolin Xu</strong> 2018 |
-          <a href=""> Artwork:</a> Priyanka Java</p>
+          <a href=""> Artwork: Priyanka Java</a> |
+          <strong>© <a href="https://www.linkedin.com/in/shxxu/">Shirley
+          Xiaolin Xu</a></strong> 2018</p>
 </div>
 </div>
 
@@ -73,7 +77,7 @@ near you offer this strain, sorry!</h4></div>
 {% block script %}
 <script>
 // on submit of the form:
-$(".strain_lookup").submit(
+$("#strain_lookup").click(
 function initMap(evt) {
   $('#map').empty().show();
   $('#desc').empty();
@@ -95,9 +99,10 @@ function initMap(evt) {
   $.get('/map.json', {'strain':$('#user_input').val()},
       function(disp_json) {
           console.log('I am getting the dispensaries information for map');
-          document.getElementById("text").innerHTML="<h3>Dispensaries near you that offer "
+          document.getElementById("text").innerHTML="<h3\
+          id='insideMap'>Dispensaries near you that offer "
             + disp_json.strain + "</h3><hr>";
-          document.getElementById("desc").innerHTML="<br><br>" + disp_json.desc
+          document.getElementById("desc").innerHTML="<br>" + disp_json.desc
           + "<p align='right'><i>source: Leafly.com</i></p><br><br>";
       // add dark background for text
           $('#weed-info').css("background",
@@ -122,6 +127,242 @@ function initMap(evt) {
               zoomControl: true,
               panControl: false,
               streetViewControl: false,
+              styles: [
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#747474"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#8ad5d0"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.landcover",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#8ad5d0"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.terrain",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#8ad5d0"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.natural.terrain",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#8ad5d0"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#7a7a7a"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "hue": "#0099ff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#8cd6d1"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dddddd"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#dcdcdc"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#686868"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dfe1ea"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#9084a8"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#a4a6d3"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    }
+]
             });
           $('#map').css('height', '400px');
           console.log('Hi I initiated the map')
