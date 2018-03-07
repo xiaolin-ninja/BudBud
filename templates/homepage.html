@@ -16,12 +16,6 @@
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnZPpl8aau3fCm9LKhwc5Yx9ugGxqddT8">
 </script>
 <script src="https://code.jquery.com/jquery.js"></script>
-<style>
-    #map {
-    height: 400px;
-    width: 100%;
-    }
-</style>
 {% endblock %}
 
 {% block navbar_current %}
@@ -63,14 +57,16 @@ near you offer this strain, sorry!</h4></div>
 <div class="col-sm-6" id="desc-size"> <div id="desc" align="left"></div> </div>
 </div>
 
-<hr>
-  <div class="footer">
+<div class="footer">
+    <hr>
         <p><a href="https://github.com/shxxu0212/BudBud">
           <strong><u>BudBud</u>: A Buddy for Your Bud! </a></strong> |
           <strong>© <a href="https://www.linkedin.com/in/shxxu/">Shirley</a>
-          Xiaolin Xu</strong> 2018 | <a href=""> Artwork:</a> Priyanka
-        Java</p>
-  </div>
+          Xiaolin Xu</strong> 2018 |
+          <a href=""> Artwork:</a> Priyanka Java</p>
+</div>
+</div>
+
 
 {% endblock %}
 
@@ -84,6 +80,7 @@ function initMap(evt) {
   $('#text').empty();
   $('#weed-info').css('background','none');
   $('#desc-size').removeClass('col-sm-12').addClass('col-sm-6');
+  $('.footer').css('position', 'absolute');
 
   let loadingMsg = document.getElementById("loading");
     if (loadingMsg.style.display === "none") {
@@ -110,12 +107,14 @@ function initMap(evt) {
       if (disp_json.count === 0 || !disp_json.strain) {
           loadingMsg.style.display = "none";
           noResults.style.display = "block";
+          $('.footer').css('position', 'static');
           $('#map').hide();
           $('#desc-size').removeClass('col-sm-6').addClass('col-sm-12').css
           ('height','100%');
       } else {
+          $('.footer').css('position', 'static')
             // create map
-          let sf = {lat: 37.7995971, lng: -122.327749};
+          let sf = {lat: 37.7995971, lng: -122.377749};
           let map = new google.maps.Map(document.getElementById('map'), {
               zoom: 11,
               center: sf,
@@ -124,10 +123,11 @@ function initMap(evt) {
               panControl: false,
               streetViewControl: false,
             });
+          $('#map').css('height', '400px');
           console.log('Hi I initiated the map')
 
           let infoWindow = new google.maps.InfoWindow({
-            width: 150
+            width: 120
           });
           console.log('I made the info window~')
         // hide no results, show map
