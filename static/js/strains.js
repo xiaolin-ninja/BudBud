@@ -10,14 +10,16 @@ $('.openmodal').click(function(evt) {
 
     $.get('/map.json', {'strain': strain}, function(json) {
         console.log('I am inside the modal');
-        document.getElementsByClassName('modal-title')[0].innerHTML = json.name;
+        document.getElementsByClassName('modal-title')[0].innerHTML =
+        "<b>" + json.name + '</b>';
         document.getElementsByClassName('modal-body')[0].innerHTML = json.pos +
-            "<br><br><div class='description' align='left'>" + json.desc +
+            "<br><br><div class='description'>" + json.desc +
             "</div><br><p align='right'><i>"+
             "source: <a href='https://www.leafly.com/"+json.url+"' target='_blank'>"+
             "Leafly.com</a></i></p>";
         document.getElementsByClassName('modal-map')[0].innerHTML =
-            "<h5>Where can I find it?</h5><div id='map'></div>"
+            "<h4 style='margin-bottom:20px'><b>Where can I find\
+            it?</b></h4><div id='map'></div>"
         initMap(json);
         modal.style.display = "block";
     })
