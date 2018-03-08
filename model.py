@@ -3,6 +3,7 @@ from datetime import datetime
 import random
 
 db = SQLAlchemy()
+from flask.ext.heroku import Heroku
 
 ##############################################################################
 
@@ -308,12 +309,14 @@ def example_data():
 
 ##############################################################################
 
-def connect_to_db(app, db_uri="postgresql:///budbud"):
+def connect_to_db(app, db_uri="postgresql://localhost/budbud"):
     """Connect the database to our Flask app."""
 
     # Configure to use our PstgreSQL database
     app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
     # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+    heroku = Heroku(app)
     db.app = app
     db.init_app(app)
 
