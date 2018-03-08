@@ -284,6 +284,6 @@ connect_to_db(app)
 # # Use the DebugToolbar
 # DebugToolbarExtension(app)
 
-app.run(port=5000, host='0.0.0.0')
+app.run()
     # port=5000, host='0.0.0.0'
 
