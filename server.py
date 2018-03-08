@@ -284,10 +284,7 @@ if __name__ == "__main__":
     # # Use the DebugToolbar
     # DebugToolbarExtension(app)
 
-<<<<<<< HEAD
     app.run()
-=======
-app.run()
->>>>>>> 5753673fae966f1060285a5bec34671a7982f7ed
+
     # port=5000, host='0.0.0.0'
 
