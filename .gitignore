@@ -1,3 +1,6 @@
+aws.pem
+runtime.txt
+to-do.txt
 backup_info/
 env/
 *.pyc
