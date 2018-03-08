@@ -272,19 +272,18 @@ def strain_in_db():
 # if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the
     # point that we invoke the DebugToolbarExtension
-    app.debug = False
-    # app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
-    db.init_app(app)
+app.debug = False
+app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
+# db.init_app(app)
 
-    heroku = Heroku(app)
-    # make sure templates, etc. are not cached in debug mode
-    # app.jinja_env.auto_reload = app.debug
+# make sure templates, etc. are not cached in debug mode
+# app.jinja_env.auto_reload = app.debug
 
-    connect_to_db(app)
+connect_to_db(app)
 
-    # # Use the DebugToolbar
-    # DebugToolbarExtension(app)
+# # Use the DebugToolbar
+# DebugToolbarExtension(app)
 
-    app.run()
+app.run(port=5000, host='0.0.0.0')
     # port=5000, host='0.0.0.0'
 
