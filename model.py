@@ -3,7 +3,7 @@ from datetime import datetime
 import random
 
 db = SQLAlchemy()
-from flask.ext.heroku import Heroku
+from flask_heroku import Heroku
 
 ##############################################################################
 
