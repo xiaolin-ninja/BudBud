@@ -3,7 +3,6 @@ from datetime import datetime
 import random
 
 db = SQLAlchemy()
-from flask_heroku import Heroku
 
 ##############################################################################
 
@@ -324,6 +323,6 @@ def connect_to_db(app, db_uri="postgresql:///budbud"):
     # As a convenience, if we run this module interactively, it will leave
     # you in a state of being able to work with the database directly.
 
-    from server import app
-    connect_to_db(app)
-    print "Connected to DB."
+from server import app
+connect_to_db(app)
+print "Connected to DB."
