@@ -274,6 +274,11 @@ if __name__ == "__main__":
     # point that we invoke the DebugToolbarExtension
     app.debug = True
     app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
+    app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    db.init_app(app)
+
+    heroku = Heroku(app)
     # make sure templates, etc. are not cached in debug mode
     app.jinja_env.auto_reload = app.debug
 
@@ -284,3 +289,4 @@ if __name__ == "__main__":
 
     app.run()
     # port=5000, host='0.0.0.0'
+
