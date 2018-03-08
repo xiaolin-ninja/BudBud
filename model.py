@@ -314,7 +314,7 @@ def connect_to_db(app, db_uri="postgresql://localhost/budbud"):
 
     # Configure to use our PstgreSQL database
     app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
-    # app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     heroku = Heroku(app)
     db.app = app
