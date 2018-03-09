@@ -222,14 +222,16 @@ $('.collapse.in').on('load', function(){
       <div class="panel panel-default" id={{ journal.journal_id }}>
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a data-toggle="collapse" data-target="#journal{{journal.journal_id}}">
+            <a data-toggle="collapse" data-target="#journal_entries">
               {{ journal.journal_label }}
             </a>
           </h4>
         </div>
 
-        <div id="journal{{journal.journal_id}}" class="panel-collapse collapse">
-          <div class="panel-body" style="display:inline; border:none;">
+        <div id="journal_entries" class="panel-collapse collapse">
+          <div class="panel-body"
+          style="display:inline; border:none;">
+      <div id="journal{{journal.journal_id}}">
             <!-- <ul style="list-style-type:none; padding:0em"> -->
             {% for entry in journal.entries %}
             <div class="row" style="margin:0;">
@@ -245,9 +247,11 @@ $('.collapse.in').on('load', function(){
         data-entry={{ entry.log_id }}></span></a></div>
             </div>
             {% endfor %}
+      </div>
             <div class="row" style="text-align:center"><br>
             <a class="removeJournal" data-journal={{ journal.journal_id }}>Delete
-            Journal</a></div>
+            Journal</a>
+          </div>
           </div>
         </div>
       </div>
