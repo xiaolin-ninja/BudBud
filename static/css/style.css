@@ -54,7 +54,7 @@ body {
   width:60%;
   height: 100%;
   align-items: center;
-  overflow: scroll;
+  overflow: auto;
 /*  resize:both;
 *//*   allows for manual resizing*/
   background-position: center;
