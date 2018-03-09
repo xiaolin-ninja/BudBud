@@ -70,6 +70,17 @@ function updateJournal(result) {
   $('#strainFormsGroup').empty();
   $('#findStrain').val('');
   count = 1;
+  $(`#journal${result['journal']}`).append("\
+    <div class='row' style='margin:0;'><div class='col-xs-4' style='padding:\
+    0px, margin:0px'>\
+              <a href='https://www.leafly.com/{{\
+            entry.strain.leafly_url }}' target='_blank'>" + result['strain'] +
+            "</a></div><div class='col-xs-3'>rating:" + result['rating'] +
+            "</div><div class='col-xs-4' style='width:110px'>" +
+            result['notes'] + "</div><div class='col-xs-1' style='padding: 0px,\
+            margin: 0px'>" + "<a><span class='glyphicon glyphicon-remove\
+            removeStrain' data-entry=" + result['log_id']
+            + "></span></a></div></div>")
 }
 
 $('#submitUpdate').click(function(evt) {
