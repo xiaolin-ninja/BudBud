@@ -56,8 +56,8 @@ def load_test_user():
                         age=21,
                         zipcode=94118,
                         user_type='Medical',
-                        lname='lastname',
-                        fname='firstname',
+                        lname='Bud',
+                        fname='Bud',
                         password='password',
                         email='email'))
     db.session.commit()
