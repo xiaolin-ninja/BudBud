@@ -89,6 +89,11 @@ body {
   font-family: Courier;
 }
 
+.glyphicon-hand-right, .glyphicon-hand-left {
+  margin: 0, auto;
+  padding: 0, auto;
+}
+
 .navbar-brand {
   margin-right: 0.5em;
   padding: 0;
