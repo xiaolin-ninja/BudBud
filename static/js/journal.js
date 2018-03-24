@@ -30,6 +30,11 @@ $('#addStrain').click(function() {
           <option value='3'>3</option>\
           <option value='4'>4</option>\
           <option value='5'>5</option>\
+          <option value='6'>6</option>\
+          <option value='7'>7</option>\
+          <option value='8'>8</option>\
+          <option value='9'>9</option>\
+          <option value='10'>10</option>\
         </select>\
       </div>\
     </div>\
@@ -65,21 +70,23 @@ $('#addStory').click(function() {
 } // else
 }}) //close main else, close main event listener
 
+// display new journal entry without refresh callback //
 function updateJournal(result) {
   console.log(result);
   $('#strainFormsGroup').empty();
   $('#findStrain').val('');
   count = 1;
-  $(`#journal${result['journal']}`).append("\
-    <div class='row' style='margin:0;'><div class='col-xs-4' style='padding:\
+  $(`#journal_body${result['journal']}`).append("\
+    <div class='row' id='entry"+ result['log_id']+"' style='margin:0;'><div\
+    class='col-xs-4'style='padding:\
     0px, margin:0px'>\
               <a href='https://www.leafly.com/{{\
             entry.strain.leafly_url }}' target='_blank'>" + result['strain'] +
             "</a></div><div class='col-xs-3'>rating:" + result['rating'] +
             "</div><div class='col-xs-4' style='width:110px'>" +
             result['notes'] + "</div><div class='col-xs-1' style='padding: 0px,\
-            margin: 0px'>" + "<a><span class='glyphicon glyphicon-remove\
-            removeStrain' data-entry=" + result['log_id']
+            margin: 0px'>" + "<a><span class='removeStrain glyphicon\
+            glyphicon-remove' data-entry=" + result['log_id']
             + "></span></a></div></div>")
 }
 
@@ -108,26 +115,27 @@ $('#finishUpdates').click(function(evt){
 })
 
 $('.removeStrain').click(function() {
-  entry = $(this).data('entry')
-  console.log(entry)
+  console.log('I am removing a strain')
+  entry = $(this).data('entry');
+  $(`#entry${entry}`).remove();
 
   $.post("/journal/remove_strain.json", {
     'entry' : entry,
   }, function(result) {
     console.log(result);
-    location.reload();
-
-  })
+  });
 })
+
 
 $('.removeJournal').click(function(evt) {
   evt.preventDefault();
   let journal= $(this).data('journal')
+  $(`#${journal}`).remove();
+
   $.post("/journal/remove", {
     'journal' : journal,
   }, function(result) {
     console.log(result);
-    location.reload();
   })
 })
 

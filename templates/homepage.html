@@ -6,7 +6,7 @@
     $( "#user_input" ).autocomplete({
       source: {{ auto_strains | tojson }},
       minLength: 2,
-      delay: 0
+      delay: 50
     });
     console.log('autocomplete working')
   } );
