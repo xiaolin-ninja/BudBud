@@ -45,7 +45,20 @@
       </ul>
       {% endblock %}
 
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="http://outsidethebox.live">
+          <span class="glyphicon glyphicon-hand-right"
+         aria-hidden="true"></span>
+          Live Outside The Box
+          <span class="glyphicon glyphicon-hand-left"
+          aria-hidden="true"></span></a>
+        </li>
+      </ul>
+
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="mailto:shirleyxiaolinxu@gmail.com?subject=I found a
+          bug on BudBud!"><span class="glyphicon glyphicon-fire">
+            </span>  Report an Issue!</a></li>
         {% if session.get('current_user') %}
         <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span>
            Logout</a></li>
