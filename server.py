@@ -240,7 +240,6 @@ def new_entry():
                     'log_id': entry.log_id})
 
 
-
 @app.route("/journal/remove_strain.json", methods=["POST"])
 def remove_strain():
     """Remove strain from journal & database"""
@@ -278,15 +277,15 @@ def strain_in_db():
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the
     # point that we invoke the DebugToolbarExtension
-    # app.debug = False
-    # app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
+    app.debug = True
+    app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 
     # make sure templates, etc. are not cached in debug mode
     app.jinja_env.auto_reload = app.debug
     connect_to_db(app)
     db.init_app(app)
 
-    # # Use the DebugToolbar
+    # Use the DebugToolbar
     # DebugToolbarExtension(app)
 
     app.run(port=5000, host='0.0.0.0')
