@@ -36,3 +36,5 @@ alternatives: "Blue Dream"
 {% endfor %}
 
 a href="/map?strain={{s.s_name}}"
+
+updating for backup, switching computers
