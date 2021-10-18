@@ -75,7 +75,6 @@
 
 ## Author
 * [Shirley Xiaolin Xu](https://www.linkedin.com/in/shxxu/)
-* [@shxxu0212](https://github.com/Shxxu0212) — Full-stack software engineer, former business development consultant
 * Artwork: [Priyanka Java](http://priyankajava.com)
 
 
