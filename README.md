@@ -4,9 +4,9 @@
 
 "Bud Search" allows users to locate cannabis dispensaries nearby that offer a desired strain, and renders an interactive map with navigation directions. The BudBud database (PostGreSQL) contains 144 strains & 60 dispensaries in San Francisco and Oakland, populated through web scraping (Leafly.com.) Registered users can personalize their cannabis experiences with private journals, as well as share public adventure stories in "Bud Journal" (powered by jQuery, SQLAlchemy.) "Party Bud" the enlightened bud bot algorithmically recommends new strains to users, based on journal entries and search history. BudBud is constructed in Python and prettified with Bootstrap. Maps are rendered by Google API.
 
-![alt text](https://github.com/xiaolin-ninja/BudBud/blob/master/static/img/screenshots/main.jpg)
-![alt text](https://github.com/xiaolin-ninja/BudBud/blob/master/static/img/screenshots/journal.jpg)
-![alt text](https://github.com/xiaolin-ninja/BudBud/blob/master/static/img/screenshots/main-results.jpg)
+![alt text](./static/img/screenshots/main.jpg)
+![alt text](./static/img/screenshots/journal.jpg)
+![alt text](./static/img/screenshots/main-results.jpg)
 
 ## Built With
 * Languages: Python, SQL (PostGRES), JavaScript, HTML, CSS
